@@ -30,9 +30,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "49e92afa9e22a42f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/107. Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af144a4b79dabcbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc3d06436fee2129",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/111. Ingress Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "948d183f09c52794",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/118. Network Policies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -98,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/104. CronJobs.md",
+                "file": "Udemy Lectures for CKAD/118. Network Policies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/104. CronJobs.md",
+                "file": "Udemy Lectures for CKAD/118. Network Policies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/104. CronJobs.md"
+                "file": "Udemy Lectures for CKAD/118. Network Policies.md"
               }
             }
           }
@@ -159,10 +207,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0eb6454246f3e89e",
+  "active": "948d183f09c52794",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/103. Jobs.md",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (42).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (41).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (40).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (39).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (37).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (36).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (35).png",
+    "Udemy Lectures for CKAD/111. Ingress Networking.md",
+    "Udemy Lectures for CKAD/118. Network Policies.md",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (33).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (32).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (31).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (30).png",
+    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
+    "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/104. CronJobs.md",
+    "Udemy Lectures for CKAD/103. Jobs.md",
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
     "Udemy Lectures for CKAD/32. Implerative Commands.md",
@@ -170,20 +233,10 @@
     "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
     "Github Actions/Sonar 4 Github Action.md",
     "Github Actions",
-    "ReadMe.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299430_start=330.png",
+    "Udemy Lectures for CKAD/ReadMe.md",
     "2024-08-11.md",
-    "images/Pasted image 20240326112159.png",
     "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
-    "images/Pasted image 20240325180518.png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12903110 (29).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12316794 (16).png",
     "Udemy Lectures for CKAD/37. Define, build and modify container image.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12316794 (3).png",
-    "images/Pasted image 20240811150137.png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12970866 (6).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12316794 (20).png",
-    "images/Pasted image 20240326112439.png",
     "Untitled.canvas",
     "Udemy Lectures for CKAD/68. Node Affinity.md",
     "Udemy Lectures for CKAD/38. Docker Practice.md",
@@ -195,11 +248,6 @@
     "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
     "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
-    "Udemy Lectures for CKAD/44. Environment Variables.md",
-    "Udemy Lectures for CKAD/58. Service Account.md",
-    "Udemy Lectures for CKAD/82. Liveness Probes.md",
-    "Udemy Lectures for CKAD/67. Node Selectors.md",
-    "Udemy Lectures for CKAD/55. Security Context.md",
-    "Udemy Lectures for CKAD/45. ConfigMaps.md"
+    "Udemy Lectures for CKAD/44. Environment Variables.md"
   ]
 }
