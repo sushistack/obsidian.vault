@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "75. Multi-Container Pods.md",
+                "file": "103. Jobs.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "75. Multi-Container Pods.md",
+                "file": "103. Jobs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "75. Multi-Container Pods.md",
+                "file": "103. Jobs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "75. Multi-Container Pods.md"
+                "file": "103. Jobs.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "ab87b1c3f481017d",
   "lastOpenFiles": [
+    "www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462.png",
+    "100. Deployment Strategy - Canary.md",
+    "75. Multi-Container Pods.md",
     "71. Taints & Tolerations vs Node Affinity.md",
     "61. Resource Requirements.md",
     "53. Demo Encrypting Secret Data at Rest.md",
@@ -155,9 +158,7 @@
     "44. Environment Variables.md",
     "58. Service Account.md",
     "103. Jobs.md",
-    "100. Deployment Strategy - Canary.md",
     "82. Liveness Probes.md",
-    "75. Multi-Container Pods.md",
     "67. Node Selectors.md",
     "55. Security Context.md",
     "45. ConfigMaps.md",
@@ -183,7 +184,6 @@
     "40. Commands and Arguments in Kube.md",
     "48. Secret.md",
     "54. Docker Security.md",
-    "64. Taints And Tolerations.md",
     "Untitled",
     "Untitled.canvas"
   ]
