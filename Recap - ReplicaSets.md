@@ -1,0 +1,149 @@
+![[www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12316794 (1).png]]
+
+
+
+
+![[www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12316794 (2).png]]
+
+우리는 애플리케이션을 실행하는 단일 포드가 있었습니다.  어떤 이유로 애플리케이션이 충돌하고 포드에 장애가 발생하면 어떻게 합니까?  
+  
+사용자는 더 이상 저희 애플리케이션에 액세스할 수 없습니다.  
+  
+사용자가 애플리케이션에 대한 액세스를 잃는 것을 방지하기 위해 하나 이상의 인스턴스 또는 포드를 동시에 실행하기를 원합니다.  
+  
+이렇게 하면 하나가 실패해도 다른 하나에서 애플리케이션이 실행됩니다.  
+  
+복제 컨트롤러를 사용하면 Kubernetes 클러스터에서 단일 포드의 여러 인스턴스를 실행할 수 있으므로 고가용성을 제공할 수 있습니다.  
+  
+그렇다면 단일 포드를 사용할 계획이라면 복제 컨트롤러를 사용할 필요가 없는가?
+
+아니요.  단일 포드가 있는 경우에도 복제 컨트롤러는 기존 포드에 장애가 발생할 때 자동으로 새 포드를 불러올 수 있습니다.  
+  
+따라서 복제 컨트롤러는 지정된 개수의 포드가 100개 또는 100개에 불과하더라도 항상 실행되도록 합니다.
+
+![[www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12316794 (3).png]]
+
+복제 컨트롤러가 필요한 또 다른 이유는 여러 포드를 생성하여 여러 포드 간에 로드를 공유하는 것입니다.  
+  
+예를 들어, 이 간단한 시나리오에서는 사용자 세트를 제공하는 단일 포드가 있습니다.  사용자 수가 증가하면 추가 포드를 배치하여 두 포드 간의 부하 균형을 유지합니다.  
+  
+수요가 더욱 증가하고 첫 번째 노드에서 리소스가 부족한 경우 클러스터의 다른 노드에 추가 부품을 배포할 수 있습니다.  보시다시피 복제 컨트롤러는 클러스터의 여러 노드에 걸쳐 있습니다.  
+  
+서로 다른 노드에서 여러 포드 간의 부하 균형을 맞출 뿐만 아니라 수요가 증가할 때 애플리케이션을 확장하는 데 도움이 됩니다.
+
+![[www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12316794 (4).png]]
+
+복제 컨트롤러와 복제 세트에는 두 가지 유사한 용어가 있다는 점에 유의해야 합니다.  
+  
+둘 다 같은 목적을 가지고 있지만 같지는 않습니다.  복제 컨트롤러는 복제 세트로 대체되는 오래된 기술입니다.  
+  
+복제 세트는 복제를 설정하는 새로운 권장 방법입니다.  그러나 이전 몇 개의 슬라이드에서 논의한 내용은 이 두 기술 모두에 적용할 수 있습니다.  
+  
+각각의 작업 방식에 약간의 차이가 있으며 그 부분은 잠시 후에 살펴보도록 하겠습니다.  따라서 앞으로 모든 데모 및 구현에서 복제 세트를 고수하려고 노력할 것입니다.
+
+
+Replication Controller
+
+![[www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12316794 (5).png]]
+
+```yml
+apiVersion: v1
+kind: ReplicationController
+metadata:
+	name: myapp-rc
+	labels:
+		app: myapp
+		type: frontend
+
+spec:
+	template:
+		metadata:
+			name: myapp-pod
+			labels:
+				app: myapp
+				type: front-end
+		spec:
+			containers:
+				- name: nginx-container
+				  image: nginx
+
+	replicas: 3
+
+```
+
+Replicaset
+
+복제본 집합에는 선택기(selector) 정의가 필요합니다. 
+
+선택기 섹션은 복제본 집합이 그 아래에 속하는 포드를 식별하는 데 도움을 주지만 어떤 부품이 그 아래에 속하는지 지정해야 하는 이유는 무엇입니까?
+
+복제 세트는 복제 세트 작성의 일부로 생성되지 않은 포드도 관리할 수 있기 때문입니다.
+
+예를 들어 선택기에 지정된 레이블과 일치하는 복제본 집합을 만들기 전에 생성된 포드의 경우 복제본 집합은 복제본을 작성할 때 이러한 부분도 고려합니다.
+
+![[www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12316794 (6).png]]
+
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+	name: myapp-replicaset
+	labels: 
+		app: myapp
+		type: front-end
+
+spec:
+	template:
+		metadata:
+			name: myapp-pod
+			labels:
+				app: myapp
+				type: front-end
+		spec:
+			containers:
+				- name: nginx-container
+				  image: nginx
+
+	replicas: 3
+	selector:
+		matchLabels:
+			type: front-end
+```
+
+
+예를 들어, 이전 슬라이드와 동일한 시나리오로 이미 생성된 3개의 기존 포드가 있으며, 항상 최소 3개의 포드가 실행되는지 확인하기 위해 해당 포드를 모니터링하기 위한 복제본 세트를 만들어야 합니다.  
+  
+복제 컨트롤러가 생성되면 일치하는 레이블이 있는 3개의 포드 인스턴스가 이미 생성되었기 때문에 새 포드 인스턴스를 배포하지 않습니다.  
+  
+그렇다면 복제 세트가 배포 시 새 포드를 생성할 것으로 예상하지 않으므로 복제 세트 사양에서 템플릿 섹션을 제공해야 합니까?  
+  
+네, 앞으로 포드 중 하나가 고장날 경우를 대비하여 원하는 포드 수를 유지하기 위해 복제본 세트를 새로 만들어야 하기 때문입니다.  
+  
+그리고 복제 세트가 새 포드를 만들기 위해서는 템플릿 정의 섹션이 필요합니다.
+
+
+```
+$ kubectl replace -f replicaset-definition.yml
+```
+
+or
+
+```
+$ kubectl scale --replicas=6 -f replicaset-definition.yml
+$ kubectl scale --replicas=6 replicaset myapp-replicaset
+```
+
+--- 
+
+```
+$ kubectl create -f replicaset-definition.yml
+$ kubectl get replicaset
+$ kubectl delete replicaset myapp-replicaset
+$ kubectl replace -f replicaset-definition.yml
+$ kubectl scale --replicas=6 -f replicaset-definition.yml
+```
+
+
+정리
+
+replicasets 얘가 여러 pods들을 관리하고 개수를 유지하는 역할을 한다.
