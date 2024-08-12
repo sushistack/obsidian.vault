@@ -78,9 +78,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6a63d7f816b0b636",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "119. Developing network policies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/118. Network Policies.md",
+                "file": "119. Developing network policies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/118. Network Policies.md",
+                "file": "119. Developing network policies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/118. Network Policies.md"
+                "file": "119. Developing network policies.md"
               }
             }
           }
@@ -207,8 +219,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "948d183f09c52794",
+  "active": "6a63d7f816b0b636",
   "lastOpenFiles": [
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (1).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680.png",
+    "Udemy Lectures for CKAD/118. Network Policies.md",
+    "119. Developing network policies.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (42).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (41).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (40).png",
@@ -217,11 +233,8 @@
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (36).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (35).png",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
-    "Udemy Lectures for CKAD/118. Network Policies.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (33).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (32).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (31).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12299462 (30).png",
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/104. CronJobs.md",
@@ -247,7 +260,6 @@
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
-    "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
-    "Udemy Lectures for CKAD/44. Environment Variables.md"
+    "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md"
   ]
 }
