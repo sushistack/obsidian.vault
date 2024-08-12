@@ -114,9 +114,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6132e7c5ee3a81fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -182,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/123. Persistent Volume.md",
+                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/123. Persistent Volume.md",
+                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/123. Persistent Volume.md"
+                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md"
               }
             }
           }
@@ -243,12 +255,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f07e0ab0634396ef",
+  "active": "6132e7c5ee3a81fc",
   "lastOpenFiles": [
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (14).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (13).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (12).png",
+    "Udemy Lectures for CKAD/123. Persistent Volume.md",
+    "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (11).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (10).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (9).png",
     "Udemy Lectures for CKAD/122. Volume.md",
-    "Udemy Lectures for CKAD/123. Persistent Volume.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (8).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (7).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (6).png",
@@ -256,10 +273,6 @@
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (4).png",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (3).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (2).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (1).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680.png",
     "Udemy Lectures for CKAD/118. Network Policies.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/107. Services.md",
@@ -283,7 +296,6 @@
     "images",
     "Udemy Lectures for CKAD",
     "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
-    "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md"
+    "Udemy Lectures for CKAD/75. Multi-Container Pods.md"
   ]
 }
