@@ -140,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -206,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "125. Using PVCs in Pod.md",
+                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "125. Using PVCs in Pod.md",
+                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "125. Using PVCs in Pod.md"
+                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md"
               }
             }
           }
@@ -267,10 +267,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8305b341d725addf",
+  "active": "6132e7c5ee3a81fc",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
     "125. Using PVCs in Pod.md",
+    "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12361594.png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (15).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (14).png",
