@@ -133,14 +133,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "125. Using PVCs in Pod.md",
+                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d7f7357266a80edb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "129. Storage class.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -206,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "125. Using PVCs in Pod.md",
+                "file": "129. Storage class.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "125. Using PVCs in Pod.md",
+                "file": "129. Storage class.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "125. Using PVCs in Pod.md"
+                "file": "129. Storage class.md"
               }
             }
           }
@@ -267,10 +279,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8305b341d725addf",
+  "active": "d7f7357266a80edb",
   "lastOpenFiles": [
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12361594 (1).png",
+    "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
+    "129. Storage class.md",
     "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
-    "125. Using PVCs in Pod.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12361594.png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (15).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (14).png",
@@ -306,8 +320,6 @@
     "Udemy Lectures for CKAD/38. Docker Practice.md",
     "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
     "images",
-    "Udemy Lectures for CKAD",
-    "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md"
+    "Udemy Lectures for CKAD"
   ]
 }
