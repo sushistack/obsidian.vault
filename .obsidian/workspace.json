@@ -126,9 +126,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8305b341d725addf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "125. Using PVCs in Pod.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -194,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
+                "file": "125. Using PVCs in Pod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
+                "file": "125. Using PVCs in Pod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md"
+                "file": "125. Using PVCs in Pod.md"
               }
             }
           }
@@ -255,22 +267,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6132e7c5ee3a81fc",
+  "active": "8305b341d725addf",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
+    "125. Using PVCs in Pod.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12361594.png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (15).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (14).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (13).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (12).png",
     "Udemy Lectures for CKAD/123. Persistent Volume.md",
-    "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (11).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (10).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (9).png",
     "Udemy Lectures for CKAD/122. Volume.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (8).png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (7).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (6).png",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
