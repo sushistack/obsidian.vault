@@ -145,14 +145,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "129. Storage class.md",
+                "file": "Udemy Lectures for CKAD/129. Storage class.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f15e261799860ca9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "131. Stateful Sets.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -218,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "129. Storage class.md",
+                "file": "131. Stateful Sets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "129. Storage class.md",
+                "file": "131. Stateful Sets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "129. Storage class.md"
+                "file": "131. Stateful Sets.md"
               }
             }
           }
@@ -279,11 +291,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7f7357266a80edb",
+  "active": "f15e261799860ca9",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/129. Storage class.md",
+    "131. Stateful Sets.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12361594 (1).png",
     "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
-    "129. Storage class.md",
     "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12361594.png",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (15).png",
@@ -296,7 +309,6 @@
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (9).png",
     "Udemy Lectures for CKAD/122. Volume.md",
     "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (8).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (7).png",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
