@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2453c577334a5361",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/145. Cluster roles.md",
+                "file": "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/145. Cluster roles.md",
+                "file": "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/145. Cluster roles.md"
+                "file": "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md"
               }
             }
           }
@@ -159,17 +171,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b0414153f23ea0e",
+  "active": "2453c577334a5361",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/144. Role based Access Controls.md",
+    "Udemy Lectures for CKAD/150. Admission Controllers.md",
+    "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (58).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (57).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (56).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (55).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (54).png",
     "Udemy Lectures for CKAD/145. Cluster roles.md",
+    "Udemy Lectures for CKAD/144. Role based Access Controls.md",
+    "Udemy Lectures for CKAD/136. Authentication.md",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (52).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (51).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (50).png",
     "JPA/ReadMe.md",
     "images/info8.png",
     "Udemy Lectures for CKAD/143. Authorization.md",
     "Udemy Lectures for CKAD/142. API Groups.md",
     "Udemy Lectures for CKAD/139. KubeConfig.md",
     "Udemy Lectures for CKAD/137. Basic Authentication.md",
-    "Udemy Lectures for CKAD/136. Authentication.md",
     "Udemy Lectures for CKAD/135. Authentication, Authorization and Admission Control.md",
     "Udemy Lectures for CKAD/134. Storage in StatefulSets.md",
     "Udemy Lectures for CKAD/133. Headless Services.md",
@@ -186,16 +208,7 @@
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/104. CronJobs.md",
-    "Udemy Lectures for CKAD/37. Define, build and modify container image.md",
     "images/inf.png",
-    "images/www.inflearn.com_course_ORM-JPA-Basic (1).png",
-    "images/www.inflearn.com_course_ORM-JPA-Basic.png",
-    "images/www.inflearn.com_course_%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EC%8B%A4%EC%A0%84 1.png",
-    "images/www.inflearn.com_course_%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EC%8B%A4%EC%A0%84.png",
-    "images/info10.png",
-    "images/info9.png",
-    "images/info7.png",
-    "images/info6.png",
     "JPA",
     "Github Actions",
     "Untitled.canvas",
