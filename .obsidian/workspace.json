@@ -265,14 +265,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "143. Authorization.md",
+                "file": "Udemy Lectures for CKAD/143. Authorization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cdb75464aa07f45c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JPA/ReadMe.md.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 21
+        "currentTab": 22
       }
     ],
     "direction": "vertical"
@@ -338,7 +350,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "143. Authorization.md",
+                "file": "JPA/ReadMe.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -355,7 +367,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "143. Authorization.md",
+                "file": "JPA/ReadMe.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -378,7 +390,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "143. Authorization.md"
+                "file": "JPA/ReadMe.md.md"
               }
             }
           }
@@ -399,22 +411,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ca8bafe31952941",
+  "active": "cdb75464aa07f45c",
   "lastOpenFiles": [
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (35).png",
+    "images/www.inflearn.com_course_ORM-JPA-Basic (1).png",
+    "images/www.inflearn.com_course_ORM-JPA-Basic.png",
+    "images/info2.png",
+    "images/www.inflearn.com_course_%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EC%8B%A4%EC%A0%84 1.png",
+    "images/inf.png",
+    "images/www.inflearn.com_course_%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EC%8B%A4%EC%A0%84.png",
+    "Untitled.md",
+    "JPA/ReadMe.md.md",
+    "JPA",
+    "144. Role based Access Controls.md",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (48).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (46).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (45).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (44).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (43).png",
+    "Udemy Lectures for CKAD/143. Authorization.md",
     "Udemy Lectures for CKAD/142. API Groups.md",
-    "143. Authorization.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (34).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (33).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (32).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (31).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (30).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (29).png",
     "Udemy Lectures for CKAD/139. KubeConfig.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (28).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (27).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (26).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (25).png",
     "Udemy Lectures for CKAD/137. Basic Authentication.md",
     "Udemy Lectures for CKAD/136. Authentication.md",
     "Udemy Lectures for CKAD/135. Authentication, Authorization and Admission Control.md",
@@ -434,9 +450,6 @@
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/104. CronJobs.md",
     "Udemy Lectures for CKAD/103. Jobs.md",
-    "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
-    "Udemy Lectures for CKAD/29. Namescapces.md",
-    "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "Github Actions",
     "Untitled.canvas",
     "images",
