@@ -277,7 +277,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/ReadMe.md.md",
+                "file": "JPA/ReadMe.md",
                 "mode": "source",
                 "source": false
               }
@@ -350,7 +350,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/ReadMe.md.md",
+                "file": "JPA/ReadMe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -367,7 +367,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/ReadMe.md.md",
+                "file": "JPA/ReadMe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -390,7 +390,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/ReadMe.md.md"
+                "file": "JPA/ReadMe.md"
               }
             }
           }
@@ -425,7 +425,7 @@
     "images/www.inflearn.com_course_ORM-JPA-Basic.png",
     "images/info2.png",
     "Untitled.md",
-    "JPA/ReadMe.md.md",
+    "JPA/ReadMe.md",
     "JPA",
     "144. Role based Access Controls.md",
     "Udemy Lectures for CKAD/143. Authorization.md",
