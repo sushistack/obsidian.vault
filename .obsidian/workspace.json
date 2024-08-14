@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/ReadMe.md",
+                "file": "Udemy Lectures for CKAD/144. Role based Access Controls.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0b0414153f23ea0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/145. Cluster roles.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/ReadMe.md",
+                "file": "Udemy Lectures for CKAD/145. Cluster roles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/ReadMe.md",
+                "file": "Udemy Lectures for CKAD/145. Cluster roles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/ReadMe.md"
+                "file": "Udemy Lectures for CKAD/145. Cluster roles.md"
               }
             }
           }
@@ -146,11 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0029797bbd8caa03",
+  "active": "0b0414153f23ea0e",
   "lastOpenFiles": [
     "Udemy Lectures for CKAD/144. Role based Access Controls.md",
-    "images/info8.png",
+    "Udemy Lectures for CKAD/145. Cluster roles.md",
     "JPA/ReadMe.md",
+    "images/info8.png",
     "Udemy Lectures for CKAD/143. Authorization.md",
     "Udemy Lectures for CKAD/142. API Groups.md",
     "Udemy Lectures for CKAD/139. KubeConfig.md",
@@ -182,7 +196,6 @@
     "images/info9.png",
     "images/info7.png",
     "images/info6.png",
-    "Untitled.md",
     "JPA",
     "Github Actions",
     "Untitled.canvas",
