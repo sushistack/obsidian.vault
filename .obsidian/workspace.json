@@ -193,14 +193,86 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "134. Storage in StatefulSets.md",
+                "file": "Udemy Lectures for CKAD/134. Storage in StatefulSets.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b286d0cf4e49280",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/135. Authentication, Authorization and Admission Control.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d0f9dc694feb96d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/136. Authentication.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c25dda0c999da0f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/137. Basic Authentication.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e4ad0b10470312c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/139. KubeConfig.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4f236762cf250899",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/142. API Groups.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0ca8bafe31952941",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "143. Authorization.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 15
+        "currentTab": 21
       }
     ],
     "direction": "vertical"
@@ -266,7 +338,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "134. Storage in StatefulSets.md",
+                "file": "143. Authorization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -283,7 +355,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "134. Storage in StatefulSets.md",
+                "file": "143. Authorization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -306,7 +378,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "134. Storage in StatefulSets.md"
+                "file": "143. Authorization.md"
               }
             }
           }
@@ -327,26 +399,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4194952f6ff22d99",
+  "active": "0ca8bafe31952941",
   "lastOpenFiles": [
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (7).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (6).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (35).png",
+    "Udemy Lectures for CKAD/142. API Groups.md",
+    "143. Authorization.md",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (34).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (33).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (32).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (31).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (30).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (29).png",
+    "Udemy Lectures for CKAD/139. KubeConfig.md",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (28).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (27).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (26).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (25).png",
+    "Udemy Lectures for CKAD/137. Basic Authentication.md",
+    "Udemy Lectures for CKAD/136. Authentication.md",
+    "Udemy Lectures for CKAD/135. Authentication, Authorization and Admission Control.md",
+    "Udemy Lectures for CKAD/134. Storage in StatefulSets.md",
     "Udemy Lectures for CKAD/133. Headless Services.md",
-    "134. Storage in StatefulSets.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (5).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (3).png",
     "Udemy Lectures for CKAD/132. Stateful Sets Introduction.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (2).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616 (1).png",
     "Udemy Lectures for CKAD/131. Stateful Sets.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_17478616.png",
     "Udemy Lectures for CKAD/129. Storage class.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12361594 (1).png",
     "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
     "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_12361594.png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (15).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_24491680 (14).png",
     "Udemy Lectures for CKAD/123. Persistent Volume.md",
     "Udemy Lectures for CKAD/122. Volume.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
@@ -359,13 +437,7 @@
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
     "Udemy Lectures for CKAD/32. Implerative Commands.md",
-    "Udemy Lectures for CKAD/25. Deployments.md",
-    "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
-    "Github Actions/Sonar 4 Github Action.md",
     "Github Actions",
-    "Udemy Lectures for CKAD/ReadMe.md",
-    "2024-08-11.md",
-    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Untitled.canvas",
     "images",
     "Udemy Lectures for CKAD"
