@@ -4,275 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2d502376adb7fde8",
+        "id": "cfe68a991937362f",
         "type": "tabs",
         "children": [
           {
-            "id": "ab87b1c3f481017d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/37. Define, build and modify container image.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0eb6454246f3e89e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/104. CronJobs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "49e92afa9e22a42f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/107. Services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "af144a4b79dabcbd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cc3d06436fee2129",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/111. Ingress Networking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "948d183f09c52794",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/118. Network Policies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6a63d7f816b0b636",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/119. Developing network policies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b465cab4fe351d26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/122. Volume.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f07e0ab0634396ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/123. Persistent Volume.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6132e7c5ee3a81fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8305b341d725addf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d7f7357266a80edb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/129. Storage class.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f15e261799860ca9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/131. Stateful Sets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5e7746fd26b0c12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/132. Stateful Sets Introduction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3005c4b782847180",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/133. Headless Services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4194952f6ff22d99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/134. Storage in StatefulSets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9b286d0cf4e49280",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/135. Authentication, Authorization and Admission Control.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d0f9dc694feb96d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/136. Authentication.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c25dda0c999da0f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/137. Basic Authentication.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e4ad0b10470312c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/139. KubeConfig.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4f236762cf250899",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/142. API Groups.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0ca8bafe31952941",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/143. Authorization.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cdb75464aa07f45c",
+            "id": "0029797bbd8caa03",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -283,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 22
+        ]
       }
     ],
     "direction": "vertical"
@@ -411,23 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cdb75464aa07f45c",
+  "active": "0029797bbd8caa03",
   "lastOpenFiles": [
-    "images/info10.png",
-    "images/info9.png",
+    "Udemy Lectures for CKAD/144. Role based Access Controls.md",
     "images/info8.png",
-    "images/info7.png",
-    "images/info6.png",
-    "images/info5.png",
-    "images/info4.png",
-    "images/info3.png",
-    "images/www.inflearn.com_course_ORM-JPA-Basic (1).png",
-    "images/www.inflearn.com_course_ORM-JPA-Basic.png",
-    "images/info2.png",
-    "Untitled.md",
     "JPA/ReadMe.md",
-    "JPA",
-    "144. Role based Access Controls.md",
     "Udemy Lectures for CKAD/143. Authorization.md",
     "Udemy Lectures for CKAD/142. API Groups.md",
     "Udemy Lectures for CKAD/139. KubeConfig.md",
@@ -444,12 +167,23 @@
     "Udemy Lectures for CKAD/123. Persistent Volume.md",
     "Udemy Lectures for CKAD/122. Volume.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
-    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
+    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/104. CronJobs.md",
-    "Udemy Lectures for CKAD/103. Jobs.md",
+    "Udemy Lectures for CKAD/37. Define, build and modify container image.md",
+    "images/inf.png",
+    "images/www.inflearn.com_course_ORM-JPA-Basic (1).png",
+    "images/www.inflearn.com_course_ORM-JPA-Basic.png",
+    "images/www.inflearn.com_course_%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EC%8B%A4%EC%A0%84 1.png",
+    "images/www.inflearn.com_course_%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EC%8B%A4%EC%A0%84.png",
+    "images/info10.png",
+    "images/info9.png",
+    "images/info7.png",
+    "images/info6.png",
+    "Untitled.md",
+    "JPA",
     "Github Actions",
     "Untitled.canvas",
     "images",
