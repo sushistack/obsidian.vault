@@ -73,14 +73,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "160. Custom Resource Definition.md",
+                "file": "Udemy Lectures for CKAD/160. Custom Resource Definition.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bbd7d17187a24857",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/162. Custom Controller.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cd920d09561ecbe8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/163. Operator Framework.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c17822ab53f484b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/107. Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "231b335efbcd33a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -146,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "160. Custom Resource Definition.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "160. Custom Resource Definition.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "160. Custom Resource Definition.md"
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md"
               }
             }
           }
@@ -207,23 +255,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2bcb6b8dd8fef96",
+  "active": "231b335efbcd33a1",
   "lastOpenFiles": [
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (3).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (2).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (1).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0.png",
+    "images/Microservices.png",
+    "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
+    "Udemy Lectures for CKAD/168. Helm Concepts.md",
+    "Master MS with SpringBoot,Docker,Kubernetes",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (29).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (28).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (27).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (26).png",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (25).png",
+    "Udemy Lectures for CKAD/107. Services.md",
+    "Udemy Lectures for CKAD/164. Helm Introduction.md",
+    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (24).png",
+    "Udemy Lectures for CKAD/163. Operator Framework.md",
+    "Udemy Lectures for CKAD/162. Custom Controller.md",
+    "Udemy Lectures for CKAD/160. Custom Resource Definition.md",
     "Udemy Lectures for CKAD/157. API Deprecations.md",
-    "160. Custom Resource Definition.md",
     "Udemy Lectures for CKAD/156. API Versions.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (13).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (12).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (11).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (10).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (9).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (8).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (7).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (5).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (4).png",
     "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
     "Udemy Lectures for CKAD/150. Admission Controllers.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (3).png",
     "Udemy Lectures for CKAD/145. Cluster roles.md",
     "Udemy Lectures for CKAD/144. Role based Access Controls.md",
     "Udemy Lectures for CKAD/136. Authentication.md",
@@ -237,14 +294,6 @@
     "Udemy Lectures for CKAD/133. Headless Services.md",
     "Udemy Lectures for CKAD/132. Stateful Sets Introduction.md",
     "Udemy Lectures for CKAD/131. Stateful Sets.md",
-    "Udemy Lectures for CKAD/129. Storage class.md",
-    "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
-    "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
-    "Udemy Lectures for CKAD/123. Persistent Volume.md",
-    "Udemy Lectures for CKAD/122. Volume.md",
-    "Udemy Lectures for CKAD/119. Developing network policies.md",
-    "Udemy Lectures for CKAD/118. Network Policies.md",
-    "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "JPA",
     "Github Actions",
     "Untitled.canvas",
