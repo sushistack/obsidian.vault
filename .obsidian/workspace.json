@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md"
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md"
               }
             }
           }
@@ -257,23 +257,25 @@
   },
   "active": "231b335efbcd33a1",
   "lastOpenFiles": [
+    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
+    "Master MS with SpringBoot,Docker,Kubernetes/attachments",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (11).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (10).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (9).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (8).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (7).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (6).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (5).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (4).png",
     "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (3).png",
     "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (2).png",
-    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (1).png",
-    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0.png",
-    "images/Microservices.png",
     "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Udemy Lectures for CKAD/168. Helm Concepts.md",
     "Master MS with SpringBoot,Docker,Kubernetes",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (29).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (28).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (27).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (26).png",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (25).png",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/164. Helm Introduction.md",
-    "images/www.udemy.com_course_certified-kubernetes-application-developer_learn_lecture_29039640_start=60 (24).png",
     "Udemy Lectures for CKAD/163. Operator Framework.md",
     "Udemy Lectures for CKAD/162. Custom Controller.md",
     "Udemy Lectures for CKAD/160. Custom Resource Definition.md",
