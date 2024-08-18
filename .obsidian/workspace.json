@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
+                "file": "Udemy Lectures for CKAD/48. Secret.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
+                "file": "Udemy Lectures for CKAD/48. Secret.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
+                "file": "Udemy Lectures for CKAD/48. Secret.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md"
+                "file": "Udemy Lectures for CKAD/48. Secret.md"
               }
             }
           }
@@ -257,8 +257,8 @@
   },
   "active": "231b335efbcd33a1",
   "lastOpenFiles": [
-    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments",
     "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (11).png",
