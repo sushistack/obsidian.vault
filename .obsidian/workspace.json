@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/48. Secret.md",
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/48. Secret.md",
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/48. Secret.md",
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/48. Secret.md"
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md"
               }
             }
           }
@@ -257,6 +257,9 @@
   },
   "active": "231b335efbcd33a1",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/168. Helm Concepts.md",
+    "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Udemy Lectures for CKAD/48. Secret.md",
     "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
     "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
@@ -272,7 +275,6 @@
     "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (3).png",
     "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (2).png",
     "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
-    "Udemy Lectures for CKAD/168. Helm Concepts.md",
     "Master MS with SpringBoot,Docker,Kubernetes",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/164. Helm Introduction.md",
@@ -294,8 +296,6 @@
     "Udemy Lectures for CKAD/135. Authentication, Authorization and Admission Control.md",
     "Udemy Lectures for CKAD/134. Storage in StatefulSets.md",
     "Udemy Lectures for CKAD/133. Headless Services.md",
-    "Udemy Lectures for CKAD/132. Stateful Sets Introduction.md",
-    "Udemy Lectures for CKAD/131. Stateful Sets.md",
     "JPA",
     "Github Actions",
     "Untitled.canvas",
