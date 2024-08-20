@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/3. Persistant Context.md",
+                "file": "JPA/5. 기본키 매핑.md",
                 "mode": "source",
                 "source": false
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/3. Persistant Context.md",
+                "file": "JPA/5. 기본키 매핑.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/3. Persistant Context.md",
+                "file": "JPA/5. 기본키 매핑.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/3. Persistant Context.md"
+                "file": "JPA/5. 기본키 매핑.md"
               }
             }
           }
@@ -269,19 +269,21 @@
   },
   "active": "662d2e35af3436f1",
   "lastOpenFiles": [
-    "images/Pasted image 20240820093737.png",
-    "images/Pasted image 20240819224559.png",
-    "images/Pasted image 20240819224325.png",
-    "images/Pasted image 20240819224207.png",
-    "images/Pasted image 20240819223942.png",
-    "images/Pasted image 20240819223629.png",
-    "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21686 (6).png",
-    "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21686 (5).png",
-    "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21686 (4).png",
-    "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21686 (3).png",
-    "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21686 (2).png",
-    "JPA/2. JPA 소개.md",
+    "images/Pasted image 20240820190517.png",
+    "images/Pasted image 20240820190510.png",
+    "images/Pasted image 20240820190500.png",
+    "images/Pasted image 20240820190453.png",
+    "images/Pasted image 20240820190445.png",
+    "images/Pasted image 20240820190426.png",
+    "images/Pasted image 20240820190414.png",
+    "JPA/4. Entity Mapping.md",
+    "JPA/5. 기본키 매핑.md",
+    "images/Pasted image 20240820190050.png",
+    "images/Pasted image 20240820185851.png",
+    "images/Pasted image 20240820185621.png",
+    "images/Pasted image 20240820185519.png",
     "JPA/3. Persistant Context.md",
+    "JPA/2. JPA 소개.md",
     "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
     "JPA/1. SQL 중심적인 개발의 문제점.md",
     "JPA/0. 강좌 소개.md",
@@ -306,8 +308,6 @@
     "Udemy Lectures for CKAD/145. Cluster roles.md",
     "Udemy Lectures for CKAD/144. Role based Access Controls.md",
     "Udemy Lectures for CKAD/136. Authentication.md",
-    "JPA/ReadMe.md",
-    "Udemy Lectures for CKAD/143. Authorization.md",
     "JPA",
     "Github Actions",
     "Untitled.canvas",
