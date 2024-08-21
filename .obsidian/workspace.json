@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+                "file": "JPA/6. 연관 관계 매핑.md",
                 "mode": "source",
                 "source": false
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+                "file": "JPA/6. 연관 관계 매핑.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+                "file": "JPA/6. 연관 관계 매핑.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md"
+                "file": "JPA/6. 연관 관계 매핑.md"
               }
             }
           }
@@ -269,9 +269,13 @@
   },
   "active": "662d2e35af3436f1",
   "lastOpenFiles": [
+    "images/Pasted image 20240821133425.png",
+    "images/Pasted image 20240821132349.png",
+    "images/Pasted image 20240821131721.png",
+    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+    "JPA/6. 연관 관계 매핑.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
-    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
@@ -286,8 +290,6 @@
     "images/Pasted image 20240820190414.png",
     "JPA/4. Entity Mapping.md",
     "images/Pasted image 20240820190050.png",
-    "images/Pasted image 20240820185851.png",
-    "images/Pasted image 20240820185621.png",
     "JPA/3. Persistant Context.md",
     "JPA/2. JPA 소개.md",
     "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
@@ -306,8 +308,6 @@
     "Udemy Lectures for CKAD/163. Operator Framework.md",
     "Udemy Lectures for CKAD/162. Custom Controller.md",
     "Udemy Lectures for CKAD/160. Custom Resource Definition.md",
-    "Udemy Lectures for CKAD/157. API Deprecations.md",
-    "Udemy Lectures for CKAD/156. API Versions.md",
     "JPA",
     "Github Actions",
     "Untitled.canvas",
