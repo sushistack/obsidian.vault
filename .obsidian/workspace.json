@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/6. 연관 관계 매핑.md",
+                "file": "Udemy Lectures for CKAD/25. Deployments.md",
                 "mode": "source",
                 "source": false
               }
@@ -141,6 +141,24 @@
           }
         ],
         "currentTab": 10
+      },
+      {
+        "id": "e8624ec1aac921af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eeb8ce032c714891",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,7 +224,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/6. 연관 관계 매핑.md",
+                "file": "Udemy Lectures for CKAD/25. Deployments.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +241,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/6. 연관 관계 매핑.md",
+                "file": "Udemy Lectures for CKAD/25. Deployments.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +264,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/6. 연관 관계 매핑.md"
+                "file": "Udemy Lectures for CKAD/25. Deployments.md"
               }
             }
           }
@@ -269,12 +287,17 @@
   },
   "active": "662d2e35af3436f1",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
+    "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Udemy Lectures for CKAD/25. Deployments.md",
+    "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
+    "JPA/3. Persistant Context.md",
+    "Untitled.md",
+    "JPA/6. 연관 관계 매핑.md",
     "images/Pasted image 20240821133425.png",
     "images/Pasted image 20240821132349.png",
     "images/Pasted image 20240821131721.png",
     "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
-    "JPA/6. 연관 관계 매핑.md",
-    "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
@@ -289,8 +312,6 @@
     "images/Pasted image 20240820190426.png",
     "images/Pasted image 20240820190414.png",
     "JPA/4. Entity Mapping.md",
-    "images/Pasted image 20240820190050.png",
-    "JPA/3. Persistant Context.md",
     "JPA/2. JPA 소개.md",
     "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
     "JPA/1. SQL 중심적인 개발의 문제점.md",
@@ -301,13 +322,10 @@
     "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments",
-    "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
     "Master MS with SpringBoot,Docker,Kubernetes",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/164. Helm Introduction.md",
     "Udemy Lectures for CKAD/163. Operator Framework.md",
-    "Udemy Lectures for CKAD/162. Custom Controller.md",
-    "Udemy Lectures for CKAD/160. Custom Resource Definition.md",
     "JPA",
     "Github Actions",
     "Untitled.canvas",

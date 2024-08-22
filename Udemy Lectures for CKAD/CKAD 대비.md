@@ -1,4 +1,19 @@
 
+```
+$ k run nginx --image=nginx
+$ k create -f pod.yml
+$ k create replicaset my-replicaset --image=nginx --replicas=3
+
+```
+
+
+
+
+
+
+---
+
+
 ## 모의 시험
 
 Create a pod called `time-check` in the `dvl1987` namespace. This pod should run a container called `time-check` that uses the `busybox` image.
