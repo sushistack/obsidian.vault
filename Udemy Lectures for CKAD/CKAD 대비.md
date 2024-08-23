@@ -3,8 +3,18 @@
 $ k run nginx --image=nginx
 $ k create -f pod.yml
 $ k create replicaset my-replicaset --image=nginx --replicas=3
-
+$ k create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3
 ```
+
+deployment
+ㄴ replicaset
+	ㄴ pod1
+	ㄴ pod2
+	ㄴ pod3
+
+Deployment는 전반적인 배포 전략을 관리하고, ReplicaSet은 해당 전략에 따라 실제 Pod를 관리하는 역할을 맡습니다.
+
+
 
 
 
