@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gRPC/Netty 서버에서 hikariCP 사용하기.md",
+                "file": "JPA/7. 다양한 연관 관계.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "gRPC/Netty 서버에서 hikariCP 사용하기.md",
+                "file": "JPA/7. 다양한 연관 관계.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "gRPC/Netty 서버에서 hikariCP 사용하기.md",
+                "file": "JPA/7. 다양한 연관 관계.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "gRPC/Netty 서버에서 hikariCP 사용하기.md"
+                "file": "JPA/7. 다양한 연관 관계.md"
               }
             }
           }
@@ -245,13 +245,21 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "images/Pasted image 20240823133053.png",
+    "images/Pasted image 20240823132450.png",
+    "images/Pasted image 20240823131953.png",
+    "images/Pasted image 20240823131619.png",
+    "images/Pasted image 20240823131504.png",
+    "JPA/6. 연관 관계 매핑.md",
+    "JPA/7. 다양한 연관 관계.md",
+    "images/Pasted image 20240823125734.png",
+    "gRPC/Netty 서버에서 hikariCP 사용하기.md",
     "images/Pasted image 20240823112953.png",
     "images/Pasted image 20240823112940.png",
     "gRPC/Spring-boot gRPC.md",
     "gRPC/Spring-boot gRPC server 성능 테스트.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "files/3863793606993468516.md",
-    "gRPC/Netty 서버에서 hikariCP 사용하기.md",
     "files",
     "images/Pasted image 20240823112920.png",
     "images/Pasted image 20240823112904.png",
@@ -260,7 +268,6 @@
     "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
     "().md",
     "images/Pasted image 20240823110723.png",
-    "images/Pasted image 20240823110712.png",
     "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "gRPC",
     "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
@@ -274,15 +281,8 @@
     "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
     "JPA/3. Persistant Context.md",
     "Untitled.md",
-    "JPA/6. 연관 관계 매핑.md",
-    "images/Pasted image 20240821133425.png",
-    "images/Pasted image 20240821132349.png",
-    "images/Pasted image 20240821131721.png",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
-    "Udemy Lectures for CKAD/118. Network Policies.md",
-    "images/Pasted image 20240820190517.png",
-    "images/Pasted image 20240820190510.png",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments",
     "Master MS with SpringBoot,Docker,Kubernetes",
