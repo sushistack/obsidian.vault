@@ -109,56 +109,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/107. Services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "231b335efbcd33a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "662d2e35af3436f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/25. Deployments.md",
+                "file": "gRPC/Netty 서버에서 hikariCP 사용하기.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 10
-      },
-      {
-        "id": "e8624ec1aac921af",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "eeb8ce032c714891",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -224,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/25. Deployments.md",
+                "file": "gRPC/Netty 서버에서 hikariCP 사용하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -241,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/25. Deployments.md",
+                "file": "gRPC/Netty 서버에서 hikariCP 사용하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -264,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/25. Deployments.md"
+                "file": "gRPC/Netty 서버에서 hikariCP 사용하기.md"
               }
             }
           }
@@ -285,9 +243,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "662d2e35af3436f1",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "images/Pasted image 20240823112953.png",
+    "images/Pasted image 20240823112940.png",
+    "gRPC/Spring-boot gRPC.md",
+    "gRPC/Spring-boot gRPC server 성능 테스트.md",
+    "Udemy Lectures for CKAD/107. Services.md",
+    "files/3863793606993468516.md",
+    "gRPC/Netty 서버에서 hikariCP 사용하기.md",
+    "files",
+    "images/Pasted image 20240823112920.png",
+    "images/Pasted image 20240823112904.png",
+    "gRPC/Spring-boot gRPC server.md",
+    "gRPC/Spring-boot gRPC client.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
+    "().md",
+    "images/Pasted image 20240823110723.png",
+    "images/Pasted image 20240823110712.png",
+    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+    "gRPC",
+    "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
+    "Udemy Lectures for CKAD/38. Docker Practice.md",
+    "Udemy Lectures for CKAD/37. Define, build and modify container image.md",
+    "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Udemy Lectures for CKAD/29. Namescapces.md",
     "Udemy Lectures for CKAD/25. Deployments.md",
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
     "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
@@ -297,35 +278,14 @@
     "images/Pasted image 20240821133425.png",
     "images/Pasted image 20240821132349.png",
     "images/Pasted image 20240821131721.png",
-    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
-    "Udemy Lectures for CKAD/111. Ingress Networking.md",
-    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
-    "JPA/5. 기본키 매핑.md",
     "images/Pasted image 20240820190517.png",
     "images/Pasted image 20240820190510.png",
-    "images/Pasted image 20240820190500.png",
-    "images/Pasted image 20240820190453.png",
-    "images/Pasted image 20240820190445.png",
-    "images/Pasted image 20240820190426.png",
-    "images/Pasted image 20240820190414.png",
-    "JPA/4. Entity Mapping.md",
-    "JPA/2. JPA 소개.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
-    "JPA/1. SQL 중심적인 개발의 문제점.md",
-    "JPA/0. 강좌 소개.md",
-    "Udemy Lectures for CKAD/168. Helm Concepts.md",
-    "Udemy Lectures for CKAD/48. Secret.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments",
     "Master MS with SpringBoot,Docker,Kubernetes",
-    "Udemy Lectures for CKAD/107. Services.md",
-    "Udemy Lectures for CKAD/164. Helm Introduction.md",
-    "Udemy Lectures for CKAD/163. Operator Framework.md",
     "JPA",
     "Github Actions",
     "Untitled.canvas",

@@ -14,10 +14,23 @@ deployment
 
 Deployment는 전반적인 배포 전략을 관리하고, ReplicaSet은 해당 전략에 따라 실제 Pod를 관리하는 역할을 맡습니다.
 
+```
+$ k create namespace dev
+$ k config set-context $(k config current-context) --namespace=dev
+```
 
+서비스 생성
 
+```sh
+kubectl expose <resource-type> <resource-name> [--port=<port>] [--target-port=<target-port>] [--type=<service-type>]
+$ k expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml
+```
 
-
+• <resource-type>: Service를 노출하려는 리소스의 유형 (예: pod, deployment, replicaset 등).
+• <resource-name>: Service를 노출하려는 리소스의 이름.
+• --port: Service가 외부에 노출할 포트 번호.
+• --target-port: 실제 Pod에서 노출될 포트 번호 (디폴트는 --port와 동일).
+• --type: Service의 유형 (ClusterIP, NodePort, LoadBalancer, ExternalName 중 하나).
 
 
 
