@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
+                "file": "JPA/9. 프록시.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
+                "file": "JPA/9. 프록시.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
+                "file": "JPA/9. 프록시.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md"
+                "file": "JPA/9. 프록시.md"
               }
             }
           }
@@ -245,25 +245,27 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "images/Pasted image 20240824182122.png",
+    "images/Pasted image 20240824180900.png",
+    "images/Pasted image 20240824180830.png",
+    "images/Pasted image 20240824180619.png",
+    "JPA/8. 상속관계 매핑.md",
+    "JPA/9. 프록시.md",
+    "images/Pasted image 20240824180244.png",
+    "images/Pasted image 20240824180132.png",
+    "images/Pasted image 20240824180116.png",
+    "images/Pasted image 20240824174529.png",
+    "images/Pasted image 20240824174526.png",
+    "images/Pasted image 20240824173906.png",
+    "JPA/7. 다양한 연관 관계.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
     "images/Pasted image 20240824171001.png",
     "Master MS with SpringBoot,Docker,Kubernetes/Approaches to identify boundaries & right size ms.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
-    "images/Pasted image 20240824165911.png",
-    "images/Pasted image 20240824165601.png",
-    "images/Pasted image 20240824164510.png",
     "Untitled.md",
-    "images/Pasted image 20240824164132.png",
     "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
     "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
-    "JPA/7. 다양한 연관 관계.md",
-    "images/Pasted image 20240823133053.png",
-    "images/Pasted image 20240823132450.png",
-    "images/Pasted image 20240823131953.png",
-    "images/Pasted image 20240823131619.png",
-    "images/Pasted image 20240823131504.png",
     "JPA/6. 연관 관계 매핑.md",
-    "images/Pasted image 20240823125734.png",
     "gRPC/Netty 서버에서 hikariCP 사용하기.md",
     "gRPC/Spring-boot gRPC.md",
     "gRPC/Spring-boot gRPC server 성능 테스트.md",
@@ -281,8 +283,6 @@
     "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
-    "Udemy Lectures for CKAD/25. Deployments.md",
-    "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments",
     "Master MS with SpringBoot,Docker,Kubernetes",
