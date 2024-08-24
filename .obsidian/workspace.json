@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/7. 다양한 연관 관계.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/7. 다양한 연관 관계.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/7. 다양한 연관 관계.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/7. 다양한 연관 관계.md"
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md"
               }
             }
           }
@@ -245,13 +245,15 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
+    "JPA/7. 다양한 연관 관계.md",
     "images/Pasted image 20240823133053.png",
     "images/Pasted image 20240823132450.png",
     "images/Pasted image 20240823131953.png",
     "images/Pasted image 20240823131619.png",
     "images/Pasted image 20240823131504.png",
     "JPA/6. 연관 관계 매핑.md",
-    "JPA/7. 다양한 연관 관계.md",
     "images/Pasted image 20240823125734.png",
     "gRPC/Netty 서버에서 hikariCP 사용하기.md",
     "images/Pasted image 20240823112953.png",
@@ -265,9 +267,7 @@
     "images/Pasted image 20240823112904.png",
     "gRPC/Spring-boot gRPC server.md",
     "gRPC/Spring-boot gRPC client.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
     "().md",
-    "images/Pasted image 20240823110723.png",
     "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "gRPC",
     "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
