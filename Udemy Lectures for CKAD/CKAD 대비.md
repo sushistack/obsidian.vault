@@ -50,29 +50,68 @@ kube : docker
 commands : ENTRYPOINT
 args: CMD
 
-### 
-
-## 모의 시험
-
-Create a pod called `time-check` in the `dvl1987` namespace. This pod should run a container called `time-check` that uses the `busybox` image.
-
-1. Create a config map called `time-config` with the data `TIME_FREQ=10` in the same namespace.
-2. The `time-check` container should run the command: `while true; do date; sleep $TIME_FREQ;done` and write the result to the location `/opt/time/time-check.log`.
-3. The path `/opt/time` on the pod should mount a volume that lasts the lifetime of this pod.
-
-
-### 1. time-config
+### ConfigMaps
 
 ```yml
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: time-config
+  name: my-config
 data:
-  TIME_FREQ: '10'
+  key1: value1
+  key2: value2
+```
+  
+```yml
+envFrom:
+	- configMapRef:
+		name: app-config
 ```
 
+```yml
+env:
+	- name: APP_COLOR
+	  valueFrom:
+		  configMapKeyRef:
+			  name: app-config
+			  key: APP_COLOR
+volumes:
+	- name: app-config-volume
+	  configMap:
+		  name: app-config
+```
+
+### Secret
+
+```yml
+apiVersion: v1
+kind: Secret
+metadata: 
+	name: app-secret
+data:
+	DB_Host: mysql
+```
+
+```sh
+$ echo -n 'password' | base64
+```
+
+**기본 요구 사항**: Kubernetes의 Secret 데이터는 base64로 인코딩하여 Secret 객체의 data 필드에 저장합니다. base64 인코딩은 데이터의 이진 값을 ASCII 문자열로 변환하는 방식입니다.
 
 
-## Commands
+```yml
+spec:
+	containers
+		- name: web-app
+		  envFrom:
+			  -secretRef:
+				  name: app-secret
+
+volumes:
+	- name: app-secret-volume
+	  secret:
+		  secretName: app-secret
+```
+
+### Security Context
 

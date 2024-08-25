@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
+                "file": "Udemy Lectures for CKAD/55. Security Context.md",
                 "mode": "source",
                 "source": false
               }
@@ -200,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -240,7 +240,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md"
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md"
               }
             }
           }
@@ -261,11 +261,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "fb5a34b62e06dca8",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+    "Udemy Lectures for CKAD/55. Security Context.md",
+    "Udemy Lectures for CKAD/54. Docker Security.md",
+    "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
+    "Udemy Lectures for CKAD/48. Secret.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Udemy Lectures for CKAD/82. Liveness Probes.md",
+    "Udemy Lectures for CKAD/61. Resource Requirements.md",
+    "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
+    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
+    "Udemy Lectures for CKAD/78. Init Container.md",
+    "Udemy Lectures for CKAD/68. Node Affinity.md",
+    "Udemy Lectures for CKAD/67. Node Selectors.md",
+    "Udemy Lectures for CKAD/64. Taints And Tolerations.md",
+    "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/모의 시험.md",
+    "Udemy Lectures for CKAD/45. ConfigMaps.md",
+    "Udemy Lectures for CKAD/44. Environment Variables.md",
+    "Udemy Lectures for CKAD/42. practice Test.md",
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
+    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
     "Udemy Lectures for CKAD/38. Docker Practice.md",
     "Udemy Lectures for CKAD/37. Define, build and modify container image.md",
@@ -282,24 +299,7 @@
     "images/Pasted image 20240824182751.png",
     "images/Pasted image 20240824182733.png",
     "images/Pasted image 20240824182122.png",
-    "JPA/8. 상속관계 매핑.md",
-    "JPA/7. 다양한 연관 관계.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/Approaches to identify boundaries & right size ms.md",
-    "Untitled.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/2. Source Code, PDF.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
-    "JPA/6. 연관 관계 매핑.md",
-    "gRPC/Netty 서버에서 hikariCP 사용하기.md",
-    "gRPC/Spring-boot gRPC.md",
-    "gRPC/Spring-boot gRPC server 성능 테스트.md",
-    "Udemy Lectures for CKAD/107. Services.md",
-    "files/3863793606993468516.md",
     "files",
-    "gRPC/Spring-boot gRPC server.md",
-    "gRPC/Spring-boot gRPC client.md",
-    "().md",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments",
