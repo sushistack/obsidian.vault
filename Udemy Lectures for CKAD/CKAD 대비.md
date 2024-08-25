@@ -26,16 +26,31 @@ kubectl expose <resource-type> <resource-name> [--port=<port>] [--target-port=<t
 $ k expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml
 ```
 
-• <resource-type>: Service를 노출하려는 리소스의 유형 (예: pod, deployment, replicaset 등).
-• <resource-name>: Service를 노출하려는 리소스의 이름.
+• resource-type: Service를 노출하려는 리소스의 유형 (예: pod, deployment, replicaset 등).
+• resource-name: Service를 노출하려는 리소스의 이름.
 • --port: Service가 외부에 노출할 포트 번호.
 • --target-port: 실제 Pod에서 노출될 포트 번호 (디폴트는 --port와 동일).
-• --type: Service의 유형 (ClusterIP, NodePort, LoadBalancer, ExternalName 중 하나).
+• --type: Service의 유형 (ClusterIP, NodePort, LoadBalancer, ExternalName 중 하나)
 
+### Command & Arguments
 
+```sh
+CMD ["sleep", "5"]
+# or
+CMD sleep 5
+# or
+ENTRYPOINT ["sleep"]
+CMD ["5"]
+```
 
----
+ENTRYPOINT: 고정형 명령어 또는 인수 사용
+CMD: 동적 명령어 또는 인수 전달
 
+kube : docker
+commands : ENTRYPOINT
+args: CMD
+
+### 
 
 ## 모의 시험
 
