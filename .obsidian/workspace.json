@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/10. 타입.md",
+                "file": "JPA/6. 연관 관계 매핑.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/10. 타입.md",
+                "file": "JPA/6. 연관 관계 매핑.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/10. 타입.md",
+                "file": "JPA/6. 연관 관계 매핑.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/10. 타입.md"
+                "file": "JPA/6. 연관 관계 매핑.md"
               }
             }
           }
@@ -245,11 +245,16 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "JPA/5. 기본키 매핑.md",
+    "JPA/4. Entity Mapping.md",
+    "JPA/3. Persistant Context.md",
+    "JPA/7. 다양한 연관 관계.md",
+    "JPA/6. 연관 관계 매핑.md",
+    "JPA/10. 타입.md",
     "images/Pasted image 20240825155603.png",
     "images/Pasted image 20240825154554.png",
     "images/Pasted image 20240825153743.png",
     "JPA/9. CASCADE & 고아 객체.md",
-    "JPA/10. 타입.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/54. Docker Security.md",
@@ -269,10 +274,6 @@
     "Udemy Lectures for CKAD/44. Environment Variables.md",
     "Udemy Lectures for CKAD/42. practice Test.md",
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
-    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
-    "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
-    "Udemy Lectures for CKAD/38. Docker Practice.md",
-    "Udemy Lectures for CKAD/37. Define, build and modify container image.md",
     "images/Pasted image 20240824184546.png",
     "images/Pasted image 20240824184441.png",
     "images/Pasted image 20240824183853.png",
@@ -280,7 +281,6 @@
     "images/Pasted image 20240824183748.png",
     "images/Pasted image 20240824183527.png",
     "images/Pasted image 20240824183525.png",
-    "images/Pasted image 20240824182751.png",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
