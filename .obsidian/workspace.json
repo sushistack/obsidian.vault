@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/10. 타입.md",
+                "file": "JPA/3. Persistant Context.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/10. 타입.md",
+                "file": "JPA/3. Persistant Context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/10. 타입.md",
+                "file": "JPA/3. Persistant Context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/10. 타입.md"
+                "file": "JPA/3. Persistant Context.md"
               }
             }
           }
@@ -246,17 +246,17 @@
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
     "JPA/5. 기본키 매핑.md",
+    "JPA/6. 연관 관계 매핑.md",
+    "JPA/10. 타입.md",
     "images/Pasted image 20240826185352.png",
     "images/Pasted image 20240826185101.png",
     "images/Pasted image 20240826184844.png",
     "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21716&tab=curriculum.png",
     "images/Pasted image 20240826184453.png",
     "images/Pasted image 20240826184102.png",
-    "JPA/6. 연관 관계 매핑.md",
     "JPA/7. 다양한 연관 관계.md",
     "JPA/8. 상속관계 매핑.md",
     "JPA/9. 프록시.md",
-    "JPA/10. 타입.md",
     "JPA/4. Entity Mapping.md",
     "JPA/3. Persistant Context.md",
     "images/Pasted image 20240825155603.png",
