@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/객체지향 쿼리.md",
+                "file": "JPA/JPQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/객체지향 쿼리.md",
+                "file": "JPA/JPQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/객체지향 쿼리.md",
+                "file": "JPA/JPQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/객체지향 쿼리.md"
+                "file": "JPA/JPQL.md"
               }
             }
           }
@@ -245,13 +245,20 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "images/Pasted image 20240827214232.png",
-    "images/Pasted image 20240827214205.png",
-    "images/Pasted image 20240827213706.png",
-    "images/Pasted image 20240827213406.png",
-    "images/Pasted image 20240827212959.png",
-    "JPA/10. 타입.md",
+    "images/Pasted image 20240828133331.png",
+    "images/Pasted image 20240828133309.png",
+    "images/Pasted image 20240828133231.png",
+    "images/Pasted image 20240828132553.png",
+    "images/Pasted image 20240828132153.png",
+    "images/Pasted image 20240828130658.png",
+    "images/Pasted image 20240828125922.png",
+    "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21719&tab=curriculum.png",
+    "images/Pasted image 20240828125621.png",
+    "images/Pasted image 20240828125509.png",
+    "images/Pasted image 20240828125459.png",
     "JPA/객체지향 쿼리.md",
+    "JPA/JPQL.md",
+    "JPA/10. 타입.md",
     "JPA/0. 강좌 소개.md",
     "JPA/3. Persistant Context.md",
     "JPA/4. Entity Mapping.md",
@@ -261,12 +268,6 @@
     "JPA/8. 상속관계 매핑.md",
     "JPA/7. 다양한 연관 관계.md",
     "JPA/6. 연관 관계 매핑.md",
-    "images/Pasted image 20240826185352.png",
-    "images/Pasted image 20240826185101.png",
-    "images/Pasted image 20240826184844.png",
-    "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21716&tab=curriculum.png",
-    "images/Pasted image 20240826184453.png",
-    "images/Pasted image 20240826184102.png",
     "Udemy Lectures for CKAD/55. Security Context.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/54. Docker Security.md",
@@ -280,7 +281,6 @@
     "Udemy Lectures for CKAD/68. Node Affinity.md",
     "Udemy Lectures for CKAD/67. Node Selectors.md",
     "Udemy Lectures for CKAD/64. Taints And Tolerations.md",
-    "Udemy Lectures for CKAD/58. Service Account.md",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
