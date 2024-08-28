@@ -112,3 +112,115 @@ SELECT m, t FROM Member m LEFT JOIN m.team t on t.name = 'A'
 
 ![](Pasted%20image%2020240828133331.png)
 
+## 타입 표현
+
+• 문자: ‘HELLO’, ‘She’’s’
+• 숫자: 10L(Long), 10D(Double), 10F(Float)
+• Boolean: TRUE, FALSE
+• ENUM: jpabook.MemberType.Admin (패키지명 포함)
+• 엔티티 타입: TYPE(m) = Member (상속 관계에서 사용)
+
+
+![](www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21719&tab=curriculum%20(1).png)
+
+DTYPE 필요한 경우
+DiscriminatorValue
+
+```sql
+select
+	case when m.age <= 10 then '학생요금'
+		when m.age >= 60 then '경로요금'
+		else '일반요금'
+	end
+from Member m
+```
+
+
+COALESCE = 하나씩 조회해서 null이 아니면 반환
+NULLIF = 두 값이 같으면 null 반환, 다르면 첫번째 값 반환
+
+```sql
+select coalesce(m.username,'이름 없는 회원') from Member m
+```
+
+```sql
+select NULLIF(m.username, '관리자') from Member m
+```
+
+### 함수
+
+JPQL 표준함수
+
+ • CONCAT
+
+• SUBSTRING
+
+• TRIM
+
+• LOWER, UPPER
+
+• LENGTH
+
+• LOCATE = indexOf
+
+• ABS, SQRT, MOD
+
+• SIZE = 컬렉션 사이즈 반환, INDEX(JPA 용도)
+
+
+### 커스텀
+
+dialect 등록해야 함.
+
+```sql
+select function('group_concat', i.name) from Item i
+```
+
+### 경로 표현식
+
+.(점)을 찍어 객체 그래프를 탐색하는 것
+
+```sql
+select m.username -> 상태 필드
+from Member m
+join m.team t -> 단일 값 연관 필드
+join m.orders o -> 컬렉션 값 연관 필드
+where t.name = '팀A'
+```
+
+
+• **상태** **필드**(state field): 단순히 값을 저장하기 위한 필드 (ex: m.username)
+• **연관** **필드**(association field): 연관관계를 위한 필드
+-  **단일** **값** **연관** **필드**: @ManyToOne, @OneToOne, 대상이 엔티티(ex: m.team)
+-  **컬렉션** **값** **연관** **필드**: @OneToMany, @ManyToMany, 대상이 컬렉션(ex: m.orders)
+
+```sql
+SELECT m.team.name FROM Member m
+```
+
+내부조인 발생해서 조심해야 한다 
+사용 하지마라
+
+![](Pasted%20image%2020240828141225.png)
+
+![](Pasted%20image%2020240828141237.png)
+
+## Fetch Join
+
+한방 쿼리
+
+```SQL
+select m from Member m join fetch m.team
+```
+
+TO
+
+```sql
+SELECT M.*, T.* FROM MEMBER M
+
+INNER JOIN TEAM T ON M.TEAM_ID=T.ID
+```
+
+명시적으로 한 번에 가져온다
+
+EAGER와 비슷
