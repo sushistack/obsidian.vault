@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/JPQL.md",
+                "file": "JPA/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/JPQL.md",
+                "file": "JPA/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/JPQL.md",
+                "file": "JPA/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/JPQL.md"
+                "file": "JPA/README.md"
               }
             }
           }
@@ -245,6 +245,9 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "JPA/1. SQL 중심적인 개발의 문제점.md",
+    "JPA/0. 강좌 소개.md",
+    "JPA/JPQL.md",
     "images/Pasted image 20240829094651.png",
     "images/Pasted image 20240829094508.png",
     "images/Pasted image 20240828141237.png",
@@ -255,11 +258,8 @@
     "images/Pasted image 20240828133231.png",
     "images/Pasted image 20240828132553.png",
     "images/Pasted image 20240828132153.png",
-    "images/Pasted image 20240828130658.png",
     "JPA/객체지향 쿼리.md",
-    "JPA/JPQL.md",
     "JPA/10. 타입.md",
-    "JPA/0. 강좌 소개.md",
     "JPA/3. Persistant Context.md",
     "JPA/4. Entity Mapping.md",
     "JPA/5. 기본키 매핑.md",

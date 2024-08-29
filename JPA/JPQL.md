@@ -415,5 +415,48 @@ select count(m.id) as cnt from Member m
 • 미리 정의해서 이름을 부여해두고 사용하는 JPQL
 • 정적 쿼리 (만 가능하다)
 • 어노테이션, XML에 정의
-• 애플리케이션 로딩 시점에 초기화 후 재사용
+• **애플리케이션 로딩 시점에 초기화 후 재사용**
 • **애플리케이션** **로딩** **시점에** **쿼리를** **검증**
+
+
+```java
+@Entity
+
+@NamedQuery(
+name = "Member.findByUsername",
+query="select m from Member m where m.username = :username")
+public class Member {
+...
+}
+```
+
+@Query()  이게 Named 쿼리임
+
+## 벌크 연산
+
+변경된 데이터가 100건이라면 100번의 UPDATE SQL 실행
+
+• 쿼리 한 번으로 여러 테이블 로우 변경(엔티티)
+• **executeUpdate()****의** **결과는** **영향받은** **엔티티** **수** **반환**
+• **UPDATE, DELETE** **지원**
+• **INSERT(insert into .. select,** **하이버네이트** **지원****)**
+
+
+벌크 연산은 영속성 컨텍스트를 무시하고 데이터베이스에 직접 쿼리
+• 벌크 연산을 먼저 실행
+• **벌크** **연산** **수행** **후** **영속성** **컨텍스트** **초기화**
+
+
+```
+String qlString = "update Product p " +
+
+"set p.price = p.price * 1.1 " +
+
+"where p.stockAmount < :stockAmount";
+
+int resultCount = em.createQuery(qlString)
+
+.setParameter("stockAmount", 10)
+
+.executeUpdate();
+```
