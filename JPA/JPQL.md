@@ -339,3 +339,81 @@ team1에서 회원 데이터를 찾으면 memberA, memberB만 반환되는 것�
 이렇게 되면 JPA 입장에서 DB와 데이터 일관성이 깨지고, 최악의 경우에 memberC가 DB에서 삭제될 수도 있습니다.
 
 왜냐하면 JPA의 엔티티 객체 그래프는 DB와 데이터 일관성을 유지해야 하기 때문입니다! 잘 생각해보면 우리가 엔티티의 값을 변경하면 DB에 반영이 되어버리지요.
+
+---
+
+**1. fetch join과 일반 조인의 차이를 설명해주세요. 예제를 가지고, 실제 실행되는 JPQL, SQL, 그리고 애플리케이션에서 객체가 가지고 있는 데이터를 기반으로 비교해서 설명해주세요.**
+
+일반 join과 fetch join의 가장 큰 차이점은 엔티티를 조회 하는 시점입니다.
+일반 join은 sql의 join과 동일 하게 동작 합니다.
+fetch join은 jpql을 이용하여 조회 할 때, 연관된 엔티티를 한번에 같이 조회하는 기능입니다.
+별칭을 줄수 없기 때문에 select, where, 서브쿼리에는 사용이 불가 합니다.
+둘 이상의 컬렉션을 fetch join 할 수 없습니다.
+
+
+## 다형성 쿼리
+
+### Type
+
+• 조회 대상을 특정 자식으로 한정
+• 예) Item 중에 Book, Movie를 조회해라
+
+• **[JPQL]**
+```sql
+select i from Item i
+where type(i) IN (Book, Movie)
+```
+
+
+• **[SQL]**
+
+```sql
+select i from i
+where i.DTYPE in (‘B’, ‘M’)
+```
+
+### TREAT
+
+• 자바의 타입 캐스팅과 유사
+• 상속 구조에서 부모 타입을 특정 자식 타입으로 다룰 때 사용
+• FROM, WHERE, SELECT(하이버네이트 지원) 사용
+
+
+
+• 예) 부모인 Item과 자식 Book이 있다.
+
+• **[JPQL]**
+
+```sql
+select i from Item i
+where treat(i as Book).author = ‘kim’
+```
+
+
+• **[SQL]**
+
+```sql
+select i.* from Item i
+where i.DTYPE = ‘B’ and i.author = ‘kim’
+```
+
+
+## 엔티티 직접 사용
+
+```sql
+select count(m) from Member m
+```
+
+to
+
+```sql
+select count(m.id) as cnt from Member m
+```
+
+## Named 쿼리
+
+• 미리 정의해서 이름을 부여해두고 사용하는 JPQL
+• 정적 쿼리 (만 가능하다)
+• 어노테이션, XML에 정의
+• 애플리케이션 로딩 시점에 초기화 후 재사용
+• **애플리케이션** **로딩** **시점에** **쿼리를** **검증**
