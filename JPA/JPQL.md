@@ -205,9 +205,9 @@ SELECT m.team.name FROM Member m
 
 ![](Pasted%20image%2020240828141237.png)
 
-## Fetch Join
+## Fetch Join (= 한방 쿼리)
 
-한방 쿼리
+
 
 ```SQL
 select m from Member m join fetch m.team
@@ -223,4 +223,67 @@ INNER JOIN TEAM T ON M.TEAM_ID=T.ID
 
 명시적으로 한 번에 가져온다
 
-EAGER와 비슷
+EAGER와 비슷하지만, EAGER는 개발자의 의도 없다고 보는게 맞음...
+
+```
+회원1 조회 후, 팀(A, SQL)을 조회
+회원2도 조회 후, 팀(A, 1차 캐시)을 조회한다면? -> 얘는 1차 캐시에서 조회 됨
+```
+
+100명 조회하면? -> 100번 쿼리가 날라간다. 
+
+N + 1 문제는 fetch join으로 해결해야 한다.
+
+
+```java
+String jpql = "select m from Member m join fetch m.team";
+List<Member> members = em.createQuery(jpql, Member.class)
+.getResultList();
+
+for (Member member : members) {
+//페치 조인으로 회원과 팀을 함께 조회해서 지연 로딩X
+System.out.println("username = " + member.getUsername() + ", " +
+"teamName = " + member.getTeam().name());
+}
+```
+
+
+```sql
+select t
+from Team t join fetch t.members
+where t.name = ‘팀A'
+```
+
+
+조인에 의한 중복 row가 발생할 수 있다.
+
+![](Pasted%20image%2020240829094508.png)
+
+![](Pasted%20image%2020240829094651.png)
+
+
+### 페치 조인과 일반 조인의 차이
+
+=> 일반 조인 실행시 연관된 엔티티를 함께 조회하지 않음
+
+• JPQL은 결과를 반환할 때 연관관계 고려X
+• 단지 SELECT 절에 지정한 엔티티만 조회할 뿐
+• 여기서는 팀 엔티티만 조회하고, 회원 엔티티는 조회X
+• 페치 조인을 사용할 때만 연관된 엔티티도 함께 조회(즉시 로딩)
+• 페치 조인은 객체 그래프를 SQL 한번에 조회하는 개념
+
+
+### 한계
+
+• 페치 조인 대상에는 별칭을 줄 수 없다. (=> where 절에 별칭에 대한 조건으로 별칭 대상 개 수가 달라진다. => JPA 그래프 탐색에 이슈가 있을 수 있다.)
+• 하이버네이트는 가능, 가급적 사용X
+• 둘 이상의 컬렉션은 페치 조인 할 수 없다.
+• 컬렉션을 페치 조인하면 페이징 API(setFirstResult, setMaxResults)를 사용할 수 없다.
+• 일대일, 다대일 같은 단일 값 연관 필드들은 페치 조인해도 페이징 가능
+• 하이버네이트는 경고 로그를 남기고 메모리에서 페이징(매우 위험)
+
+• 연관된 엔티티들을 SQL 한 번으로 조회 - 성능 최적화
+• 엔티티에 직접 적용하는 글로벌 로딩 전략보다 우선함
+• @OneToMany(fetch = FetchType.LAZY) //글로벌 로딩 전략
+• 실무에서 글로벌 로딩 전략은 모두 지연 로딩
+• 최적화가 필요한 곳은 페치 조인 적용
