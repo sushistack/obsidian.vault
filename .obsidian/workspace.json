@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/README.md",
+                "file": "JPA/JPQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/README.md",
+                "file": "JPA/JPQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/README.md",
+                "file": "JPA/JPQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/README.md"
+                "file": "JPA/JPQL.md"
               }
             }
           }
@@ -245,9 +245,13 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "JPA/1. SQL 중심적인 개발의 문제점.md",
-    "JPA/0. 강좌 소개.md",
+    "JPA/README.md",
     "JPA/JPQL.md",
+    "JPA/8. 상속관계 매핑.md",
+    "JPA/0. 강좌 소개.md",
+    "JPA/3. Persistant Context.md",
+    "JPA/2. JPA 소개.md",
+    "JPA/1. SQL 중심적인 개발의 문제점.md",
     "images/Pasted image 20240829094651.png",
     "images/Pasted image 20240829094508.png",
     "images/Pasted image 20240828141237.png",
@@ -260,12 +264,10 @@
     "images/Pasted image 20240828132153.png",
     "JPA/객체지향 쿼리.md",
     "JPA/10. 타입.md",
-    "JPA/3. Persistant Context.md",
     "JPA/4. Entity Mapping.md",
     "JPA/5. 기본키 매핑.md",
     "JPA/9. 프록시.md",
     "JPA/9. CASCADE & 고아 객체.md",
-    "JPA/8. 상속관계 매핑.md",
     "JPA/7. 다양한 연관 관계.md",
     "JPA/6. 연관 관계 매핑.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
@@ -279,8 +281,6 @@
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "Udemy Lectures for CKAD/78. Init Container.md",
     "Udemy Lectures for CKAD/68. Node Affinity.md",
-    "Udemy Lectures for CKAD/67. Node Selectors.md",
-    "Udemy Lectures for CKAD/64. Taints And Tolerations.md",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
