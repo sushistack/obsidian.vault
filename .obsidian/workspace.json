@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebFlux/왜 반응형을 써야하는가?.md",
+                "file": "Spring Data JPA/1. Basic.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebFlux/왜 반응형을 써야하는가?.md",
+                "file": "Spring Data JPA/1. Basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WebFlux/왜 반응형을 써야하는가?.md",
+                "file": "Spring Data JPA/1. Basic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebFlux/왜 반응형을 써야하는가?.md"
+                "file": "Spring Data JPA/1. Basic.md"
               }
             }
           }
@@ -245,10 +245,12 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "WebFlux/왜 반응형을 써야하는가?.md",
+    "Spring Data JPA/1. Basic.md",
+    "Spring Data JPA",
     "images/Pasted image 20240829164412.png",
     "images/Pasted image 20240829163623.png",
     "JPA/JPQL.md",
-    "WebFlux/왜 반응형을 써야하는가?.md",
     "WebFlux",
     "JPA/README.md",
     "JPA/8. 상속관계 매핑.md",
@@ -264,7 +266,6 @@
     "images/Pasted image 20240828133331.png",
     "images/Pasted image 20240828133309.png",
     "images/Pasted image 20240828133231.png",
-    "images/Pasted image 20240828132553.png",
     "JPA/객체지향 쿼리.md",
     "JPA/10. 타입.md",
     "JPA/4. Entity Mapping.md",
@@ -290,7 +291,6 @@
     "JPA",
     "Github Actions",
     "Untitled.canvas",
-    "images",
-    "Udemy Lectures for CKAD"
+    "images"
   ]
 }
