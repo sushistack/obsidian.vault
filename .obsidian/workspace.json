@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring Data JPA/1. Basic.md",
+                "file": "2024-08-31.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring Data JPA/1. Basic.md",
+                "file": "2024-08-31.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring Data JPA/1. Basic.md",
+                "file": "2024-08-31.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring Data JPA/1. Basic.md"
+                "file": "2024-08-31.md"
               }
             }
           }
@@ -245,8 +245,9 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "WebFlux/왜 반응형을 써야하는가?.md",
     "Spring Data JPA/1. Basic.md",
+    "2024-08-31.md",
+    "WebFlux/왜 반응형을 써야하는가?.md",
     "Spring Data JPA",
     "images/Pasted image 20240829164412.png",
     "images/Pasted image 20240829163623.png",
@@ -282,7 +283,6 @@
     "Udemy Lectures for CKAD/82. Liveness Probes.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
     "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
