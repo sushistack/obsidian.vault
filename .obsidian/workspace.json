@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring Data JPA/3. 확장 기능.md",
+                "file": "Spring Data JPA/4. JPA 내부.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring Data JPA/3. 확장 기능.md",
+                "file": "Spring Data JPA/4. JPA 내부.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring Data JPA/3. 확장 기능.md",
+                "file": "Spring Data JPA/4. JPA 내부.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring Data JPA/3. 확장 기능.md"
+                "file": "Spring Data JPA/4. JPA 내부.md"
               }
             }
           }
@@ -245,8 +245,9 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Spring Data JPA/2. 기능.md",
     "Spring Data JPA/3. 확장 기능.md",
+    "Spring Data JPA/4. JPA 내부.md",
+    "Spring Data JPA/2. 기능.md",
     "Spring Data JPA/1. Basic.md",
     "2024-08-31.md",
     "WebFlux/왜 반응형을 써야하는가?.md",
@@ -282,7 +283,6 @@
     "Udemy Lectures for CKAD/54. Docker Security.md",
     "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
     "Udemy Lectures for CKAD/48. Secret.md",
-    "Udemy Lectures for CKAD/82. Liveness Probes.md",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
