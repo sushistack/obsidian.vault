@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring Data JPA/2. 기능.md",
+                "file": "JPA/3. Persistant Context.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring Data JPA/2. 기능.md",
+                "file": "JPA/3. Persistant Context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring Data JPA/2. 기능.md",
+                "file": "JPA/3. Persistant Context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring Data JPA/2. 기능.md"
+                "file": "JPA/3. Persistant Context.md"
               }
             }
           }
@@ -243,32 +243,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1c711a44534636b",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "JPA/4. Entity Mapping.md",
+    "JPA/5. 기본키 매핑.md",
+    "JPA/6. 연관 관계 매핑.md",
+    "JPA/8. 상속관계 매핑.md",
+    "JPA/9. 프록시.md",
+    "JPA/9. CASCADE & 고아 객체.md",
+    "JPA/10. 타입.md",
+    "JPA/객체지향 쿼리.md",
+    "JPA/JPQL.md",
+    "JPA/3. Persistant Context.md",
+    "JPA/2. JPA 소개.md",
+    "JPA/0. 강좌 소개.md",
+    "JPA/1. SQL 중심적인 개발의 문제점.md",
+    "JPA/7. 다양한 연관 관계.md",
+    "querydsl/2. 기본 문법.md",
+    "Spring Data JPA/2. 기능.md",
     "Spring Data JPA/0. Github Link.md",
     "files/3863793606993468516.md",
     "querydsl/0. Github Link.md",
-    "querydsl/2. 기본 문법.md",
     "querydsl/1. 기초.md",
     "Spring Data JPA/5. 부가 기능.md",
     "querydsl",
     "Spring Data JPA/4. JPA 내부.md",
     "Spring Data JPA/3. 확장 기능.md",
-    "Spring Data JPA/2. 기능.md",
     "Spring Data JPA/1. Basic.md",
     "2024-08-31.md",
     "WebFlux/왜 반응형을 써야하는가?.md",
     "Spring Data JPA",
     "images/Pasted image 20240829164412.png",
     "images/Pasted image 20240829163623.png",
-    "JPA/JPQL.md",
     "WebFlux",
-    "JPA/README.md",
-    "JPA/8. 상속관계 매핑.md",
-    "JPA/0. 강좌 소개.md",
-    "JPA/3. Persistant Context.md",
-    "JPA/2. JPA 소개.md",
-    "JPA/1. SQL 중심적인 개발의 문제점.md",
     "images/Pasted image 20240829094651.png",
     "images/Pasted image 20240829094508.png",
     "images/Pasted image 20240828141237.png",
@@ -277,13 +284,6 @@
     "images/Pasted image 20240828133331.png",
     "images/Pasted image 20240828133309.png",
     "images/Pasted image 20240828133231.png",
-    "JPA/객체지향 쿼리.md",
-    "JPA/10. 타입.md",
-    "JPA/4. Entity Mapping.md",
-    "JPA/5. 기본키 매핑.md",
-    "JPA/9. 프록시.md",
-    "JPA/9. CASCADE & 고아 객체.md",
-    "JPA/7. 다양한 연관 관계.md",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
