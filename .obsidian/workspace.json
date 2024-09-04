@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md"
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md"
               }
             }
           }
@@ -245,9 +245,12 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "images/Pasted image 20240904203718.png",
+    "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
+    "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",
     "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
     "images/Pasted image 20240904185301.png",
     "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
     "Master MS with SpringBoot,Docker,Kubernetes/6. Approaches to identify boundaries & right size ms.md",
@@ -271,7 +274,6 @@
     "Spring Data JPA/0. Github Link.md",
     "files/3863793606993468516.md",
     "querydsl/0. Github Link.md",
-    "querydsl/1. 기초.md",
     "querydsl",
     "Spring Data JPA",
     "images/Pasted image 20240829164412.png",
@@ -282,8 +284,6 @@
     "images/Pasted image 20240828141237.png",
     "images/Pasted image 20240828141225.png",
     "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21719&tab=curriculum (1).png",
-    "images/Pasted image 20240828133331.png",
-    "images/Pasted image 20240828133309.png",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
