@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/README.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/README.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/README.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/README.md"
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md"
               }
             }
           }
@@ -245,6 +245,12 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
+    "images/Pasted image 20240904185301.png",
+    "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/6. Approaches to identify boundaries & right size ms.md",
+    "JPA/README.md",
     "JPA/0. 강좌 소개.md",
     "JPA/1. SQL 중심적인 개발의 문제점.md",
     "JPA/3. Persistant Context.md",
@@ -265,13 +271,7 @@
     "files/3863793606993468516.md",
     "querydsl/0. Github Link.md",
     "querydsl/1. 기초.md",
-    "Spring Data JPA/5. 부가 기능.md",
     "querydsl",
-    "Spring Data JPA/4. JPA 내부.md",
-    "Spring Data JPA/3. 확장 기능.md",
-    "Spring Data JPA/1. Basic.md",
-    "2024-08-31.md",
-    "WebFlux/왜 반응형을 써야하는가?.md",
     "Spring Data JPA",
     "images/Pasted image 20240829164412.png",
     "images/Pasted image 20240829163623.png",
@@ -283,7 +283,6 @@
     "images/www.inflearn.com_course_lecture_courseSlug=ORM-JPA-Basic&unitId=21719&tab=curriculum (1).png",
     "images/Pasted image 20240828133331.png",
     "images/Pasted image 20240828133309.png",
-    "images/Pasted image 20240828133231.png",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
