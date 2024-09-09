@@ -102,39 +102,44 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "1c17822ab53f484b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/58. Service Account.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       },
       {
-        "id": "5f42630e2c49ceac",
+        "id": "24f38bffb6af2c3c",
         "type": "tabs",
         "children": [
           {
-            "id": "474a9de85fed04d7",
+            "id": "6df003004b063483",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "1c17822ab53f484b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -200,7 +205,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +222,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -240,7 +245,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/CKAD 대비.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -261,10 +266,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "474a9de85fed04d7",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/163. Operator Framework.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Udemy Lectures for CKAD/61. Resource Requirements.md",
+    "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
     "Spring Data JPA/5. 부가 기능.md",
@@ -285,14 +294,10 @@
     "JPA/README.md",
     "JPA/4. Entity Mapping.md",
     "JPA/2. JPA 소개.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",
     "images/Pasted image 20240904185301.png",
-    "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
     "querydsl",
     "Spring Data JPA",
     "images/Pasted image 20240829164412.png",

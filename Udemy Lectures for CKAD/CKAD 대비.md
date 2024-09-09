@@ -166,3 +166,7 @@ spec:
 
 ### Service Account
 
+```bash
+$ k get serviceaccounts
+```
+
