@@ -209,5 +209,4 @@ $ k replace -f new-replicasets.yaml
 $ k scale --replicas=5 rs new-replica-set
 ```
 
-### Now scale the ReplicaSet down to 2 PODs.
 
