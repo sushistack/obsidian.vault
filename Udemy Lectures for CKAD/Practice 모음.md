@@ -145,3 +145,69 @@ $ k create -f replicaset-definition-1.yaml
 error: resource mapping not found for name: "replicaset-1" namespace: "" from "replicaset-definition-1.yaml": no matches for kind "ReplicaSet" in version "v1"
 ensure CRDs are installed first
 ```
+
+=> ReplicaSet 은 **apiVersion: apps/v1**
+
+### Fix the issue in the `replicaset-definition-2.yaml` file and create a `ReplicaSet` using it.
+
+```yml
+spec:
+	replicas: 3 
+	selector: 
+		matchLabels: 
+			app: my-app
+			tier: nginx
+	template:
+		metadata:
+			name: myapp-pod
+			labels:
+				app: myapp
+				type: nginx
+		spec:
+			containers:
+				- name: nginx-container
+				  image: nginx
+```
+
+=> `spec.selector.matchLabels.레이블명` 과 `spec.template.metadata.labels.레이블명` 은 완벽히 일치해야 함. (해당 Pods 들이 해당 ReplicaSet에 의해 관리되고 있음을 명확히 할 수 있음)
+
+### Delete the two newly created ReplicaSets - `replicaset-1` and `replicaset-2`
+
+
+```sh
+$ k delete rs replicaset-1
+```
+
+### Fix the original replica set `new-replica-set` to use the correct `busybox` image.
+
+#### 내가 만든 정답
+
+```sh
+$ k get rs new-replica-set -o yaml > new-replicasets.yaml
+# new-replicasets.yaml  수정
+$ k delete rs new-replica-set
+$ k create -f new-replicasets.yaml
+```
+
+#### 정답
+
+```sh
+$ k edit rs new-replica-set
+```
+
+#### 참고
+
+```sh
+$ k replace -f new-replicasets.yaml
+```
+이건 왜 안됐을까?
+
+
+### Scale the ReplicaSet to 5 PODs.
+
+```sh
+$ k scale --replicas=5 rs new-replica-set
+```
+
+### Now scale the ReplicaSet down to 2 PODs.
+

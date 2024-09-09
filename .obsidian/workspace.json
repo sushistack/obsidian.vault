@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/163. Operator Framework.md",
+                "file": "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
                 "mode": "source",
                 "source": false
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "정적",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,7 +185,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -205,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -222,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -245,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md"
               }
             }
           }
@@ -266,10 +267,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "cd920d09561ecbe8",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/163. Operator Framework.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
+    "Udemy Lectures for CKAD/163. Operator Framework.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
@@ -293,7 +295,6 @@
     "JPA/3. Persistant Context.md",
     "JPA/README.md",
     "JPA/4. Entity Mapping.md",
-    "JPA/2. JPA 소개.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",
