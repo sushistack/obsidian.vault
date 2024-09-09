@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "querydsl/2. 기본 문법.md",
+                "file": "Udemy Lectures for CKAD/58. Service Account.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,6 +117,24 @@
           }
         ],
         "currentTab": 8
+      },
+      {
+        "id": "5f42630e2c49ceac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "474a9de85fed04d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -145,7 +163,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "native",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,8 +180,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -183,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "querydsl/2. 기본 문법.md",
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "querydsl/2. 기본 문법.md",
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +240,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "querydsl/2. 기본 문법.md"
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md"
               }
             }
           }
@@ -244,8 +261,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "474a9de85fed04d7",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Udemy Lectures for CKAD/55. Security Context.md",
+    "Udemy Lectures for CKAD/29. Namescapces.md",
+    "Spring Data JPA/5. 부가 기능.md",
+    "Spring Data JPA/4. JPA 내부.md",
+    "Spring Data JPA/3. 확장 기능.md",
+    "Spring Data JPA/1. Basic.md",
+    "Spring Data JPA/0. Github Link.md",
+    "querydsl/2. 기본 문법.md",
     "Spring Data JPA/2. 기능.md",
     "JPA/JPQL.md",
     "JPA/객체지향 쿼리.md",
@@ -266,15 +293,6 @@
     "images/Pasted image 20240904185741.png",
     "images/Pasted image 20240904185301.png",
     "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/6. Approaches to identify boundaries & right size ms.md",
-    "JPA/5. 기본키 매핑.md",
-    "JPA/6. 연관 관계 매핑.md",
-    "JPA/10. 타입.md",
-    "JPA/7. 다양한 연관 관계.md",
-    "querydsl/2. 기본 문법.md",
-    "Spring Data JPA/0. Github Link.md",
-    "files/3863793606993468516.md",
-    "querydsl/0. Github Link.md",
     "querydsl",
     "Spring Data JPA",
     "images/Pasted image 20240829164412.png",

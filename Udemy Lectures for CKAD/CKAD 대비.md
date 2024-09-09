@@ -115,3 +115,54 @@ volumes:
 
 ### Security Context
 
+```bash
+$ kubectl exec ubuntu-sleeper -- whoami
+$ kubectl exec ubuntu-sleeper --user=1010
+```
+
+#### 컨테이너들 전체에 대한 유저
+
+
+```yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-sleeper
+  namespace: default
+spec:
+  securityContext:
+    runAsUser: 1010
+  containers:
+  - command:
+    - sleep
+    - "4800"
+    image: ubuntu
+    name: ubuntu-sleeper
+```
+
+#### 특정 컨테이너에 대한 유저 및 능력 부여
+
+```yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multi-pod
+spec:
+  securityContext:
+    runAsUser: 1001
+  containers:
+  -  image: ubuntu
+     name: web
+     command: ["sleep", "5000"]
+     securityContext:
+      runAsUser: 1002
+      capabilities:
+        add: ["SYS_TIME"]
+
+  -  image: ubuntu
+     name: sidecar
+     command: ["sleep", "5000"]
+```
+
+### Service Account
+
