@@ -335,3 +335,10 @@ $ k create deploy redis-deploy --image=redis --replicas=2 -n dev-ns
 ```sh
 $ k run httpd --image=httpd:alpine --port=80 --expose
 ```
+
+
+### Practice 6 - Docker Images
+
+### Practice 7 - ConfigMaps
+
+### Practice 8 - Secrets
