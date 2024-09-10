@@ -337,8 +337,11 @@ $ k run httpd --image=httpd:alpine --port=80 --expose
 ```
 
 
-### Practice 6 - Docker Images
+## Practice 6 - Docker Images
 
-### Practice 7 - ConfigMaps
 
-### Practice 8 - Secrets
+
+
+## Practice 7 - ConfigMaps
+
+## Practice 8 - Secrets
