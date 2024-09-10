@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
+                "file": "Udemy Lectures for CKAD/29. Namescapces.md",
                 "mode": "source",
                 "source": false
               }
@@ -185,8 +185,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -269,8 +268,10 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
+    "Udemy Lectures for CKAD/29. Namescapces.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/25. Deployments.md",
+    "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
     "Udemy Lectures for CKAD/163. Operator Framework.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
@@ -278,7 +279,6 @@
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
-    "Udemy Lectures for CKAD/29. Namescapces.md",
     "Spring Data JPA/5. 부가 기능.md",
     "Spring Data JPA/4. JPA 내부.md",
     "Spring Data JPA/3. 확장 기능.md",
@@ -294,7 +294,6 @@
     "JPA/0. 강좌 소개.md",
     "JPA/1. SQL 중심적인 개발의 문제점.md",
     "JPA/3. Persistant Context.md",
-    "JPA/README.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",

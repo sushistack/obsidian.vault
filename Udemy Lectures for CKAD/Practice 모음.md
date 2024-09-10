@@ -1,5 +1,5 @@
 
-## Section 2
+## Practice 1 - Pods
 
 ### How many `pods` exist on the system?
 
@@ -95,7 +95,7 @@ $ k run redis --image=redis123
 $ k create -f redis-definition.yaml
 ```
 
-## Section 3
+## Practice 2 - ReplicaSets
 
 ### How many ReplicaSets exist on the system?
 
@@ -210,3 +210,61 @@ $ k scale --replicas=5 rs new-replica-set
 ```
 
 
+## Practice  3 - Deployments
+
+### How many Deployments exist on the system?
+
+```sh
+$ k get deploy
+```
+
+### What is images of Pods
+
+```sh
+$ k describe deployments frontend-deployment
+```
+
+### Create a new Deployment using the `deployment-definition-1.yaml` file located at `/root/`.
+
+Deployment 는 apps/v1
+
+
+### Create a new Deployment with the below attributes using your own deployment definition file.
+
+
+```sh
+$ k create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3
+```
+
+
+## Practice 4 - Namespace
+
+### How many Namespaces exist on the system?
+
+```sh
+$ k get namespaces
+```
+
+### How many pods exist in the `research` namespace?
+
+```sh
+$ k get pods -n research
+```
+
+### Create a POD in the `finance` namespace.
+
+```sh
+$ k run redis --image=redis -n finance
+```
+
+### Which namespace has the `blue` pod in it?
+
+```sh
+$ k get pods --all-namespace
+```
+
+### What DNS name should the `Blue` application use to access the database `db-service` in its own namespace - `marketing`?
+
+```sh
+$
+```
