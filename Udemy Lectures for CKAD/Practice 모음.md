@@ -354,7 +354,24 @@ WORKDIR /opt
 ENTRYPOINT ["python", "app.py"]
 ```
 
+### Run an instance of the image `webapp-color` and publish port `8080` on the container to `8282` on the host.
 
-## Practice 7 - ConfigMaps
+```sh
+$ docker run -p 8282:8080 webapp-color
+```
 
-## Practice 8 - Secrets
+### What is OS of python:3.6
+
+```sh
+$ docker run python:3.6 cat /etc/*release*
+```
+
+## Practice 7 - Command and Arguments
+
+```sh
+$ 
+```
+
+## Practice 8 - ConfigMaps
+
+## Practice 9 - Secrets
