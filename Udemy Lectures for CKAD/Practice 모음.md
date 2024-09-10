@@ -266,5 +266,72 @@ $ k get pods --all-namespace
 ### What DNS name should the `Blue` application use to access the database `db-service` in its own namespace - `marketing`?
 
 ```sh
-$
+$ k get services
+```
+
+Host Name: db-service
+Host Port: 6379
+
+
+### What DNS name should the `Blue` application use to access the database `db-service` in the `dev` namespace?
+
+`db-service.dev.svc.cluster.local`
+`서비스이름.네임스페이스.svc.cluster.local`
+
+
+### Practice 5 - Imperative Commands
+
+```sh
+$ kubectl apply -f
+```
+
+위 명령어를 사용하여 yaml 파일 업데이트 후 적용을 시켜야합니다.
+
+### Deploy a pod named `nginx-pod` using the `nginx:alpine` image.
+
+```sh
+$ k run nginx-pod --image=nginx:alpine
+```
+
+### Deploy a `redis` pod using the `redis:alpine` image with the labels set to `tier=db`.
+
+```sh
+$ k run redis --image=redis:alpine --labels tier=db
+```
+
+### Create a service `redis-service` to expose the `redis` application within the cluster on port `6379`.
+
+```sh
+$ k expose pod redis --port=6379 --name redis-service --type=ClusterIP
+```
+
+### Create a deployment named `webapp` using the image `kodekloud/webapp-color` with `3` replicas.
+
+
+```sh
+$ k create deployment webapp --image=kodekloud/webapp-color --replicas=3
+```
+
+### Create a new pod called `custom-nginx` using the `nginx` image and run it on `container port 8080`.
+
+```sh
+$ k run custom-nginx --image=nginx --port=8080
+```
+
+### Create a new namespace called `dev-ns`.
+
+```sh
+$ k create namespace dev-ns
+```
+
+### Create a new deployment called `redis-deploy` in the `dev-ns` namespace with the `redis` image. It should have `2` replicas.
+
+```sh
+$ k create deploy redis-deploy --image=redis --replicas=2 -n dev-ns
+```
+
+### Create a pod called `httpd` using the image `httpd:alpine` in the default namespace. Next, create a service of type `ClusterIP` by the same name `(httpd)`. The target port for the service should be `80`.
+
+```sh
+$ k run httpd --image=httpd:alpine --port=80 --expose
 ```
