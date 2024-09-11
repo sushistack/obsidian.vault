@@ -384,7 +384,42 @@ spec:
       - "1200"
 ```
 
-### 
+### Inspect the two files under directory `webapp-color-2`. What command is run at container startup?
+
+```
+controlplane ~/webapp-color-2 ➜  cat Dockerfile 
+FROM python:3.6-alpine
+
+RUN pip install flask
+
+COPY . /opt/
+
+EXPOSE 8080
+
+WORKDIR /opt
+
+ENTRYPOINT ["python", "app.py"]
+
+CMD ["--color", "red"]
+
+controlplane ~/webapp-color-2 ➜  cat webapp-color-pod.yaml 
+apiVersion: v1 
+kind: Pod 
+metadata:
+  name: webapp-green
+  labels:
+      name: webapp-green 
+spec:
+  containers:
+  - name: simple-webapp
+    image: kodekloud/webapp-color
+    command: ["--color","green"]
+```
+
+```sh
+--color green
+```
+이 실행된디.
 
 ## Practice 8 - ConfigMaps
 
