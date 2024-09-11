@@ -368,9 +368,23 @@ $ docker run python:3.6 cat /etc/*release*
 
 ## Practice 7 - Command and Arguments
 
-```sh
-$ 
+### Create a pod using the file named `ubuntu-sleeper-3.yaml`. There is something wrong with it. Try to fix it!
+
+```yml
+apiVersion: v1 
+kind: Pod 
+metadata:
+  name: ubuntu-sleeper-3 
+spec:
+  containers:
+  - name: ubuntu
+    image: ubuntu
+    command:
+      - "sleep"
+      - "1200"
 ```
+
+### 
 
 ## Practice 8 - ConfigMaps
 

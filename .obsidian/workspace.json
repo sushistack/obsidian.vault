@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/32. Implerative Commands.md",
+                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
                 "mode": "source",
                 "source": false
               }
@@ -268,11 +268,15 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/32. Implerative Commands.md",
+    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+    "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
+    "Udemy Lectures for CKAD/42. practice Test.md",
+    "Udemy Lectures for CKAD/44. Environment Variables.md",
+    "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
     "Udemy Lectures for CKAD/25. Deployments.md",
-    "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
     "Udemy Lectures for CKAD/163. Operator Framework.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
@@ -290,10 +294,6 @@
     "JPA/JPQL.md",
     "JPA/객체지향 쿼리.md",
     "JPA/9. CASCADE & 고아 객체.md",
-    "JPA/9. 프록시.md",
-    "JPA/8. 상속관계 매핑.md",
-    "JPA/0. 강좌 소개.md",
-    "JPA/1. SQL 중심적인 개발의 문제점.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",
