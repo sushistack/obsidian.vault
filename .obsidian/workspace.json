@@ -137,9 +137,21 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "e7456f95e00f8b13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -205,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -222,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -245,7 +257,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md"
               }
             }
           }
@@ -266,10 +278,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "cd920d09561ecbe8",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+    "Ideas/Facade Pattern 을 이용한 로직 개선.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Ideas",
+    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/42. practice Test.md",
     "Udemy Lectures for CKAD/44. Environment Variables.md",
@@ -293,7 +307,6 @@
     "Spring Data JPA/2. 기능.md",
     "JPA/JPQL.md",
     "JPA/객체지향 쿼리.md",
-    "JPA/9. CASCADE & 고아 객체.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",
@@ -313,7 +326,6 @@
     "Master MS with SpringBoot,Docker,Kubernetes/attachments",
     "Master MS with SpringBoot,Docker,Kubernetes",
     "JPA",
-    "Github Actions",
     "Untitled.canvas"
   ]
 }
