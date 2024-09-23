@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+                "file": "JPA/1. SQL 중심적인 개발의 문제점.md",
                 "mode": "source",
                 "source": false
               }
@@ -217,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+                "file": "JPA/1. SQL 중심적인 개발의 문제점.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
+                "file": "JPA/1. SQL 중심적인 개발의 문제점.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -257,7 +257,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md"
+                "file": "JPA/1. SQL 중심적인 개발의 문제점.md"
               }
             }
           }
@@ -280,10 +280,18 @@
   },
   "active": "cd920d09561ecbe8",
   "lastOpenFiles": [
+    "JPA/JPQL.md",
+    "JPA/README.md",
+    "Spring Data JPA/2. 기능.md",
+    "Spring Data JPA/5. 부가 기능.md",
+    "Spring Data JPA/4. JPA 내부.md",
+    "querydsl/2. 기본 문법.md",
+    "querydsl/1. 기초.md",
+    "querydsl/0. Github Link.md",
     "Ideas/Facade Pattern 을 이용한 로직 개선.md",
+    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Ideas",
-    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/42. practice Test.md",
     "Udemy Lectures for CKAD/44. Environment Variables.md",
@@ -298,15 +306,7 @@
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
-    "Spring Data JPA/5. 부가 기능.md",
-    "Spring Data JPA/4. JPA 내부.md",
     "Spring Data JPA/3. 확장 기능.md",
-    "Spring Data JPA/1. Basic.md",
-    "Spring Data JPA/0. Github Link.md",
-    "querydsl/2. 기본 문법.md",
-    "Spring Data JPA/2. 기능.md",
-    "JPA/JPQL.md",
-    "JPA/객체지향 쿼리.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",

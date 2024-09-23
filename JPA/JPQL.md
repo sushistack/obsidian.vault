@@ -234,7 +234,6 @@ EAGER와 비슷하지만, EAGER는 개발자의 의도 없다고 보는게 맞�
 
 N + 1 문제는 fetch join으로 해결해야 한다.
 
-
 ```java
 String jpql = "select m from Member m join fetch m.team";
 List<Member> members = em.createQuery(jpql, Member.class)
@@ -283,6 +282,7 @@ where t.name = ‘팀A'
 • 컬렉션(members)을 페치 조인하면 페이징 API(setFirstResult, setMaxResults)를 사용할 수 없다. (쿼리도 다 긁어옴....)
 • 일대일, 다대일 같은 단일 값 연관 필드들은 페치 조인해도 페이징 가능 (collection에 @BatchSize(100) 을 사용하면? IN 쿼리로 하나씩 날리던것을 한번에 날린다.)
 • 하이버네이트는 경고 로그를 남기고 메모리에서 페이징(매우 위험)
+• `COUNT` 쿼리에서 페치 조인(fetch join)을 사용할 수 없습니다. `COUNT` 쿼리는 결과로 단일 값(숫자)을 반환하기 때문에 엔티티 객체를 조회하는 것이 아니라 단순히 행의 개수를 세는 것이기 때문입니다.
 
 #### 특징
 
