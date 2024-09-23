@@ -279,7 +279,7 @@ Host Port: 6379
 `서비스이름.네임스페이스.svc.cluster.local`
 
 
-### Practice 5 - Imperative Commands
+## Practice 5 - Imperative Commands
 
 ```sh
 $ kubectl apply -f
@@ -422,5 +422,12 @@ spec:
 이 실행된디.
 
 ## Practice 8 - ConfigMaps
+
+### How many `ConfigMaps` exists in the `default` namespace?
+
+```bash
+$ 
+```
+
 
 ## Practice 9 - Secrets
