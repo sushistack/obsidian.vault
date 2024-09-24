@@ -588,10 +588,45 @@ spec:
 ### Update pod `ubuntu-sleeper` to run as Root user and with the `SYS_TIME` capability.
 
 
-```yaml
+```diff
 spec:
-  securityContext:
-    capabilities:
-      add: ["SYS_TIME"]
+  containers:
+  - command:
+    - sleep
+    - "4800"
+    image: ubuntu
+    imagePullPolicy: Always
+    name: ubuntu
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-pd27p
+      readOnly: true
+    securityContext:
++     capabilities:
++       add: ["SYS_TIME"]
 ```
+
+### Now update the pod to also make use of the `NET_ADMIN` capability.
+
+```diff
+spec:
+  containers:
+  - command:
+    - sleep
+    - "4800"
+    image: ubuntu
+    imagePullPolicy: Always
+    name: ubuntu
+    resources: {}
+    securityContext:
+      capabilities:
+        add:
+        - SYS_TIME
++       - NET_ADMIN
+```
+
+## Practice 11 - Service Account
 
