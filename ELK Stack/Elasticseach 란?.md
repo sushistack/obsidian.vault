@@ -29,3 +29,59 @@
 ### 클러스터
 : 노드들의 집합
 
+## Compact and aligned text (CAT) APIs
+### Verbose
+
+
+```bash
+$ GET _cat/master?v=true
+```
+
+### Help
+
+```bash
+$ GET _cat/master?help
+```
+
+### Headers
+
+```bash
+GET _cat/nodes?h=ip,port,heapPercent,name
+```
+
+### Numeric formats
+
+```bash
+GET _cat/indices?bytes=b&s=store.size:desc,index:asc&v=true
+```
+
+## 생성/읽기/수정/삭제 (CRUD)
+
+### 인덱스 생성
+
+```bash
+PUT /study
+```
+
+### 인덱스 조회
+
+```bash
+GET /study
+```
+
+### 인덱스 alias
+
+```bash
+POST /_aliases
+{
+  "actions": [
+    {
+      "add": {
+        "index": "study",
+        "alias": "alias_for_study"
+      }
+    }
+  ]
+}
+```
+
