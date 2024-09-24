@@ -6,6 +6,7 @@
       {
         "id": "cfe68a991937362f",
         "type": "tabs",
+        "dimension": 48.54060913705584,
         "children": [
           {
             "id": "0029797bbd8caa03",
@@ -73,7 +74,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ELK Stack/Elasticseach 란?.md",
+                "file": "ELK Stack/Log Stash.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,6 +86,7 @@
       {
         "id": "24f38bffb6af2c3c",
         "type": "tabs",
+        "dimension": 51.45939086294417,
         "children": [
           {
             "id": "6df003004b063483",
@@ -181,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ELK Stack/Elasticseach 란?.md",
+                "file": "ELK Stack/Log Stash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ELK Stack/Elasticseach 란?.md",
+                "file": "ELK Stack/Log Stash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ELK Stack/Elasticseach 란?.md"
+                "file": "ELK Stack/Log Stash.md"
               }
             }
           }
@@ -244,9 +246,10 @@
   },
   "active": "c2bcb6b8dd8fef96",
   "lastOpenFiles": [
+    "ELK Stack/Elasticseach 란?.md",
+    "ELK Stack/Log Stash.md",
     "images/Pasted image 20240924160256.png",
     "Udemy Lectures for CKAD/Practice 모음.md",
-    "ELK Stack/Elasticseach 란?.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
     "ELK Stack",
     "Udemy Lectures for CKAD/54. Docker Security.md",
@@ -284,7 +287,6 @@
     "images/Pasted image 20240829094651.png",
     "images/Pasted image 20240829094508.png",
     "images/Pasted image 20240828141237.png",
-    "images/Pasted image 20240828141225.png",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
