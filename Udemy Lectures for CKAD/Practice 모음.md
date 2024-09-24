@@ -1,4 +1,11 @@
 
+## API Resource
+
+```sh
+$ kubectl api-resources
+```
+
+
 ## Practice 1 - Pods
 
 ### How many `pods` exist on the system?
