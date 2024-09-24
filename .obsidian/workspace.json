@@ -73,38 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/160. Custom Resource Definition.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bbd7d17187a24857",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/162. Custom Controller.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cd920d09561ecbe8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/48. Secret.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       },
       {
         "id": "24f38bffb6af2c3c",
@@ -268,8 +244,11 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Ideas/Facade Pattern 을 이용한 로직 개선.md",
+    "Udemy Lectures for CKAD/48. Secret.md",
+    "Udemy Lectures for CKAD/45. ConfigMaps.md",
+    "Udemy Lectures for CKAD/44. Environment Variables.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Ideas/Facade Pattern 을 이용한 로직 개선.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
     "JPA/1. SQL 중심적인 개발의 문제점.md",
@@ -285,7 +264,6 @@
     "Ideas",
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/42. practice Test.md",
-    "Udemy Lectures for CKAD/44. Environment Variables.md",
     "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
     "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
@@ -293,8 +271,6 @@
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
     "Udemy Lectures for CKAD/163. Operator Framework.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
-    "Udemy Lectures for CKAD/58. Service Account.md",
-    "Udemy Lectures for CKAD/55. Security Context.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",

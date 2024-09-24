@@ -426,8 +426,56 @@ spec:
 ### How many `ConfigMaps` exists in the `default` namespace?
 
 ```bash
-$ 
+$ k get configmaps
+$ k get cm
 ```
 
+### Identify the database host from the config map `db-config`.
+
+```bash
+$ k describe cm db-config
+```
+
+### Create a new ConfigMap for the `webapp-color` POD. Use the spec given below.
+
+```yaml
+apiVersion: v1
+data:
+  APP_COLOR: darkblue
+  APP_OTHER: disregard
+kind: ConfigMap
+metadata:
+  name: webapp-config-map
+```
+### Update the environment variable on the POD to use only the `APP_COLOR` key from the newly created ConfigMap.
+
+#### as-is
+
+```yaml
+spec:
+  containers:
+  - env:
+    - name: APP_COLOR
+      value: pink
+```
+
+#### to-be
+
+```yaml
+spec:
+  containers:
+  - env:
+    - name: APP_COLOR
+      valueFrom:
+        configMapKeyRef:
+          name: webapp-config-map
+          key: APP_COLOR
+```
 
 ## Practice 9 - Secrets
+
+### How many `Secrets` exist on the system?
+
+```bash
+$ k get secrets
+```
