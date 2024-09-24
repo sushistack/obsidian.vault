@@ -547,3 +547,51 @@ spec:
 
 ## Practice 10 - Security Contexts
 
+### What is the user used to execute the sleep process within the `ubuntu-sleeper` pod?
+
+```sh
+$ k exec ubuntu-sleeper -- whoami
+```
+
+### Run as 1010
+
+```
+spec:
+  securityContext:
+    runAsUser: 1010
+```
+
+### A Pod definition file named `multi-pod.yaml` is given. With what user are the processes in the `web` container started?
+
+web: 1002, sidecar: 1001
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multi-pod
+spec:
+  securityContext:
+    runAsUser: 1001
+  containers:
+  -  image: ubuntu
+     name: web
+     command: ["sleep", "5000"]
+     securityContext:
+      runAsUser: 1002
+
+  -  image: ubuntu
+     name: sidecar
+     command: ["sleep", "5000"]
+```
+
+### Update pod `ubuntu-sleeper` to run as Root user and with the `SYS_TIME` capability.
+
+
+```yaml
+spec:
+  securityContext:
+    capabilities:
+      add: ["SYS_TIME"]
+```
+
