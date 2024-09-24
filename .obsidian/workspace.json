@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -244,10 +244,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2bcb6b8dd8fef96",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "ELK Stack/Log Stash.md",
     "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
+    "ELK Stack/Log Stash.md",
     "ELK Stack/Elasticseach 란?.md",
     "images/Pasted image 20240924160256.png",
     "Udemy Lectures for CKAD/Practice 모음.md",
