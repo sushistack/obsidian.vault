@@ -513,3 +513,37 @@ controlplane ~ ➜  echo password123 | base64
 cGFzc3dvcmQxMjMK
 ```
 
+인코딩이 이상함. 개행 문자가 포함되는 듯?
+
+```yaml
+apiVersion: v1
+data:
+  DB_Host: c3FsMDE=
+  DB_User: cm9vdA==
+  DB_Password: cGFzc3dvcmQxMjM=
+kind: Secret
+metadata:
+  name: db-secret
+  namespace: default
+```
+
+```sh
+$ k create -f mysql-secret.yaml
+```
+
+### Set secret to pod 
+
+```diff
+spec:
+  containers:
+  - image: kodekloud/simple-webapp-mysql
+    imagePullPolicy: Always
+    name: webapp
++   envFrom:
++   - secretRef:
++       name: db-secret
+```
+
+
+## Practice 10 - Security Contexts
+

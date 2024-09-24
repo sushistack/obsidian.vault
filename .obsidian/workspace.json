@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/48. Secret.md",
+                "file": "Udemy Lectures for CKAD/54. Docker Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -244,8 +244,10 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/48. Secret.md",
+    "Udemy Lectures for CKAD/54. Docker Security.md",
+    "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/48. Secret.md",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Udemy Lectures for CKAD/44. Environment Variables.md",
     "Ideas/Facade Pattern 을 이용한 로직 개선.md",
@@ -269,8 +271,6 @@
     "Udemy Lectures for CKAD/29. Namescapces.md",
     "Udemy Lectures for CKAD/25. Deployments.md",
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
-    "Udemy Lectures for CKAD/163. Operator Framework.md",
-    "Udemy Lectures for CKAD/61. Resource Requirements.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",
