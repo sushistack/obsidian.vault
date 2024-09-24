@@ -74,7 +74,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ELK Stack/Log Stash.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ELK Stack/Log Stash.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ELK Stack/Log Stash.md",
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ELK Stack/Log Stash.md"
+                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md"
               }
             }
           }
@@ -246,8 +246,9 @@
   },
   "active": "c2bcb6b8dd8fef96",
   "lastOpenFiles": [
-    "ELK Stack/Elasticseach 란?.md",
     "ELK Stack/Log Stash.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
+    "ELK Stack/Elasticseach 란?.md",
     "images/Pasted image 20240924160256.png",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
@@ -274,7 +275,6 @@
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/42. practice Test.md",
     "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
-    "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",
