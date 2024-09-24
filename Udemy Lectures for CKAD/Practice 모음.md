@@ -486,3 +486,30 @@ spec:
 ```bash
 $ k get secrets
 ```
+
+### The reason the application is failed is because we have not created the secrets yet. Create a new secret named `db-secret` with the data given below.
+
+
+```sh
+controlplane ~ ➜  k get all
+NAME             READY   STATUS    RESTARTS   AGE
+pod/webapp-pod   1/1     Running   0          4m4s
+pod/mysql        1/1     Running   0          4m4s
+
+NAME                     TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+service/kubernetes       ClusterIP   10.43.0.1       <none>        443/TCP          15m
+service/webapp-service   NodePort    10.43.210.107   <none>        8080:30080/TCP   4m4s
+service/sql01            ClusterIP   10.43.129.185   <none>        3306/TCP         4m3s
+```
+
+```sh
+controlplane ~ ➜  echo sql01 | base64
+c3FsMDEK
+
+controlplane ~ ➜  echo root | base64
+cm9vdAo=
+
+controlplane ~ ➜  echo password123 | base64
+cGFzc3dvcmQxMjMK
+```
+
