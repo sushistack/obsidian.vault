@@ -630,3 +630,11 @@ spec:
 
 ## Practice 11 - Service Account
 
+### How many Service Accounts exist in the default namespace?
+
+```sh
+$ k get sa
+```
+
+### What is the secret token used by the default service account?
+
