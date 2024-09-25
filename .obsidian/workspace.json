@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/157. API Deprecations.md",
+                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,14 +74,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/58. Service Account.md",
+                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "24f38bffb6af2c3c",
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/58. Service Account.md",
+                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/58. Service Account.md",
+                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/58. Service Account.md"
+                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md"
               }
             }
           }
@@ -244,10 +244,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2bcb6b8dd8fef96",
+  "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/157. API Deprecations.md",
+    "Ideas/Facade Pattern 을 이용한 로직 개선.md",
+    "images/Pasted image 20240925143245.png",
+    "images/Pasted image 20240925143222.png",
     "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
     "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
@@ -260,7 +264,6 @@
     "Udemy Lectures for CKAD/48. Secret.md",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Udemy Lectures for CKAD/44. Environment Variables.md",
-    "Ideas/Facade Pattern 을 이용한 로직 개선.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
     "JPA/1. SQL 중심적인 개발의 문제점.md",
@@ -274,7 +277,6 @@
     "querydsl/0. Github Link.md",
     "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Ideas",
-    "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",
@@ -285,8 +287,6 @@
     "images/Pasted image 20240829163623.png",
     "WebFlux",
     "images/Pasted image 20240829094651.png",
-    "images/Pasted image 20240829094508.png",
-    "images/Pasted image 20240828141237.png",
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
