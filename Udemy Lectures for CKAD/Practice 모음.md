@@ -638,3 +638,34 @@ $ k get sa
 
 ### What is the secret token used by the default service account?
 
+```sh
+$ k describe sa default
+Name:                default
+Namespace:           default
+Labels:              <none>
+Annotations:         <none>
+Image pull secrets:  <none>
+Mountable secrets:   <none>
+Tokens:              <none>
+Events:              <none>
+```
+
+### What is the state of the dashboard? Have the pod details loaded successfully?
+
+pods is forbidden: User "system:serviceaccount:default:default" cannot list resource "pods" in API group "" in the namespace "default"
+
+
+### What type of account does the Dashboard application use to query the Kubernetes API?
+
+Service Account
+
+### Which account does the Dashboard application use to query the Kubernetes API?
+
+Default 
+
+```
+pods is forbidden: User "system:serviceaccount:default:default" cannot list resource "pods" in API group "" in the namespace "default"
+```
+
+### Inspect the Dashboard Application POD and identify the Service Account mounted on it.
+

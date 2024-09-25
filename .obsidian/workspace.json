@@ -74,7 +74,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
+                "file": "Udemy Lectures for CKAD/58. Service Account.md",
                 "mode": "source",
                 "source": false
               }
@@ -246,12 +246,14 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
+    "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/61. Resource Requirements.md",
+    "Udemy Lectures for CKAD/55. Security Context.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
     "ELK Stack/Log Stash.md",
     "ELK Stack/Elasticseach 란?.md",
     "images/Pasted image 20240924160256.png",
-    "Udemy Lectures for CKAD/55. Security Context.md",
     "ELK Stack",
     "Udemy Lectures for CKAD/54. Docker Security.md",
     "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
@@ -273,8 +275,6 @@
     "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Ideas",
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
-    "Udemy Lectures for CKAD/42. practice Test.md",
-    "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
     "images/Pasted image 20240904203718.png",
     "images/Pasted image 20240904203521.png",
     "images/Pasted image 20240904185741.png",
