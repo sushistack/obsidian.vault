@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md",
+                "file": "Ideas/디자인 패턴을 이용한 로직 개선.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,7 +74,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md",
+                "file": "Ideas/디자인 패턴을 이용한 로직 개선.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md",
+                "file": "Ideas/디자인 패턴을 이용한 로직 개선.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md",
+                "file": "Ideas/디자인 패턴을 이용한 로직 개선.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/Facade Pattern 을 이용한 로직 개선.md"
+                "file": "Ideas/디자인 패턴을 이용한 로직 개선.md"
               }
             }
           }
@@ -246,12 +246,12 @@
   },
   "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "Udemy Lectures for CKAD/157. API Deprecations.md",
-    "Ideas/Facade Pattern 을 이용한 로직 개선.md",
     "images/Pasted image 20240925143245.png",
     "images/Pasted image 20240925143222.png",
     "Udemy Lectures for CKAD/58. Service Account.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
     "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
