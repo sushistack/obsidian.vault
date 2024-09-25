@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/유용한 링크.md",
+                "file": "Ideas/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/유용한 링크.md",
+                "file": "Ideas/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/유용한 링크.md",
+                "file": "Ideas/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/유용한 링크.md"
+                "file": "Ideas/Untitled.md"
               }
             }
           }
@@ -246,19 +246,20 @@
   },
   "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
-    "images/Pasted image 20240925164906.png",
-    "images/Pasted image 20240925164854.png",
-    "images/Pasted image 20240925164737.png",
-    "images/Pasted image 20240925164617.png",
-    "images/Pasted image 20240925164501.png",
-    "images/Pasted image 20240925164434.png",
-    "images/Pasted image 20240925164332.png",
-    "images/Pasted image 20240925164214.png",
-    "images/Pasted image 20240925164053.png",
-    "images/Pasted image 20240925164008.png",
-    "images/Pasted image 20240925163915.png",
+    "images/Pasted image 20240925171749.png",
+    "images/Pasted image 20240925170136.png",
+    "images/Pasted image 20240925165853.png",
+    "images/Pasted image 20240925165822.png",
+    "images/Pasted image 20240925165815.png",
+    "Ideas/Gateway.md",
+    "Ideas/Untitled.md",
+    "images/Pasted image 20240925165452.png",
+    "images/Pasted image 20240925165401.png",
+    "images/Pasted image 20240925165347.png",
+    "images/Pasted image 20240925165319.png",
+    "images/Pasted image 20240925165301.png",
+    "images/Pasted image 20240925165247.png",
     "Untitled.md",
-    "Ideas/유용한 링크.md",
     "Untitled",
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
@@ -283,7 +284,6 @@
     "Spring Data JPA/2. 기능.md",
     "Spring Data JPA/5. 부가 기능.md",
     "Spring Data JPA/4. JPA 내부.md",
-    "querydsl/2. 기본 문법.md",
     "Ideas",
     "querydsl",
     "Spring Data JPA",

@@ -97,3 +97,28 @@ MDC는 주로 SLF4J(Simple Logging Facade for Java)와 Logback, Log4j와 같은 
 
 ![](Pasted%20image%2020240925164906.png)
 
+![](Pasted%20image%2020240925165007.png)
+
+Github actions 로 검증
+
+
+![](Pasted%20image%2020240925165024.png)
+
+![](Pasted%20image%2020240925165136.png)
+
+## 모니터링
+
+![](Pasted%20image%2020240925165247.png)
+
+![](Pasted%20image%2020240925165301.png)
+
+![](Pasted%20image%2020240925165319.png)
+
+### Metric
+
+![](Pasted%20image%2020240925165347.png)
+
+![](Pasted%20image%2020240925165401.png)
+
+![](Pasted%20image%2020240925165452.png)
+
