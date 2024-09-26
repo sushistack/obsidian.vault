@@ -36,3 +36,171 @@ The **JUnit Platform** serves as a foundation for [launching testing framewor
 
 **JUnit Vintage** provides a `TestEngine` for running JUnit 3 and JUnit 4 based tests on the platform. It requires JUnit 4.12 or later to be present on the class path or module path.
 
+### ParameterizedTest
+
+```java
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class ParameterizedTestExample {
+
+    @ParameterizedTest
+    @CsvSource({
+        "1, 1, 2",
+        "2, 2, 4",
+        "3, 3, 6",
+        "4, 4, 8"
+    })
+    void testAddition(int a, int b, int expected) {
+        assertEquals(expected, a + b);
+    }
+}
+```
+
+### @Nested
+
+```java
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class NestedTestExample {
+
+    private Calculator calculator;
+
+    @BeforeEach
+    void setUp() {
+        calculator = new Calculator();
+    }
+
+    @Nested
+    class AdditionTests {
+        @Test
+        void testAddPositiveNumbers() {
+            assertEquals(5, calculator.add(2, 3));
+        }
+
+        @Test
+        void testAddNegativeNumbers() {
+            assertEquals(-5, calculator.add(-2, -3));
+        }
+    }
+
+    @Nested
+    class SubtractionTests {
+        @Test
+        void testSubtractPositiveNumbers() {
+            assertEquals(1, calculator.subtract(3, 2));
+        }
+
+        @Test
+        void testSubtractNegativeNumbers() {
+            assertEquals(-1, calculator.subtract(-2, -3));
+        }
+    }
+}
+
+class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+}
+```
+
+다양한 단위(메소드 등)의 구조화?
+
+### @EnabledOnOs, @EnabledOnOs
+
+custom
+
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+@Test
+@EnabledOnOs(MAC)
+@interface TestOnMac {
+}
+```
+
+```java
+@EnabledOnOs(architectures = "aarch64")
+```
+
+```java
+@EnabledOnJre(JAVA_8)
+@EnabledForJreRange(min = JAVA_9, max = JAVA_11)
+@DisabledOnJre(JAVA_9)
+@EnabledInNativeImage
+@EnabledIfSystemProperty(named = "os.arch", matches = ".*64.*")
+@EnabledIfEnvironmentVariable(named = "ENV", matches = "staging-server")
+```
+
+```java
+@Test 
+@EnabledIf("customCondition") 
+void enabled() { 
+	// ...
+}
+
+@Test 
+@DisabledIf("customCondition") 
+void disabled() { 
+// ... 
+} 
+boolean customCondition() { return true; }
+```
+
+
+```java
+package example; 
+import org.junit.jupiter.api.Test; 
+import org.junit.jupiter.api.condition.EnabledIf; 
+class ExternalCustomConditionDemo { 
+
+@Test 
+@EnabledIf("example.ExternalCondition#customCondition") 
+void enabled() { 
+		// ... 
+	} 
+} 
+
+class ExternalCondition { 
+	static boolean customCondition() { return true; } 
+}
+```
+
+
+```java
+import org.junit.jupiter.api.Tag; 
+import org.junit.jupiter.api.Test; 
+
+@Tag("fast") 
+@Tag("model") 
+class TaggingDemo { 
+	@Test 
+	@Tag("taxes") 
+	void testingTaxCalculation() { }
+
+}
+```
+
+
+```java
+import org.junit.jupiter.api.ClassOrderer; 
+import org.junit.jupiter.api.Nested; 
+import org.junit.jupiter.api.Order; 
+import org.junit.jupiter.api.Test; 
+import org.junit.jupiter.api.TestClassOrder; @TestClassOrder(ClassOrderer.OrderAnnotation.class) 
+class OrderedNestedTestClassesDemo { 
+@Nested @Order(1) 
+class PrimaryTests { @Test void test1() { } } 
+
+@Nested @Order(2) 
+class SecondaryTests { @Test void test2() { } } }
+```
