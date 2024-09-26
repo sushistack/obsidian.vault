@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/32. Implerative Commands.md",
+                "file": "ELK Stack/Log Stash.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/32. Implerative Commands.md",
+                "file": "ELK Stack/Log Stash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/32. Implerative Commands.md",
+                "file": "ELK Stack/Log Stash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/32. Implerative Commands.md"
+                "file": "ELK Stack/Log Stash.md"
               }
             }
           }
@@ -246,6 +246,9 @@
   },
   "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
+    "ELK Stack/Elasticseach 란?.md",
+    "ELK Stack/Log Stash.md",
+    "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "querydsl/2. 기본 문법.md",
     "querydsl/1. 기초.md",
     "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
@@ -275,15 +278,12 @@
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
     "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
-    "ELK Stack/Log Stash.md",
-    "ELK Stack/Elasticseach 란?.md",
     "ELK Stack",
     "Udemy Lectures for CKAD/54. Docker Security.md",
     "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
     "Udemy Lectures for CKAD/48. Secret.md",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Udemy Lectures for CKAD/44. Environment Variables.md",
-    "Udemy Lectures for CKAD/CKAD 대비.md",
     "Ideas",
     "querydsl",
     "Spring Data JPA",
