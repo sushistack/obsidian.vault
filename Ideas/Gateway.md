@@ -1,4 +1,7 @@
 
+## [Making Spring Cloud Gateway your perfect API gateway solution by Dan Erez @ Spring I/O 2024](https://youtu.be/9wycFMCmRUY?si=_XmAcT0xLbdAoHKH)
+
+위 내용 확인 필요
 ## [토스ㅣSLASH 23 - 토스는 Gateway 이렇게 씁니다](https://youtu.be/Zs3jVelp0L8?si=PCSLXAR078Em08uV)
 
 Gateway: Zuul (Neflix)

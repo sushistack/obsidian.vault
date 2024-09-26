@@ -6,7 +6,7 @@
       {
         "id": "cfe68a991937362f",
         "type": "tabs",
-        "dimension": 45.93908629441624,
+        "dimension": 45.939086294416235,
         "children": [
           {
             "id": "0029797bbd8caa03",
@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ELK Stack/Log Stash.md",
+                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
       {
         "id": "24f38bffb6af2c3c",
         "type": "tabs",
-        "dimension": 54.06091370558376,
+        "dimension": 54.060913705583765,
         "children": [
           {
             "id": "6df003004b063483",
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ELK Stack/Log Stash.md",
+                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ELK Stack/Log Stash.md",
+                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ELK Stack/Log Stash.md"
+                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md"
               }
             }
           }
@@ -246,10 +246,14 @@
   },
   "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
+    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
+    "Spring IO/Spring Boot - Advanced Testing Techniques.md",
+    "Spring IO",
+    "Ideas/Gateway.md",
+    "ELK Stack/Log Stash.md",
     "images/Pasted image 20240926152527.png",
     "images/Pasted image 20240926152500.png",
     "ELK Stack/Elasticseach 란?.md",
-    "ELK Stack/Log Stash.md",
     "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "querydsl/2. 기본 문법.md",
     "querydsl/1. 기초.md",
@@ -258,7 +262,6 @@
     "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
     "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
     "JPA/0. 강좌 소개.md",
-    "Ideas/Gateway.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Ideas/실시간 통신 성능 개선.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
@@ -272,8 +275,6 @@
     "images/Pasted image 20240925173646.png",
     "images/Pasted image 20240925173637.png",
     "images/Pasted image 20240925173627.png",
-    "images/Pasted image 20240925173546.png",
-    "Untitled",
     "Udemy Lectures for CKAD/157. API Deprecations.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
@@ -283,7 +284,6 @@
     "Udemy Lectures for CKAD/54. Docker Security.md",
     "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
     "Udemy Lectures for CKAD/48. Secret.md",
-    "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Ideas",
     "querydsl",
     "Spring Data JPA",
