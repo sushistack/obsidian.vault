@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Ideas/실시간 통신 성능 개선.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Ideas/실시간 통신 성능 개선.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Ideas/실시간 통신 성능 개선.md"
               }
             }
           }
@@ -244,8 +244,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1c711a44534636b",
+  "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/Practice 모음.md",
     "Ideas/실시간 통신 성능 개선.md",
     "Untitled.md",
     "images/Pasted image 20240925173935.png",
@@ -262,7 +263,6 @@
     "Ideas/Gateway.md",
     "Untitled",
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/157. API Deprecations.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
