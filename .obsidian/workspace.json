@@ -6,7 +6,7 @@
       {
         "id": "cfe68a991937362f",
         "type": "tabs",
-        "dimension": 48.54060913705584,
+        "dimension": 45.93908629441624,
         "children": [
           {
             "id": "0029797bbd8caa03",
@@ -86,7 +86,7 @@
       {
         "id": "24f38bffb6af2c3c",
         "type": "tabs",
-        "dimension": 51.45939086294417,
+        "dimension": 54.06091370558376,
         "children": [
           {
             "id": "6df003004b063483",
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -244,8 +244,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0aef72d0bdf84445",
+  "active": "d1c711a44534636b",
   "lastOpenFiles": [
+    "Ideas/실시간 통신 성능 개선.md",
+    "Untitled.md",
     "images/Pasted image 20240925173935.png",
     "images/Pasted image 20240925173917.png",
     "images/Pasted image 20240925173859.png",
@@ -256,11 +258,8 @@
     "images/Pasted image 20240925173627.png",
     "images/Pasted image 20240925173546.png",
     "images/Pasted image 20240925173506.png",
-    "images/Pasted image 20240925173432.png",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
-    "Ideas/실시간 통신 성능 개선.md",
     "Ideas/Gateway.md",
-    "Untitled.md",
     "Untitled",
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
