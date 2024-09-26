@@ -204,3 +204,146 @@ class PrimaryTests { @Test void test1() { } }
 @Nested @Order(2) 
 class SecondaryTests { @Test void test2() { } } }
 ```
+
+
+```java
+@ExtendWith(RandomParametersExtension.class)
+class MyRandomParametersTest {
+
+	@Test
+	void injectsInteger(@Random int i, @Random int j) {
+		assertNotEquals(i, j);
+	}
+
+  
+	@Test
+	void injectsDouble(@Random double d) {
+		assertEquals(0.0, d, 1.0);
+	}
+}
+```
+
+### Interface Default 메소드 테스트
+
+```java
+@TestInstance(Lifecycle.PER_CLASS)
+interface TestLifecycleLogger {
+
+static final Logger logger = Logger.getLogger(TestLifecycleLogger.class.getName());
+
+@BeforeAll
+default void beforeAllTests() {
+	logger.info("Before all tests");
+}
+
+@AfterAll
+default void afterAllTests() {
+	logger.info("After all tests");
+}
+
+@BeforeEach
+default void beforeEachTest(TestInfo testInfo) {
+	logger.info(() -> String.format("About to execute [%s]",
+testInfo.getDisplayName()));
+}
+
+@AfterEach
+default void afterEachTest(TestInfo testInfo) {
+	logger.info(() -> String.format("Finished executing [%s]",
+testInfo.getDisplayName()));
+}
+
+}
+```
+
+```java
+interface TestInterfaceDynamicTestsDemo {
+@TestFactory
+
+default Stream<DynamicTest> dynamicTestsForPalindromes() {
+return Stream.of("racecar", "radar", "mom", "dad")
+.map(text -> dynamicTest(text, () -> assertTrue(isPalindrome(text))));
+}
+
+}
+```
+
+
+```java
+@RepeatedTest(10) 
+void repeatedTest() { 
+// ... 
+}
+```
+
+
+```java
+@ParameterizedTest
+@NullSource
+@EmptySource
+@ValueSource(strings = { "racecar", "radar", "able was I ere I saw elba" })
+@EnumSource(ChronoUnit.class)
+void palindromes(String candidate) {
+assertTrue(StringUtils.isPalindrome(candidate));
+}
+```
+
+```java
+@ParameterizedTest
+@MethodSource("stringProvider")
+void testWithExplicitLocalMethodSource(String argument) {
+	assertNotNull(argument);
+}
+
+static Stream<String> stringProvider() {
+	return Stream.of("apple", "banana");
+}
+```
+
+```java
+@ParameterizedTest
+@MethodSource("stringIntAndListProvider")
+void testWithMultiArgMethodSource(String str, int num, List<String> list) {
+	assertEquals(5, str.length());
+	assertTrue(num >=1 && num <=2);
+	assertEquals(2, list.size());
+}
+
+
+static Stream<Arguments> stringIntAndListProvider() {
+return Stream.of(
+arguments("apple", 1, Arrays.asList("a", "b")),
+arguments("lemon", 2, Arrays.asList("x", "y"))
+);
+
+}
+```
+
+```java
+package example;
+import java.util.stream.Stream;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+
+class ExternalMethodSourceDemo {
+
+@ParameterizedTest
+@MethodSource("example.StringsProviders#tinyStrings")
+void testWithExternalMethodSource(String tinyString) {
+// test with tiny string
+}
+}
+
+class StringsProviders {
+static Stream<String> tinyStrings() {
+return Stream.of(".", "oo", "OOO");
+}
+}
+```
+
+### FieldSource
+
+### CsvSource
+
+
+### ArgumentsSource
