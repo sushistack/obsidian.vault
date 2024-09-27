@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md",
+                "file": "ELK Stack/Log Stash.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md",
+                "file": "ELK Stack/Log Stash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md",
+                "file": "ELK Stack/Log Stash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md"
+                "file": "ELK Stack/Log Stash.md"
               }
             }
           }
@@ -244,19 +244,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1c711a44534636b",
+  "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
+    "ELK Stack/Elasticseach 란?.md",
+    "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "images/Pasted image 20240927095356.png",
     "images/Pasted image 20240927095029.png",
     "images/Pasted image 20240927094845.png",
     "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
-    "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "Spring IO",
     "Ideas/Gateway.md",
     "ELK Stack/Log Stash.md",
     "images/Pasted image 20240926152527.png",
     "images/Pasted image 20240926152500.png",
-    "ELK Stack/Elasticseach 란?.md",
     "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "querydsl/2. 기본 문법.md",
     "querydsl/1. 기초.md",
@@ -275,7 +275,6 @@
     "images/Pasted image 20240925173859.png",
     "images/Pasted image 20240925173743.png",
     "images/Pasted image 20240925173713.png",
-    "images/Pasted image 20240925173646.png",
     "Udemy Lectures for CKAD/157. API Deprecations.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
