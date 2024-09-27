@@ -167,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 265.5
   },
   "right": {
     "id": "adac3940191e22e6",
@@ -244,8 +244,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0aef72d0bdf84445",
+  "active": "d1c711a44534636b",
   "lastOpenFiles": [
+    "images/Pasted image 20240927095356.png",
+    "images/Pasted image 20240927095029.png",
+    "images/Pasted image 20240927094845.png",
     "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "Spring IO",
@@ -273,8 +276,6 @@
     "images/Pasted image 20240925173743.png",
     "images/Pasted image 20240925173713.png",
     "images/Pasted image 20240925173646.png",
-    "images/Pasted image 20240925173637.png",
-    "images/Pasted image 20240925173627.png",
     "Udemy Lectures for CKAD/157. API Deprecations.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
@@ -283,7 +284,6 @@
     "ELK Stack",
     "Udemy Lectures for CKAD/54. Docker Security.md",
     "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
-    "Udemy Lectures for CKAD/48. Secret.md",
     "Ideas",
     "querydsl",
     "Spring Data JPA",

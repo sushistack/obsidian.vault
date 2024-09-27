@@ -355,3 +355,106 @@ https://github.com/innoq/junit5-logging-extension
 
 https://github.com/haasted/TestLogCollectors
 
+## Assertj custom
+
+https://joel-costigliola.github.io/assertj/assertj-core-custom-assertions.html
+
+nheriting from AbstractAssert will give you all the basic assertions : isEqualTo, isNull, ...
+
+```java
+// javadoc omitted for brevity
+// 1 - inherits from AbstractAssert !
+public class TolkienCharacterAssert extends AbstractAssert<TolkienCharacterAssert, TolkienCharacter> {
+
+  // 2 - Write a constructor to build your assertion class with the object you want make assertions on.
+  public TolkienCharacterAssert(TolkienCharacter actual) {
+    super(actual, TolkienCharacterAssert.class);
+  }
+
+  // 3 - A fluent entry point to your specific assertion class, use it with static import.
+  public static TolkienCharacterAssert assertThat(TolkienCharacter actual) {
+    return new TolkienCharacterAssert(actual);
+  }
+
+  // 4 - a specific assertion !
+  public TolkienCharacterAssert hasName(String name) {
+    // check that actual TolkienCharacter we want to make assertions on is not null.
+    isNotNull();
+
+    // check condition
+    if (!Objects.equals(actual.getName(), name)) {
+      failWithMessage("Expected character's name to be <%s> but was <%s>", name, actual.getName());
+    }
+
+    // return the current assertion for method chaining
+    return this;
+  }
+
+  // 4 - another specific assertion !
+  public TolkienCharacterAssert hasAge(int age) {
+    // check that actual TolkienCharacter we want to make assertions on is not null.
+    isNotNull();
+
+    // check condition
+    if (actual.getAge() != age) {
+      failWithMessage("Expected character's age to be <%s> but was <%s>", age, actual.getAge());
+    }
+
+    // return the current assertion for method chaining
+    return this;
+  }
+}
+```
+
+TolkienCharacter assertions usage :
+
+```java
+// use assertThat from TolkienCharacterAssert to check TolkienCharacter 
+TolkienCharacterAssert.assertThat(frodo).hasName("Frodo");
+
+// code is more elegant when TolkienCharacterAssert.assertThat is imported statically :
+assertThat(frodo).hasName("Frodo");
+```
+
+For example:
+
+```java
+public class MyProjectAssertions {
+
+  // give access to TolkienCharacter assertion 
+  public static TolkienCharacterAssert assertThat(TolkienCharacter actual) {
+    return new TolkienCharacterAssert(actual);
+  }
+
+  // give access to TolkienCharacter Race assertion 
+  public static RaceAssert assertThat(Race actual) {
+    return new RaceAssert(actual);
+  }
+}
+```
+
+Usage:
+
+```java
+// static import to use your custom assertions
+import static my.project.MyProjectAssertions.assertThat;
+// static import to use AssertJ core assertions
+import static org.assertj.core.api.Assertions.assertThat;
+...
+
+@Test
+public void successful_custom_assertion_example() {
+  // assertThat(TolkienCharacter) comes from my.project.MyProjectAssertions.assertThat
+  assertThat(frodo).hasName("Frodo");
+
+  // assertThat(String) comes from org.assertj.core.api.Assertions.assertThat
+  assertThat("frodo").contains("do");
+}
+```
+
+![](Pasted%20image%2020240927094845.png)
+
+![](Pasted%20image%2020240927095029.png)
+
+
+![](Pasted%20image%2020240927095356.png)
