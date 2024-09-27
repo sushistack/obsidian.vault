@@ -347,3 +347,11 @@ return Stream.of(".", "oo", "OOO");
 
 
 ### ArgumentsSource
+
+
+## Extensions
+
+https://github.com/innoq/junit5-logging-extension
+
+https://github.com/haasted/TestLogCollectors
+
