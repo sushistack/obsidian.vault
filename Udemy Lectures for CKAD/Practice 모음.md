@@ -896,6 +896,117 @@ amd64
 ###  Apply a label `color=blue` to node `node01`
 
 ```
+$ k edit node node01
+```
+
+### Create a new deployment named `blue` with the `nginx` image and 3 replicas.
+
+```sh
+controlplane ~ ➜  k create deployment blue --image=nginx --replicas=3
+deployment.apps/blue created
+```
+
+### Which nodes `can` the pods for the `blue` deployment be placed on?
+
+label 방식은 쫒아내지는 않는다.
+### Set Node Affinity to the deployment to place the pods on `node01` only.
 
 ```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blue
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: nginx
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      containers:
+      - image: nginx
+        imagePullPolicy: Always
+        name: nginx
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: color
+                operator: In
+                values:
+                - blue
+```
+
+
+### Which nodes are the pods placed on now?
+
+```sh
+$ kubectl get pods -o wide
+```
+
+### Create a new deployment named `red` with the `nginx` image and `2` replicas, and ensure it gets placed on the `controlplane` node only.
+
+Use the label key - `node-role.kubernetes.io/control-plane` - which is already set on the `controlplane` node.
+
+```diff
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 2
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: red
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: red
+    spec:
+      containers:
+      - image: nginx
+        imagePullPolicy: Always
+        name: nginx
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
++     affinity:
++       nodeAffinity:
++         requiredDuringSchedulingIgnoredDuringExecution:
++           nodeSelectorTerms:
++           - matchExpressions:
++             - key: node-role.kubernetes.io/control-plane
++               operator: Exists
+```
+
+
+## Practice 15 - Muliti-Container PODs
+
+
+## Practice 16 - Readiness Probes
+
+
+## Practice 17 - Logging
+
+
+## Practice 18 - Monitoring
+
+
+## Practice 19 - Init Containers
+
+
+
 
