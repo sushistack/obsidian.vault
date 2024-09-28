@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/3 -15. Minimize the accessibility of classes and members.md",
+                "file": "Spring/다중 Datasource 환경에서의 tx 매니징.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/3 -15. Minimize the accessibility of classes and members.md",
+                "file": "Spring/다중 Datasource 환경에서의 tx 매니징.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/3 -15. Minimize the accessibility of classes and members.md",
+                "file": "Spring/다중 Datasource 환경에서의 tx 매니징.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/3 -15. Minimize the accessibility of classes and members.md"
+                "file": "Spring/다중 Datasource 환경에서의 tx 매니징.md"
               }
             }
           }
@@ -246,8 +246,12 @@
   },
   "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
-    "Java/3 - 14. Consider implementing Comparable.md",
+    "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
+    "Spring/다중 Datasource 환경에서의 tx 매니징.md",
+    "Untitled.md",
     "Java/3 -15. Minimize the accessibility of classes and members.md",
+    "Spring",
+    "Java/3 - 14. Consider implementing Comparable.md",
     "Java/3 - 13. Override clone judiciously.md",
     "Java/3 - 12. Always override toString.md",
     "Java/3 - 11. Always override hashCode when you override equals.md",
@@ -276,9 +280,6 @@
     "Udemy Lectures for CKAD/32. Implerative Commands.md",
     "querydsl/2. 기본 문법.md",
     "querydsl/1. 기초.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
     "images/Pasted image 20240925173935.png",
     "images/Pasted image 20240925173917.png",
     "images/Pasted image 20240925173859.png",
@@ -291,7 +292,6 @@
     "WebFlux",
     "files",
     "gRPC",
-    "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
     "Untitled.canvas"
   ]
 }
