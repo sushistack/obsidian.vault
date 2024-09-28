@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/58. Service Account.md",
+                "file": "Udemy Lectures for CKAD/68. Node Affinity.md",
                 "mode": "source",
                 "source": false
               }
@@ -234,8 +234,12 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/68. Node Affinity.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/67. Node Selectors.md",
+    "Udemy Lectures for CKAD/64. Taints And Tolerations.md",
+    "Udemy Lectures for CKAD/61. Resource Requirements.md",
+    "Udemy Lectures for CKAD/58. Service Account.md",
     "images/Pasted image 20240928160432.png",
     "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
@@ -258,9 +262,6 @@
     "Java/3 - 12. Always override toString.md",
     "Java/3 - 11. Always override hashCode when you override equals.md",
     "Java/3 - 10. Obey the general contract when overriding equals.md",
-    "Java/2 - 9. Prefer try-with-resources to try-finally.md",
-    "Java/2 - 8. Avoid finalizers and cleaners.md",
-    "Java/2 - 7. Eliminate obsolete object references.md",
     "Java",
     "images/Pasted image 20240927095356.png",
     "images/Pasted image 20240927095029.png",

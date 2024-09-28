@@ -799,3 +799,103 @@ spec:
       requests:
         memory: 15Mi
 ```
+
+## Practice 13 - Taints and Tolerations
+
+### How many `nodes` exist on the system?
+
+```
+controlplane ~ ➜  k get nodes
+NAME           STATUS   ROLES           AGE     VERSION
+controlplane   Ready    control-plane   6m4s    v1.30.0
+node01         Ready    <none>          5m19s   v1.30.0
+```
+
+
+### has Taints in node01?
+
+```sh
+controlplane ~ ➜  k describe node node01 | grep -i taints
+Taints:             <none>
+```
+
+
+### Create a taint on `node01` with key of `spray`, value of `mortein` and effect of `NoSchedule`
+
+```sh
+$ k taint nodes node01 spray=mortein:NoSchedule
+```
+
+### Create a new pod with the `nginx` image and pod name as `mosquito`.
+
+```sh
+$ k run --image=nginx mosquito
+```
+
+### Create another pod named `bee` with the `nginx` image, which has a toleration set to the taint `mortein`.
+
+```sh
+$ k run --image=nginx bee -o yaml > bee.yaml
+```
+
+```
+spec:
+	tolerations:
+	  - effect: NoSchedule
+	    key: spray
+	    value: mortein
+```
+
+### Has taints in controlplane node
+
+```sh
+controlplane ~ ➜  k describe node controlplane | grep -i taints
+Taints:             node-role.kubernetes.io/control-plane:NoSchedule
+```
+
+### Remove the taint on `controlplane`, which currently has the taint effect of `NoSchedule`.
+
+```diff
+spec:
+  podCIDR: 10.244.0.0/24
+  podCIDRs:
+  - 10.244.0.0/24
+- taints:
+- - effect: NoSchedule
+-   key: node-role.kubernetes.io/control-plane
+```
+
+
+### What is the state of the pod `mosquito` now? Running
+
+### Which node is the POD `mosquito` on now?
+
+```
+controlplane ~ ➜  k describe po mosquito | grep -i node
+Node:             controlplane/192.10.76.9
+```
+
+
+## Practice 14 - Affinity
+
+### How many label in node01
+
+```sh
+controlplane ~ ➜  k describe node node01 | grep -iA5 label
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=node01
+                    kubernetes.io/os=linux
+Annotations:        flannel.alpha.coreos.com/backend-data: {"VNI":1,"VtepMAC":"12:d0:38:fa:73:6f"}
+```
+
+### What is the value set to the label key `beta.kubernetes.io/arch` on `node01`?
+
+amd64
+###  Apply a label `color=blue` to node `node01`
+
+```
+
+```
+
