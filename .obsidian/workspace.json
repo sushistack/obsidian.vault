@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/다중 Datasource 환경에서의 tx 매니징.md",
+                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/다중 Datasource 환경에서의 tx 매니징.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/다중 Datasource 환경에서의 tx 매니징.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/다중 Datasource 환경에서의 tx 매니징.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -244,12 +244,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0aef72d0bdf84445",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
+    "Java/4 - 25. Limit source files to a single top-level class.md",
+    "Java/4 - 24. Favor static member classes over nonstatic.md",
+    "Java/4 - 23. Prefer class hierarchies to tagged classes.md",
+    "Java/4 - 22. Use interfaces only to define types.md",
+    "Java/4 - 21. Design interfaces for posterity.md",
+    "Java/4 - 20. Prefer interfaces to abstract classes.md",
+    "Java/4 - 19. Design and document for inheritance or else prohibit it.md",
+    "Java/4 - 18. Favor composition over inheritance.md",
+    "Java/4 - 17. Minimize mutability.md",
+    "Java/4 - 15. Minimize the accessibility of classes and members.md",
+    "Java/4 - 16. In public classes, use accessor methods, not public fields.md",
     "Untitled.md",
-    "Java/3 -15. Minimize the accessibility of classes and members.md",
     "Spring",
     "Java/3 - 14. Consider implementing Comparable.md",
     "Java/3 - 13. Override clone judiciously.md",
@@ -262,24 +273,13 @@
     "Java/2 - 6. Avoid creating unnecessary objects.md",
     "Java/2 - 5. Prefer dependency injection to hardwiring resources.md",
     "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
-    "Java/2 - 3. Enforce the singleton property with a private constructor or an enum type.md",
-    "Java/2 - 1. Consider a builder when faced with many constructor parameters.md",
-    "Java/2 - 2. Consider static factory mehthods instead of constructors.md",
-    "ELK Stack/Log Stash.md",
     "Java",
-    "ELK Stack/Elasticseach 란?.md",
-    "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "images/Pasted image 20240927095356.png",
     "images/Pasted image 20240927095029.png",
     "images/Pasted image 20240927094845.png",
-    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Spring IO",
-    "Ideas/Gateway.md",
     "images/Pasted image 20240926152527.png",
     "images/Pasted image 20240926152500.png",
-    "Udemy Lectures for CKAD/32. Implerative Commands.md",
-    "querydsl/2. 기본 문법.md",
-    "querydsl/1. 기초.md",
     "images/Pasted image 20240925173935.png",
     "images/Pasted image 20240925173917.png",
     "images/Pasted image 20240925173859.png",

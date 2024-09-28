@@ -99,7 +99,14 @@ public class JtaConfig {
     - `@Transactional`을 사용할 때, 별도의 트랜잭션 매니저 지정 없이 JTA 트랜잭션 매니저를 사용해 글로벌 트랜잭션을 적용할 수 있습니다.
 
 ```java
-
+@Service  
+public class MyService {  
+  
+    @Transactional  
+    public void globalTransaction() {  
+        // 여러 데이터 소스 및 자원 관리자에 걸친 트랜잭션 관리  
+    }  
+}
 ```
 
 #### **글로벌 트랜잭션의 특징**:
@@ -121,7 +128,17 @@ public class JtaConfig {
 
 
 ```java
-
+TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronizationAdapter() {  
+    @Override  
+    public void beforeCommit(boolean readOnly) {  
+        // 트랜잭션 커밋 전에 호출됨  
+    }  
+  
+    @Override  
+    public void afterCompletion(int status) {  
+        // 트랜잭션 완료 후 호출됨  
+    }  
+});
 ```
 
 이렇게 하면 여러 트랜잭션 매니저 간의 상태를 동기화할 수 있습니다.
