@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ELK Stack/Log Stash.md",
+                "file": "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ELK Stack/Log Stash.md",
+                "file": "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ELK Stack/Log Stash.md",
+                "file": "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ELK Stack/Log Stash.md"
+                "file": "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md"
               }
             }
           }
@@ -246,6 +246,11 @@
   },
   "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
+    "Java/2 - 1. Consider a builder when faced with many constructor parameters.md",
+    "Java/2 - 2. Consider static factory mehthods instead of constructors.md",
+    "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md",
+    "ELK Stack/Log Stash.md",
+    "Java",
     "ELK Stack/Elasticseach 란?.md",
     "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "images/Pasted image 20240927095356.png",
@@ -254,7 +259,6 @@
     "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
     "Spring IO",
     "Ideas/Gateway.md",
-    "ELK Stack/Log Stash.md",
     "images/Pasted image 20240926152527.png",
     "images/Pasted image 20240926152500.png",
     "Udemy Lectures for CKAD/32. Implerative Commands.md",
@@ -281,8 +285,6 @@
     "Udemy Lectures for CKAD/55. Security Context.md",
     "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
     "ELK Stack",
-    "Udemy Lectures for CKAD/54. Docker Security.md",
-    "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
     "Ideas",
     "querydsl",
     "Spring Data JPA",
@@ -290,7 +292,6 @@
     "files",
     "gRPC",
     "Master MS with SpringBoot,Docker,Kubernetes/attachments/Master+Microservices+with+SpringBoot,Docker,Kubernetes.pdf",
-    "Master MS with SpringBoot,Docker,Kubernetes/attachments",
     "Untitled.canvas"
   ]
 }
