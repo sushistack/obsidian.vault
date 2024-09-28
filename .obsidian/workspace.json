@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kotlin/3 - 2. Making functions easier to call.md",
+                "file": "Interviews/Java.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kotlin/3 - 2. Making functions easier to call.md",
+                "file": "Interviews/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kotlin/3 - 2. Making functions easier to call.md",
+                "file": "Interviews/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kotlin/3 - 2. Making functions easier to call.md"
+                "file": "Interviews/Java.md"
               }
             }
           }
@@ -234,10 +234,19 @@
   },
   "active": "5e7daf5502eed837",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Interviews/Java.md",
+    "Interviews",
     "Untitled.md",
+    "Kotlin/4 - 4. The ‘object’ keyword declaring a class and creating an instance, combined.md",
+    "Kotlin/4 - 3. Compiler-generated methods data classes and class delegation.md",
+    "Kotlin/4 - 2. Declaring a class with nontrivial constructors or properties.md",
+    "Kotlin/4 - 1. Defining class hierarchies.md",
+    "Kotlin/3 - 5. Working with strings and regular expressions.md",
+    "Kotlin/3 - 4. Working with collections varargs, infix calls, and library support.md",
+    "Kotlin/3 - 3. Adding methods to other people’s classes extension functions and properties.md",
     "Kotlin/3 - 2. Making functions easier to call.md",
     "Kotlin",
-    "Untitled",
     "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
     "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
     "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
@@ -246,7 +255,6 @@
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Ideas/실시간 통신 성능 개선.md",
     "Udemy Lectures for CKAD/68. Node Affinity.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "Udemy Lectures for CKAD/67. Node Selectors.md",
@@ -254,14 +262,6 @@
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/78. Init Container.md",
     "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
-    "Udemy Lectures for CKAD/82. Liveness Probes.md",
-    "Udemy Lectures for CKAD/85. Container Logging.md",
-    "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
-    "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
-    "Udemy Lectures for CKAD/61. Resource Requirements.md",
-    "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",
-    "Udemy Lectures for CKAD/104. CronJobs.md",
-    "Udemy Lectures for CKAD/103. Jobs.md",
     "images/Pasted image 20240928160432.png",
     "Spring",
     "Java",
