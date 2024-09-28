@@ -50,19 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/156. API Versions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0aef72d0bdf84445",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring IO/Spring Boot - Advanced Testing Techniques.md",
+                "file": "Udemy Lectures for CKAD/58. Service Account.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +69,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "24f38bffb6af2c3c",
@@ -246,6 +234,9 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "images/Pasted image 20240928160432.png",
     "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
@@ -270,9 +261,6 @@
     "Java/2 - 9. Prefer try-with-resources to try-finally.md",
     "Java/2 - 8. Avoid finalizers and cleaners.md",
     "Java/2 - 7. Eliminate obsolete object references.md",
-    "Java/2 - 6. Avoid creating unnecessary objects.md",
-    "Java/2 - 5. Prefer dependency injection to hardwiring resources.md",
-    "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
     "Java",
     "images/Pasted image 20240927095356.png",
     "images/Pasted image 20240927095029.png",
@@ -284,7 +272,6 @@
     "images/Pasted image 20240925173917.png",
     "images/Pasted image 20240925173859.png",
     "images/Pasted image 20240925173743.png",
-    "images/Pasted image 20240925173713.png",
     "ELK Stack",
     "Ideas",
     "querydsl",

@@ -669,3 +669,133 @@ pods is forbidden: User "system:serviceaccount:default:default" cannot list reso
 
 ### Inspect the Dashboard Application POD and identify the Service Account mounted on it.
 
+```sh
+$ k get po -o yaml
+```
+
+```yaml
+...
+    serviceAccount: default
+    serviceAccountName: default
+...
+```
+
+
+### At what location is the ServiceAccount credentials available within the pod?
+
+/var/run/secrets
+
+```
+Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-x458j (ro)
+```
+
+### The application needs a ServiceAccount with the Right permissions to be created to authenticate to Kubernetes. The `default` ServiceAccount has limited access. Create a new ServiceAccount named `dashboard-sa`.
+
+
+```sh
+$ k create sa dashboard-sa
+```
+
+```sh
+controlplane ~ ➜  cat /var/rbac/pod-reader-role.yaml 
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: default
+  name: pod-reader
+rules:
+- apiGroups:
+  - ''
+  resources:
+  - pods
+  verbs:
+  - get
+  - watch
+  - list
+```
+
+```sh
+controlplane ~ ✖ cat /var/rbac/dashboard-sa-role-binding.yaml 
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: read-pods
+  namespace: default
+subjects:
+- kind: ServiceAccount
+  name: dashboard-sa # Name is case sensitive
+  namespace: default
+roleRef:
+  kind: Role #this must be Role or ClusterRole
+  name: pod-reader # this must match the name of the Role or ClusterRole you wish to bind to
+  apiGroup: rbac.authorization.k8s.io
+```
+
+RBAC 
+
+**RBAC**(Role-Based Access Control, 역할 기반 접근 제어)는 **클러스터 내의 자원에 대한 접근 권한을 제어**하는 메커니즘입니다. RBAC는 사용자가 클러스터의 리소스(예: Pod, 서비스, 네임스페이스 등)에 어떤 작업을 할 수 있는지 정의하고, **역할(role)**을 기반으로 권한을 부여하는 방식으로 동작
+
+
+### Enter the access token in the UI of the dashboard application. Click `Load Dashboard` button to load Dashboard
+
+```bash
+$ kubectl create token dashboard-sa
+```
+
+![](Pasted%20image%2020240928160432.png)
+
+### Edit the deployment to change ServiceAccount from `default` to `dashboard-sa`.
+
+
+```yaml
+spec:
+	template:
+		spec:
+	      serviceAccountName: dashboard-sa
+```
+
+
+## Practice 12 - Resource Requirements
+
+
+### CPU resouce = 1
+
+```yaml
+spec:
+  containers:
+  - args:
+	resources:
+      limits:
+        cpu: "2"
+      requests:
+        cpu: "1"
+```
+
+### Another pod called `elephant` has been deployed in the default namespace. It fails to get to a running state. Inspect this pod and identify the `Reason` why it is not running.
+
+```
+$ kubectl describe pod elephant | grep -A5 State:
+```
+
+### The `elephant` pod runs a process that consumes 15Mi of memory. Increase the limit of the `elephant` pod to 20Mi.
+
+
+```yaml
+spec:
+  containers:
+  - args:
+    - --vm
+    - "1"
+    - --vm-bytes
+    - 15M
+    - --vm-hang
+    - "1"
+    resources:
+      limits:
+        memory: 20Mi
+      requests:
+        memory: 15Mi
+```
