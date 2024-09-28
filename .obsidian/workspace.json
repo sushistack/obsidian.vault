@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
+                "file": "Kotlin/3 - 2. Making functions easier to call.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
+                "file": "Kotlin/3 - 2. Making functions easier to call.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
+                "file": "Kotlin/3 - 2. Making functions easier to call.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md"
+                "file": "Kotlin/3 - 2. Making functions easier to call.md"
               }
             }
           }
@@ -234,6 +234,11 @@
   },
   "active": "5e7daf5502eed837",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Kotlin/3 - 2. Making functions easier to call.md",
+    "Kotlin",
+    "Untitled",
+    "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
     "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
     "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
     "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
@@ -257,10 +262,7 @@
     "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",
     "Udemy Lectures for CKAD/104. CronJobs.md",
     "Udemy Lectures for CKAD/103. Jobs.md",
-    "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
-    "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
     "images/Pasted image 20240928160432.png",
-    "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "Spring",
     "Java",
     "images/Pasted image 20240927095356.png",
@@ -278,8 +280,6 @@
     "querydsl",
     "Spring Data JPA",
     "WebFlux",
-    "files",
-    "gRPC",
     "Untitled.canvas"
   ]
 }
