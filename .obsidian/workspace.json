@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md",
+                "file": "Java/3 -15. Minimize the accessibility of classes and members.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md",
+                "file": "Java/3 -15. Minimize the accessibility of classes and members.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md",
+                "file": "Java/3 -15. Minimize the accessibility of classes and members.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md"
+                "file": "Java/3 -15. Minimize the accessibility of classes and members.md"
               }
             }
           }
@@ -246,9 +246,21 @@
   },
   "active": "0aef72d0bdf84445",
   "lastOpenFiles": [
+    "Java/3 - 14. Consider implementing Comparable.md",
+    "Java/3 -15. Minimize the accessibility of classes and members.md",
+    "Java/3 - 13. Override clone judiciously.md",
+    "Java/3 - 12. Always override toString.md",
+    "Java/3 - 11. Always override hashCode when you override equals.md",
+    "Java/3 - 10. Obey the general contract when overriding equals.md",
+    "Java/2 - 9. Prefer try-with-resources to try-finally.md",
+    "Java/2 - 8. Avoid finalizers and cleaners.md",
+    "Java/2 - 7. Eliminate obsolete object references.md",
+    "Java/2 - 6. Avoid creating unnecessary objects.md",
+    "Java/2 - 5. Prefer dependency injection to hardwiring resources.md",
+    "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
+    "Java/2 - 3. Enforce the singleton property with a private constructor or an enum type.md",
     "Java/2 - 1. Consider a builder when faced with many constructor parameters.md",
     "Java/2 - 2. Consider static factory mehthods instead of constructors.md",
-    "Java/2 -3. Enforce the singleton property with a private constructor or an enum type.md",
     "ELK Stack/Log Stash.md",
     "Java",
     "ELK Stack/Elasticseach 란?.md",
@@ -267,23 +279,11 @@
     "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
     "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
     "Master MS with SpringBoot,Docker,Kubernetes/37. Handle Deployment, portablity & scalability of ms using Docker.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/14. JPA.md",
-    "JPA/0. 강좌 소개.md",
-    "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
-    "Ideas/실시간 통신 성능 개선.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
-    "Ideas/디자인 패턴을 이용한 로직 개선.md",
-    "Untitled.md",
     "images/Pasted image 20240925173935.png",
     "images/Pasted image 20240925173917.png",
     "images/Pasted image 20240925173859.png",
     "images/Pasted image 20240925173743.png",
     "images/Pasted image 20240925173713.png",
-    "Udemy Lectures for CKAD/157. API Deprecations.md",
-    "Udemy Lectures for CKAD/58. Service Account.md",
-    "Udemy Lectures for CKAD/61. Resource Requirements.md",
-    "Udemy Lectures for CKAD/55. Security Context.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
     "ELK Stack",
     "Ideas",
     "querydsl",
