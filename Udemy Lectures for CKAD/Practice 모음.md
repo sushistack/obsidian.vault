@@ -1211,7 +1211,113 @@ node01         28m          0%     282Mi           0%
 
 ## Practice 19 - Init Containers
 
+### Identify the pod that has an `initContainer` configured.
+
+```sh
+$ k describe pods | grep -iA5 "init Container"
+```
 
 
+### We just created a new app named `purple`. How many `initContainers` does it have?
 
-## Practice 20 - 
+```sh
+ $ k get po purple -o yaml
+```
+
+```yaml
+initContainers:
+  - command:
+    - sh
+    - -c
+    - sleep 600
+    image: busybox:1.28
+    imagePullPolicy: IfNotPresent
+    name: warm-up-1
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-tblmr
+      readOnly: true
+  - command:
+    - sh
+    - -c
+    - sleep 1200
+    image: busybox:1.28
+    imagePullPolicy: IfNotPresent
+    name: warm-up-2
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-tblmr
+      readOnly: true
+```
+
+### Update the pod `red` to use an `initContainer` that uses the `busybox` image and `sleeps for 20` seconds
+
+```diff
+spec:
+  initContainers:
++ - command:
++   - sleep
++   - "20"
++   name: red-initcontainer
++   image: busybox
+```
+
+### A new application `orange` is deployed. There is something wrong with it. Identify and fix the issue.
+
+
+```diff
+  initContainers:
+  - command:
+    - sh
+    - -c
+-   - sleeeep 2;
++   - sleep 2;
+```
+
+## Practice 20 - Labels and Selectors
+
+We have deployed a number of PODs. They are labelled with `tier`, `env` and `bu`. How many PODs exist in the `dev` environment (`env`)?
+
+```sh
+$ k get pods -l env=dev
+```
+
+```sh
+k get pods --selector bu=finance
+```
+
+### How many objects are in the `prod` environment including PODs, ReplicaSets and any other objects?
+
+```sh
+$ k get all --selector env=prod
+```
+
+### Identify the POD which is part of the `prod` environment, the `finance` BU and of `frontend` tier?
+
+```sh
+$ k get pods --selector env=prod,bu=finance,tier=frontend
+```
+
+### A ReplicaSet definition file is given `replicaset-definition-1.yaml`. Attempt to create the replicaset; you will encounter an issue with the file. Try to fix it.
+
+```diff
+
+```
+
+## Practice 21 - Rolling Updates & Rollbacks
+
+## Practice 22 - Jobs and CronJobs
+
+## Practice 23 - Kubernetes Services
+
+## Practice 24 - Network Policies
+
+## Practice 25 - Ingress Networking - 1
+
+## Practice 26 - Ingress Networking - 2

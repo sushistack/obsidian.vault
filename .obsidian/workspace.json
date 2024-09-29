@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/85. Container Logging.md",
+                "file": "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
                 "mode": "source",
                 "source": false
               }
@@ -234,12 +234,15 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/85. Container Logging.md",
-    "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
+    "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
+    "Udemy Lectures for CKAD/85. Container Logging.md",
+    "Udemy Lectures for CKAD/82. Liveness Probes.md",
+    "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
+    "Udemy Lectures for CKAD/78. Init Container.md",
     "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
-    "Udemy Lectures for CKAD/78. Init Container.md",
     "images/Pasted image 20240929160554.png",
     "Java/9 - 57. Minimize the scope of local variables.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
@@ -258,9 +261,6 @@
     "Java/7 - 45. Use streams judiciously.md",
     "Java/7 - 43. Prefer method references to lambdas.md",
     "Java/7 - 42. Prefer lambdas to anonymous classes.md",
-    "Java/6 - 41. Use marker interfaces to define types.md",
-    "Java/6 - 40. Consistently use the Override annotation.md",
-    "Java/6 - 39. Prefer annotations to naming patterns.md",
     "Interviews",
     "Kotlin",
     "images/Pasted image 20240928160432.png",
