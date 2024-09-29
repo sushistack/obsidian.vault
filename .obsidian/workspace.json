@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/7 - 47. Prefer Collection to Stream as a return type.md",
+                "file": "Java/9 - 57. Minimize the scope of local variables.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/7 - 47. Prefer Collection to Stream as a return type.md",
+                "file": "Java/9 - 57. Minimize the scope of local variables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/7 - 47. Prefer Collection to Stream as a return type.md",
+                "file": "Java/9 - 57. Minimize the scope of local variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/7 - 47. Prefer Collection to Stream as a return type.md"
+                "file": "Java/9 - 57. Minimize the scope of local variables.md"
               }
             }
           }
@@ -233,6 +233,15 @@
   },
   "active": "5e7daf5502eed837",
   "lastOpenFiles": [
+    "Java/8 - 56. Write doc comments for all exposed API elements.md",
+    "Java/9 - 57. Minimize the scope of local variables.md",
+    "Java/8 - 55. Return optionals judiciously.md",
+    "Java/8 - 54. Return empty collections or arrays, not nulls.md",
+    "Java/8 - 53. Use varargs judiciously.md",
+    "Java/8 - 52. Use overloading judiciously.md",
+    "Java/8 - 51. Design method signatures carefully.md",
+    "Java/8 - 50. Make defensive copies when needed.md",
+    "Java/8 - 49. Check parameters for validity.md",
     "Java/7 - 48. Use caution when making streams parallel.md",
     "Java/7 - 47. Prefer Collection to Stream as a return type.md",
     "Java/7 - 46. Prefer side-effect-free functions in streams.md",
@@ -250,15 +259,6 @@
     "Java/6 - 36. Use EnumSet instead of bit fields.md",
     "Java/6 - 35. Use instance fields instead of ordinals.md",
     "Java/6 - 34. se enums instead of int constants.md",
-    "Java/5 - 31. Use bounded wildcards to increase API flexibility.md",
-    "Java/5 - 30. Favor generic methods.md",
-    "Java/5 - 29. Favor generic types.md",
-    "Java/5 - 28. Prefer lists to arrays.md",
-    "Java/5 - 27. Eliminate unchecked warnings.md",
-    "Java/5 - 26. Don’t use raw types.md",
-    "Udemy Lectures for CKAD/CKAD 대비.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
-    "Interviews/Redis.md",
     "Interviews",
     "Kotlin",
     "images/Pasted image 20240928160432.png",
