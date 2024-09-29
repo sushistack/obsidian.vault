@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/5 - 35. Use instance fields instead of ordinals.md",
+                "file": "Java/7 - 47. Prefer Collection to Stream as a return type.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 294.5
   },
   "right": {
     "id": "adac3940191e22e6",
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/5 - 35. Use instance fields instead of ordinals.md",
+                "file": "Java/7 - 47. Prefer Collection to Stream as a return type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/5 - 35. Use instance fields instead of ordinals.md",
+                "file": "Java/7 - 47. Prefer Collection to Stream as a return type.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/5 - 35. Use instance fields instead of ordinals.md"
+                "file": "Java/7 - 47. Prefer Collection to Stream as a return type.md"
               }
             }
           }
@@ -233,10 +233,23 @@
   },
   "active": "5e7daf5502eed837",
   "lastOpenFiles": [
-    "Java/5 - 34. se enums instead of int constants.md",
-    "Java/5 - 35. Use instance fields instead of ordinals.md",
+    "Java/7 - 48. Use caution when making streams parallel.md",
+    "Java/7 - 47. Prefer Collection to Stream as a return type.md",
+    "Java/7 - 46. Prefer side-effect-free functions in streams.md",
+    "Java/7 - 44. Favor the use of standard functional interfaces.md",
+    "Java/7 - 45. Use streams judiciously.md",
+    "Java/7 - 43. Prefer method references to lambdas.md",
+    "Java/7 - 42. Prefer lambdas to anonymous classes.md",
+    "Java/6 - 41. Use marker interfaces to define types.md",
+    "Java/6 - 40. Consistently use the Override annotation.md",
+    "Java/6 - 39. Prefer annotations to naming patterns.md",
     "Java/5 - 33. Consider typesafe heterogeneous containers.md",
     "Java/5 - 32. Combine generics and varargs judiciously.md",
+    "Java/6 - 38. Emulate extensible enums with interfaces.md",
+    "Java/6 - 37. Use EnumMap instead of ordinal indexing.md",
+    "Java/6 - 36. Use EnumSet instead of bit fields.md",
+    "Java/6 - 35. Use instance fields instead of ordinals.md",
+    "Java/6 - 34. se enums instead of int constants.md",
     "Java/5 - 31. Use bounded wildcards to increase API flexibility.md",
     "Java/5 - 30. Favor generic methods.md",
     "Java/5 - 29. Favor generic types.md",
@@ -246,21 +259,8 @@
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Interviews/Redis.md",
-    "Interviews/Spring framework.md",
-    "Interviews/Kotlin.md",
-    "Interviews/Java.md",
     "Interviews",
-    "Untitled.md",
-    "Kotlin/4 - 4. The ‘object’ keyword declaring a class and creating an instance, combined.md",
-    "Kotlin/4 - 3. Compiler-generated methods data classes and class delegation.md",
-    "Kotlin/4 - 2. Declaring a class with nontrivial constructors or properties.md",
-    "Kotlin/4 - 1. Defining class hierarchies.md",
-    "Kotlin/3 - 5. Working with strings and regular expressions.md",
-    "Kotlin/3 - 4. Working with collections varargs, infix calls, and library support.md",
-    "Kotlin/3 - 3. Adding methods to other people’s classes extension functions and properties.md",
-    "Kotlin/3 - 2. Making functions easier to call.md",
     "Kotlin",
-    "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
     "images/Pasted image 20240928160432.png",
     "Spring",
     "Java",
