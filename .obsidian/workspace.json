@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Redis.md",
+                "file": "Java/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
+                "file": "Java/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
+                "file": "Java/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/CKAD 대비.md"
+                "file": "Java/Untitled.md"
               }
             }
           }
@@ -231,8 +231,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6df003004b063483",
+  "active": "5e7daf5502eed837",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Java/Untitled.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Interviews/Redis.md",
     "Interviews/Spring framework.md",
@@ -259,8 +261,6 @@
     "Udemy Lectures for CKAD/68. Node Affinity.md",
     "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
-    "Udemy Lectures for CKAD/67. Node Selectors.md",
-    "Udemy Lectures for CKAD/64. Taints And Tolerations.md",
     "images/Pasted image 20240928160432.png",
     "Spring",
     "Java",
