@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Untitled.md",
+                "file": "Java/5 - 35. Use instance fields instead of ordinals.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/Untitled.md",
+                "file": "Java/5 - 35. Use instance fields instead of ordinals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/Untitled.md",
+                "file": "Java/5 - 35. Use instance fields instead of ordinals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Untitled.md"
+                "file": "Java/5 - 35. Use instance fields instead of ordinals.md"
               }
             }
           }
@@ -233,8 +233,17 @@
   },
   "active": "5e7daf5502eed837",
   "lastOpenFiles": [
+    "Java/5 - 34. se enums instead of int constants.md",
+    "Java/5 - 35. Use instance fields instead of ordinals.md",
+    "Java/5 - 33. Consider typesafe heterogeneous containers.md",
+    "Java/5 - 32. Combine generics and varargs judiciously.md",
+    "Java/5 - 31. Use bounded wildcards to increase API flexibility.md",
+    "Java/5 - 30. Favor generic methods.md",
+    "Java/5 - 29. Favor generic types.md",
+    "Java/5 - 28. Prefer lists to arrays.md",
+    "Java/5 - 27. Eliminate unchecked warnings.md",
+    "Java/5 - 26. Don’t use raw types.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
-    "Java/Untitled.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Interviews/Redis.md",
     "Interviews/Spring framework.md",
@@ -252,15 +261,6 @@
     "Kotlin/3 - 2. Making functions easier to call.md",
     "Kotlin",
     "Master MS with SpringBoot,Docker,Kubernetes/59.  Introduction to Cloud-natvie applications.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/40. Docker componets & architecture.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/39. What are containers & docker.md",
-    "Master MS with SpringBoot,Docker,Kubernetes/1. Introduction to the course & Agenda.md",
-    "Ideas/Gateway.md",
-    "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
-    "Ideas/실시간 통신 성능 개선.md",
-    "Udemy Lectures for CKAD/68. Node Affinity.md",
-    "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "images/Pasted image 20240928160432.png",
     "Spring",
     "Java",
