@@ -1158,14 +1158,60 @@ spec:
 +     initialDelaySeconds: 80
 ```
 
+=> 해설 봐야 함.
+
 ## Practice 17 - Logging
+
+### A user - `USER5` - has expressed concerns accessing the application. Identify the cause of the issue.
+
+```sh
+$ k logs -f pods/webapp-1
+```
+
+```
+[2024-09-29 07:56:19,457] WARNING in event-simulator: USER5 Failed to Login as the account is locked due to MANY FAILED ATTEMPTS.
+```
 
 
 ## Practice 18 - Monitoring
 
+```sh
+git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
+```
+
+### Deploy the metrics-server by creating all the components downloaded.
+
+```sh
+$ cd kubernetes-metrics-server
+$ k create -f .
+```
+
+```sh
+controlplane ~ ➜  k top node
+NAME           CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+controlplane   243m         0%     1139Mi          0%        
+node01         23m          0%     280Mi           0%
+```
+
+### Identify the node that consumes the `most` CPU(cores).
+
+```sh
+controlplane ~ ➜  k top node --sort-by='cpu'
+NAME           CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+controlplane   235m         0%     1145Mi          0%        
+node01         23m          0%     283Mi           0%        
+```
+
+```sh
+controlplane ~ ➜  k top node --sort-by='memory'
+NAME           CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+controlplane   238m         0%     1146Mi          0%        
+node01         28m          0%     282Mi           0%
+```
 
 ## Practice 19 - Init Containers
 
 
 
 
+## Practice 20 - 
