@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kotlin/6 - 3. Collections and arrays.md",
+                "file": "Java/8 - 50. Make defensive copies when needed.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kotlin/6 - 3. Collections and arrays.md",
+                "file": "Java/8 - 50. Make defensive copies when needed.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kotlin/6 - 3. Collections and arrays.md",
+                "file": "Java/8 - 50. Make defensive copies when needed.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kotlin/6 - 3. Collections and arrays.md"
+                "file": "Java/8 - 50. Make defensive copies when needed.md"
               }
             }
           }
@@ -234,8 +234,20 @@
   },
   "active": "5e7daf5502eed837",
   "lastOpenFiles": [
-    "Kotlin/6 - 2. Primitive and other basic types.md",
+    "Java/8 - 49. Check parameters for validity.md",
+    "Java/7 - 48. Use caution when making streams parallel.md",
+    "Java/8 - 51. Design method signatures carefully.md",
+    "Java/8 - 52. Use overloading judiciously.md",
+    "Java/8 - 54. Return empty collections or arrays, not nulls.md",
+    "Java/8 - 55. Return optionals judiciously.md",
+    "Java/8 - 56. Write doc comments for all exposed API elements.md",
+    "Java/9 - 57. Minimize the scope of local variables.md",
+    "Interviews/Java.md",
+    "Interviews/Kotlin.md",
+    "Interviews/Spring framework.md",
+    "Interviews/Redis.md",
     "Kotlin/6 - 3. Collections and arrays.md",
+    "Kotlin/6 - 2. Primitive and other basic types.md",
     "Kotlin/6 - 1. Nullability.md",
     "Kotlin/5 - 5. Lambdas with receivers “with” and “apply”.md",
     "Kotlin/5 - 4. Using Java functional interfaces.md",
@@ -248,19 +260,7 @@
     "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
     "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
     "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",
-    "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
-    "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
-    "Udemy Lectures for CKAD/85. Container Logging.md",
-    "Udemy Lectures for CKAD/82. Liveness Probes.md",
-    "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
-    "Udemy Lectures for CKAD/78. Init Container.md",
-    "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "images/Pasted image 20240929160554.png",
-    "Java/9 - 57. Minimize the scope of local variables.md",
-    "Udemy Lectures for CKAD/CKAD 대비.md",
-    "Java/8 - 56. Write doc comments for all exposed API elements.md",
-    "Java/8 - 55. Return optionals judiciously.md",
     "Interviews",
     "Kotlin",
     "images/Pasted image 20240928160432.png",
