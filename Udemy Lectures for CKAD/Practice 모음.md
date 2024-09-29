@@ -1307,12 +1307,122 @@ $ k get pods --selector env=prod,bu=finance,tier=frontend
 ### A ReplicaSet definition file is given `replicaset-definition-1.yaml`. Attempt to create the replicaset; you will encounter an issue with the file. Try to fix it.
 
 ```diff
-
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+   name: replicaset-1
+spec:
+   replicas: 2
+   selector:
+      matchLabels:
+        tier: front-end
+   template:
+     metadata:
+       labels:
+-       tier: nginx
++       tier: front-end
+     spec:
+       containers:
+       - name: nginx
+         image: nginx
 ```
 
 ## Practice 21 - Rolling Updates & Rollbacks
 
+###  What is the current color of the web application?
+
+blue 
+
+### Up to how many PODs can be down for upgrade at a time
+
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+
+### Change the deployment strategy to `Recreate`
+
+```yaml
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+```
+
+```
+  strategy:
+    type: Recreate
+```
+
 ## Practice 22 - Jobs and CronJobs
+
+### Create a Job using this POD definition file or from the imperative command and look at how many attempts does it take to get a `'6'`.
+
+```sh
+$ create job throw-dice-job --image=kodekloud/throw-dice --dry-run=client -o yaml > throw-dice-job.yaml
+```
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: throw-dice-job
+spec:
+  backoffLimit: 15 # This is so the job does not quit before it succeeds.
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: kodekloud/throw-dice
+        name: throw-dice-job
+        resources: {}
+      restartPolicy: Never
+status: {}
+```
+
+```sh
+controlplane ~ ➜  k get pods
+NAME                   READY   STATUS      RESTARTS   AGE
+throw-dice-job-bg9kk   0/1     Error       0          2m1s
+throw-dice-job-gqh9f   0/1     Error       0          110s
+throw-dice-job-q5pmh   0/1     Error       0          89s
+throw-dice-job-z5wb4   0/1     Completed   0          48s
+throw-dice-pod         0/1     Error       0          6m54s
+
+controlplane ~ ➜  k logs -f throw-dice-job-z5wb4
+6
+```
+### Update the job definition to run as many times as required to get `2` successful `6's`.
+
+```diff 
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: throw-dice-job
+spec:
++ completions: 2
++ backoffLimit: 25
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: kodekloud/throw-dice
+        name: throw-dice-job
+        resources: {}
+      restartPolicy: Never
+status: {}
+```
+
+### That took a while. Let us try to speed it up, by running upto `3` jobs in parallel.
+
+```sh
+$ 
+```
+
+### 
+
 
 ## Practice 23 - Kubernetes Services
 
