@@ -1064,8 +1064,99 @@ spec:
 
 ## Practice 16 - Readiness Probes
 
+```sh
+controlplane ~ ➜  k describe po simple-webapp-2 | grep -iA5 port
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sun, 29 Sep 2024 07:19:05 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:
+
+controlplane ~ ➜  k describe po simple-webapp-1 | grep -iA5 port
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sun, 29 Sep 2024 07:17:36 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+```
+
+```sh
+controlplane ~ ➜  cat curl-test.sh 
+for i in {1..20}; do
+   kubectl exec --namespace=kube-public curl -- sh -c 'test=`wget -qO- -T 2  http://webapp-service.default.svc.cluster.local:8080/ready 2>&1` && echo "$test OK" || echo "Failed"';
+   echo ""
+done
+```
+
+### Update the newly created pod `'simple-webapp-2'` with a readinessProbe using the given spec
+
+```diff
+spec:
+  containers:
+  - env:
+    - name: APP_START_DELAY
+      value: "80"
+    image: kodekloud/webapp-delayed-start
+    imagePullPolicy: Always
+    name: simple-webapp
+    ports:
+    - containerPort: 8080
+      protocol: TCP
++   readinessProbe:
++     httpGet:
++       path: /ready
++       port: 8080
+```
+
+### What would happen if the application inside container on one of the PODs crashes?
+
+```sh
+cat crash-app.sh 
+kubectl exec --namespace=kube-public curl -- wget -qO- http://webapp-service.default.svc.cluster.local:8080/crash
+```
 
 
+죽이면? restart
+
+### What would happen if the application inside container on one of the PODs freezes?
+
+```sh
+controlplane ~ ➜  cat freeze-app.sh 
+nohup kubectl exec --namespace=kube-public curl -- wget -qO- http://webapp-service.default.svc.cluster.local:8080/freeze &
+```
+
+새로운 유저들에게 영향을 미친다 (?)
+그냥 전체 유저에 대해서 여향을 미치는게 아닌가? 
+
+### Update both the pods with a livenessProbe using the given spec
+
+```diff
+spec:
+  containers:
+  - env:
+    - name: APP_START_DELAY
+      value: "80"
+    image: kodekloud/webapp-delayed-start
+    imagePullPolicy: Always
+    name: simple-webapp
+    ports:
+    - containerPort: 8080
+      protocol: TCP
+    readinessProbe:
+      httpGet:
+        path: /ready
+        port: 8080
++   livenessProbe:
++     httpGet:
++       path: /live
++       port: 8080
++     periodSeconds: 1
++     initialDelaySeconds: 80
+```
 
 ## Practice 17 - Logging
 

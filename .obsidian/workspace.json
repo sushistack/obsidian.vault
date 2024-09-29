@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
+                "file": "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md"
               }
             }
           }
@@ -232,10 +232,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "5e7daf5502eed837",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
+    "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
+    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
+    "Udemy Lectures for CKAD/78. Init Container.md",
     "images/Pasted image 20240929160554.png",
     "Java/9 - 57. Minimize the scope of local variables.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
@@ -258,9 +261,6 @@
     "Java/6 - 40. Consistently use the Override annotation.md",
     "Java/6 - 39. Prefer annotations to naming patterns.md",
     "Java/5 - 33. Consider typesafe heterogeneous containers.md",
-    "Java/5 - 32. Combine generics and varargs judiciously.md",
-    "Java/6 - 38. Emulate extensible enums with interfaces.md",
-    "Java/6 - 37. Use EnumMap instead of ordinal indexing.md",
     "Interviews",
     "Kotlin",
     "images/Pasted image 20240928160432.png",
