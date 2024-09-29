@@ -1417,12 +1417,34 @@ status: {}
 
 ### That took a while. Let us try to speed it up, by running upto `3` jobs in parallel.
 
-```sh
-$ 
+```diff
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: throw-dice-job
+spec:
+- completions: 2
++ completions: 3
++ parallelism: 3
+  backoffLimit: 25
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: kodekloud/throw-dice
+        name: throw-dice-job
+        resources: {}
+      restartPolicy: Never
+status: {}
 ```
 
-### 
+### cronjob
 
+```sh
+$ k create cronjob throw-dice-cron-job --schedule="30 21 * * *" --image=kodekloud/throw-dice --dry-run=client -o yaml > throw-dice-cron-job.yaml
+```
 
 ## Practice 23 - Kubernetes Services
 
