@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Redis.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,8 +104,7 @@
               "pinned": true
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/Java.md"
+                "file": "Udemy Lectures for CKAD/CKAD 대비.md"
               }
             }
           }
@@ -232,9 +231,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e7daf5502eed837",
+  "active": "6df003004b063483",
   "lastOpenFiles": [
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Interviews/Redis.md",
+    "Interviews/Spring framework.md",
+    "Interviews/Kotlin.md",
     "Interviews/Java.md",
     "Interviews",
     "Untitled.md",
@@ -259,9 +261,6 @@
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "Udemy Lectures for CKAD/67. Node Selectors.md",
     "Udemy Lectures for CKAD/64. Taints And Tolerations.md",
-    "Udemy Lectures for CKAD/58. Service Account.md",
-    "Udemy Lectures for CKAD/78. Init Container.md",
-    "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
     "images/Pasted image 20240928160432.png",
     "Spring",
     "Java",

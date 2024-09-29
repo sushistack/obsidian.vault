@@ -40,3 +40,4 @@
 - 데드락(Deadlock), 레이스 컨디션(Race Condition), 라이브락(Livelock) 등의 문제를 설명하고 이를 해결하는 방법(동기화, 락, Atomic 클래스, 비동기 처리 등).
 - 자바에서 동시성 문제를 해결할 때 사용할 수 있는 다양한 방법들(Ex: `synchronized`, `ReentrantLock`, `volatile`, `java.util.concurrent` 패키지 사용).
 - 실제 프로젝트에서 멀티스레드 문제를 해결한 사례 공유.
+
