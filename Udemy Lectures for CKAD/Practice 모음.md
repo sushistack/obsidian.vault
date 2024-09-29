@@ -995,8 +995,76 @@ spec:
 
 ## Practice 15 - Muliti-Container PODs
 
+### Create a multi-container pod with `2` containers.
+
+Use the spec given below:    
+If the pod goes into the `crashloopbackoff` then add the command `sleep 1000` in the `lemon` container.
+
+```sh
+$ k run yellow --image=busybox
+```
+
+```diff
+spec:
+  containers:
+  - image: busybox
+    imagePullPolicy: Always
+    name: lemon
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-nt5zk
+      readOnly: true
++   command: ["sleep", "1000"]
++ - image: redis
++   name: gold
+```
+
+### Inspect the `app` pod and identify the number of containers in it.
+
+It is deployed in the `elastic-stack` namespace.
+
+We will configure a sidecar container for the application to send logs to Elastic Search.
+
+![](Pasted%20image%2020240929160554.png)
+
+```sh
+$ k get pods -n elastic-stack
+NAME             READY   STATUS    RESTARTS   AGE
+app              1/1     Running   0          11m
+elastic-search   1/1     Running   0          11m
+kibana           1/1     Running   0          11m
+```
+
+### The application outputs logs to the file `/log/app.log`. View the logs and try to identify the user having issues with Login.
+
+```sh
+$ k exec app -- cat /log/app.log
+
+WARNING in event-simulator: USER5 Failed to Login as the account is locked due to MANY FAILED ATTEMPTS.
+```
+
+### Edit the pod in the `elastic-stack` namespace to add a sidecar container to send logs to Elastic Search. Mount the log volume to the sidecar container.
+
+```sh
+$ k get pods app -n elastic-stack -o yaml > app.yaml
+```
+
+```diff
+spec:
+	containers:
++	  - image: kodekloud/filebeat-configured
++	    name: sidecar
++	    volumeMounts:
++	    - mountPath: /var/log/event-simulator/
++	      name: log-volume
+```
 
 ## Practice 16 - Readiness Probes
+
+
 
 
 ## Practice 17 - Logging
