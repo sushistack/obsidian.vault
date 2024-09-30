@@ -2498,9 +2498,7 @@ Try running the `kubectl get pods` command and look for the error. All users c
 error: unable to read client-cert /etc/kubernetes/pki/users/dev-user/developer-user.crt for dev-user due to open /etc/kubernetes/pki/users/dev-user/developer-user.crt: no such file or directory
 ```
 
-## Practice 29 - Role Based Access Control
-
-
+## Practice 29 - Role Based Access Controls
 
 ## Practice 30 - Cluster Roles
 

@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md"
               }
             }
           }
@@ -232,17 +232,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "5e7daf5502eed837",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
-    "Udemy Lectures for CKAD/129. Storage class.md",
     "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
+    "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
+    "Udemy Lectures for CKAD/129. Storage class.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/123. Persistent Volume.md",
+    "Udemy Lectures for CKAD/107. Services.md",
+    "Udemy Lectures for CKAD/139. KubeConfig.md",
+    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
+    "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
+    "Udemy Lectures for CKAD/모의시험.md",
     "Udemy Lectures for CKAD/122. Volume.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
-    "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
     "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",
     "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
     "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
@@ -256,11 +260,7 @@
     "Udemy Lectures for CKAD/64. Taints And Tolerations.md",
     "Udemy Lectures for CKAD/61. Resource Requirements.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
-    "Udemy Lectures for CKAD/119. Developing network policies.md",
     "images/Pasted image 20240930113614.png",
-    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
-    "Udemy Lectures for CKAD/107. Services.md",
-    "Udemy Lectures for CKAD/104. CronJobs.md",
     "images/Pasted image 20240929160554.png",
     "Interviews",
     "Kotlin",
