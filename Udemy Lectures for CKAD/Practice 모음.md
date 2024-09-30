@@ -1654,6 +1654,226 @@ root@controlplane:~> kubectl get svc -n kube-system NAME TYPE CLUSTER-IP EXTERNA
 ```
 ## Practice 25 - Ingress Networking - 1
 
+### We have deployed Ingress Controller, resources and applications. Explore the setup.
+
+Note: They are in different namespaces.
+
+```sh
+controlplane ~ ➜  k get all -n ingress-nginx
+NAME                                            READY   STATUS      RESTARTS   AGE
+pod/ingress-nginx-admission-create-hmrtv        0/1     Completed   0          2m33s
+pod/ingress-nginx-admission-patch-8bd6r         0/1     Completed   0          2m33s
+pod/ingress-nginx-controller-597d7b4fbd-47tqt   1/1     Running     0          2m33s
+
+NAME                                         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                      AGE
+service/ingress-nginx-controller             NodePort    10.106.30.103   <none>        80:30080/TCP,443:32103/TCP   2m34s
+service/ingress-nginx-controller-admission   ClusterIP   10.101.149.2    <none>        443/TCP                      2m33s
+
+NAME                                       READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ingress-nginx-controller   1/1     1            1           2m33s
+
+NAME                                                  DESIRED   CURRENT   READY   AGE
+replicaset.apps/ingress-nginx-controller-597d7b4fbd   1         1         1       2m33s
+
+NAME                                       STATUS     COMPLETIONS   DURATION   AGE
+job.batch/ingress-nginx-admission-create   Complete   1/1           9s         2m33s
+job.batch/ingress-nginx-admission-patch    Complete   1/1           10s        2m33s
+```
+
+### Which namespace is the `Ingress Controller` deployed in?
+
+ingress-nginx
+
+### What is the name of the Ingress Controller Deployment?
+
+ingress-nginx-controller
+
+### Which namespace are the applications deployed in?
+
+
+app-space
+
+### How many applications are deployed in the `app-space` namespace?
+
+Count the number of deployments in this namespace.
+
+3
+
+### Which namespace is the Ingress Resource deployed in?
+
+```sh
+$ k get ingress --all-namespaces
+NAMESPACE   NAME                 CLASS    HOSTS   ADDRESS         PORTS   AGE
+app-space   ingress-wear-watch   <none>   *       10.106.30.103   80      6m25s
+```
+
+### What is the name of the Ingress Resource?
+
+ingress-wear-watch
+
+### What is the `Host` configured on the `Ingress Resource`?
+
+The host entry defines the domain name that users use to reach the application like `www.google.com`
+
+All Hosts(*)
+
+### What backend is the `/wear` path on the Ingress configured with?
+
+```
+controlplane ~ ➜  k describe ingress ingress-wear-watch -n app-space
+Name:             ingress-wear-watch
+Labels:           <none>
+Namespace:        app-space
+Address:          10.106.30.103
+Ingress Class:    <none>
+Default backend:  <default>
+Rules:
+  Host        Path  Backends
+  ----        ----  --------
+  *           
+              /wear    wear-service:8080 (10.244.0.4:8080)
+              /watch   video-service:8080 (10.244.0.5:8080)
+Annotations:  nginx.ingress.kubernetes.io/rewrite-target: /
+              nginx.ingress.kubernetes.io/ssl-redirect: false
+Events:
+  Type    Reason  Age                    From                      Message
+  ----    ------  ----                   ----                      -------
+  Normal  Sync    8m47s (x2 over 8m47s)  nginx-ingress-controller  Scheduled for sync
+```
+
+###  At what path is the video streaming application made available on the `Ingress`?
+
+```
+Rules:
+  Host        Path  Backends
+  ----        ----  --------
+  *           
+              /wear    wear-service:8080 (10.244.0.4:8080)
+              /watch   video-service:8080 (10.244.0.5:8080)
+```
+
+/watch
+### If the requirement does not match any of the configured paths in the `Ingress`, to which service are the requests forwarded?
+
+```
+kubectl get deploy ingress-nginx-controller -n ingress-nginx -o yaml | grep default-backend -iA5
+        - --default-backend-service=app-space/default-backend-service
+        - --controller-class=k8s.io/ingress-nginx
+        - --ingress-class=nginx
+        - --configmap=$(POD_NAMESPACE)/ingress-nginx-controller
+        - --validating-webhook=:8443
+        - --validating-webhook-certificate=/usr/local/certificates/cert
+```
+
+### Now view the Ingress Service using the tab at the top of the terminal. Which page do you see?
+
+Click on the tab named `Ingress`.
+![](Pasted%20image%2020240930113614.png)
+
+### You are requested to change the URLs at which the applications are made available.
+
+Make the video application available at `/stream`.
+
+```diff
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: wear-service
+            port:
+              number: 8080
+        path: /wear
+        pathType: Prefix
+      - backend:
+          service:
+            name: video-service
+            port:
+              number: 8080
+-       path: /watch
++       path: /stream
+        pathType: Prefix
+```
+
+### A user is trying to view the `/eat` URL on the Ingress Service. Which page would he see?
+
+If not open already, click on the `Ingress` tab above your terminal, and append `/eat` to the URL in the browser.
+
+404
+### You are requested to add a new path to your ingress to make the food delivery application available to your customers.
+
+
+Make the new application available at `/eat`.
+
+```diff
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: wear-service
+            port:
+              number: 8080
+        path: /wear
+        pathType: Prefix
+      - backend:
+          service:
+            name: video-service
+            port:
+              number: 8080
+        path: /stream
+        pathType: Prefix
++     - backend:
++         service:
++           name: food-service
++           port:
++             number: 8080
++       path: /eat
++       pathType: Prefix
+```
+
+### A new payment service has been introduced. Since it is critical, the new application is deployed in its own namespace.
+
+Identify the namespace in which the new application is deployed.
+
+```sh
+$ k get services --all-namespaces
+critical-space   pay-service                          ClusterIP   10.110.11.157   <none>        8282/TCP                     60s
+```
+
+### What is the name of the deployment of the new application?
+
+```sh
+controlplane ~ ➜  k get deploy --all-namespaces
+NAMESPACE        NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+app-space        default-backend            1/1     1            1           25m
+app-space        webapp-food                1/1     1            1           4m2s
+app-space        webapp-video               1/1     1            1           25m
+app-space        webapp-wear                1/1     1            1           25m
+critical-space   webapp-pay                 1/1     1            1           2m12s
+ingress-nginx    ingress-nginx-controller   1/1     1            1           25m
+kube-system      coredns                    2/2     2            2           35m
+```
+
+webapp-pay
+
+### ou are requested to make the new application available at `/pay`.
+
+Identify and implement the best approach to making this application available on the ingress controller and test to make sure its working. Look into annotations: rewrite-target as well.
 
 
 ## Practice 26 - Ingress Networking - 2
+
+
+
+## Practice 27 - 
+
+## Practice 28 - 
+
+## Practice 29 - 
+
+## Practice 30 - 
+
+## Practice 31 - 
