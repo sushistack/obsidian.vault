@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/모의 시험.md",
+                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/모의 시험.md",
+                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/모의 시험.md",
+                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/모의 시험.md"
+                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md"
               }
             }
           }
@@ -234,10 +234,13 @@
   },
   "active": "5e7daf5502eed837",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/45. ConfigMaps.md",
+    "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
+    "Spring/다중 Datasource 환경에서의 tx 매니징.md",
+    "Spring/OpenFeign 같은 유용한 라이브러리?.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
-    "Udemy Lectures for CKAD/48. Secret.md",
     "Udemy Lectures for CKAD/모의 시험.md",
+    "Udemy Lectures for CKAD/45. ConfigMaps.md",
+    "Udemy Lectures for CKAD/48. Secret.md",
     "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
     "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
     "Udemy Lectures for CKAD/129. Storage class.md",
@@ -257,9 +260,6 @@
     "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
     "Udemy Lectures for CKAD/78. Init Container.md",
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
-    "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
-    "Udemy Lectures for CKAD/67. Node Selectors.md",
-    "Udemy Lectures for CKAD/64. Taints And Tolerations.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",
