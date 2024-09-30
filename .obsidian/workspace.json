@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
+                "file": "Udemy Lectures for CKAD/모의 시험.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
+                "file": "Udemy Lectures for CKAD/모의 시험.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
+                "file": "Udemy Lectures for CKAD/모의 시험.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md"
+                "file": "Udemy Lectures for CKAD/모의 시험.md"
               }
             }
           }
@@ -234,16 +234,18 @@
   },
   "active": "5e7daf5502eed837",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/45. ConfigMaps.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/48. Secret.md",
+    "Udemy Lectures for CKAD/모의 시험.md",
     "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
     "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
     "Udemy Lectures for CKAD/129. Storage class.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/123. Persistent Volume.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/139. KubeConfig.md",
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
-    "Udemy Lectures for CKAD/모의시험.md",
     "Udemy Lectures for CKAD/122. Volume.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
@@ -258,8 +260,6 @@
     "Udemy Lectures for CKAD/71. Taints & Tolerations vs Node Affinity.md",
     "Udemy Lectures for CKAD/67. Node Selectors.md",
     "Udemy Lectures for CKAD/64. Taints And Tolerations.md",
-    "Udemy Lectures for CKAD/61. Resource Requirements.md",
-    "Udemy Lectures for CKAD/118. Network Policies.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",
