@@ -2331,12 +2331,180 @@ No resources found in default namespace.
 
 Released (해제)
 
-## Practice 28 - KebeCOnfig
+## Practice 28 - KebeConfig
 
-### 
+### Where is the default kubeconfig file located in the current environment?
 
-## Practice 29 - 
+Find the current home directory by looking at the HOME environment variable.
 
-## Practice 30 - 
+```sh
+$HOME/.kube/config
+```
 
-## Practice 31 - 
+### cluster count
+1
+
+### How many Users are defined in the default kubeconfig file?
+
+1
+
+```
+users:
+- name: kubernetes-admin
+```
+
+### How many contexts are defined in the default kubeconfig file?
+
+1
+
+```
+contexts:
+- context:
+```
+
+### What is the user configured in the current context?
+
+kubernetes-admin
+
+```sh
+controlplane ~/.kube ➜  cat config 
+
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+```
+
+### What is the name of the cluster configured in the default kubeconfig file?
+
+kubernetes
+
+```sh
+controlplane ~/.kube ➜  cat config 
+
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+```
+
+### A new kubeconfig file named `my-kube-config` is created. It is placed in the `/root` directory. How many clusters are defined in that kubeconfig file?
+
+4
+
+```sh
+controlplane ~ ✖ cat my-kube-config 
+apiVersion: v1
+kind: Config
+
+clusters:
+- name: production
+  cluster:
+    certificate-authority: /etc/kubernetes/pki/ca.crt
+    server: https://controlplane:6443
+
+- name: development
+  cluster:
+    certificate-authority: /etc/kubernetes/pki/ca.crt
+    server: https://controlplane:6443
+
+- name: kubernetes-on-aws
+  cluster:
+    certificate-authority: /etc/kubernetes/pki/ca.crt
+    server: https://controlplane:6443
+
+- name: test-cluster-1
+  cluster:
+    certificate-authority: /etc/kubernetes/pki/ca.crt
+    server: https://controlplane:6443
+
+contexts:
+- name: test-user@development
+  context:
+    cluster: development
+    user: test-user
+
+- name: aws-user@kubernetes-on-aws
+  context:
+    cluster: kubernetes-on-aws
+    user: aws-user
+
+- name: test-user@production
+  context:
+    cluster: production
+    user: test-user
+
+- name: research
+  context:
+    cluster: test-cluster-1
+    user: dev-user
+
+users:
+- name: test-user
+  user:
+    client-certificate: /etc/kubernetes/pki/users/test-user/test-user.crt
+    client-key: /etc/kubernetes/pki/users/test-user/test-user.key
+- name: dev-user
+  user:
+    client-certificate: /etc/kubernetes/pki/users/dev-user/developer-user.crt
+    client-key: /etc/kubernetes/pki/users/dev-user/dev-user.key
+- name: aws-user
+  user:
+    client-certificate: /etc/kubernetes/pki/users/aws-user/aws-user.crt
+    client-key: /etc/kubernetes/pki/users/aws-user/aws-user.key
+
+current-context: test-user@development
+preferences: {}
+```
+
+### How many contexts are configured in the `my-kube-config` file?
+
+4
+
+### what user in research context? 
+
+dev-user
+
+### What is the name of the client-certificate file configured for the `aws-user`?
+
+aws-user.crt
+### What is the current context set to in the `my-kube-config` file?
+
+current-context: test-user@development
+
+### I would like to use the `dev-user` to access `test-cluster-1`. Set the current context to the right one so I can do that.
+
+Once the right context is identified, use the `kubectl config use-context` command.
+
+```sh
+$ k config --kubeconfig=/root/my-kube-config use-context research
+
+$ k config --kubeconfig=/root/my-kube-config current-context
+```
+
+### We don't want to have to specify the kubeconfig file option on each command.
+
+Set the `my-kube-config` file as the default kubeconfig by overwriting the content of `~/.kube/config` with the content of the `my-kube-config` file.
+
+```sh
+cp my-kube-config ~/.kube/config
+```
+
+### With the current-context set to `research`, we are trying to access the cluster. However something seems to be wrong. Identify and fix the issue.
+
+Try running the `kubectl get pods` command and look for the error. All users certificates are stored at `/etc/kubernetes/pki/users`.
+
+```
+error: unable to read client-cert /etc/kubernetes/pki/users/dev-user/developer-user.crt for dev-user due to open /etc/kubernetes/pki/users/dev-user/developer-user.crt: no such file or directory
+```
+
+## Practice 29 - Role Based Access Control
+
+
+
+## Practice 30 - Cluster Roles
+
+## Practice 31 - Custom Resource Definition
+
+
+
