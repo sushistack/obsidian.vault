@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
+                "file": "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/124. Persistent Volume Claim.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -232,10 +232,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e7daf5502eed837",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
     "Udemy Lectures for CKAD/125. Using PVCs in Pod.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/129. Storage class.md",
     "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
     "Udemy Lectures for CKAD/123. Persistent Volume.md",
     "Udemy Lectures for CKAD/122. Volume.md",
@@ -260,7 +261,6 @@
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/104. CronJobs.md",
-    "Udemy Lectures for CKAD/129. Storage class.md",
     "images/Pasted image 20240929160554.png",
     "Interviews",
     "Kotlin",

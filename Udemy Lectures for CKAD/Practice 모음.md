@@ -2189,11 +2189,151 @@ spec:
     path: /pv/log
 ```
 
+PV의 capacity: storage는 **최대 제공 가능한 스토리지 용량**을 나타내며, PVC가 요청한 용량이 PV의 용량보다 작거나 같아야 합니다.
+
 ### Let us claim some of that storage for our application. Create a `Persistent Volume Claim` with the given specification.
 
+```yml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: claim-log-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Mi
+```
+
+PVC의 requests: storage는 **사용자가 요청하는 최소한의 스토리지 용량**을 의미합니다.
+
+### What is the state of the `Persistent Volume Claim`?
+
+```sh
+controlplane ~ ➜  k describe pvc claim-log-1 
+Name:          claim-log-1
+Namespace:     default
+StorageClass:  
+Status:        Pending
+```
+
+### What is the state of the `Persistent Volume`?
+
+```sh
+controlplane ~ ➜  k describe pv pv-log 
+Name:            pv-log
+Labels:          <none>
+Annotations:     <none>
+Finalizers:      [kubernetes.io/pv-protection]
+StorageClass:    
+Status:          Available
+```
+
+### Why is the claim not bound to the available `Persistent Volume`?
+
+Access Modes Missmatch
+
+```diff
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: claim-log-1
+spec:
+  accessModes:
+-   - ReadWriteOnce
++   - ReadWriteMany 
+  resources:
+    requests:
+      storage: 50Mi
+```
+
+### You requested for `50Mi`, how much capacity is now available to the PVC?
+
+```
+controlplane ~ ➜  k describe pvc claim-log-1 
+Name:          claim-log-1
+Namespace:     default
+StorageClass:  
+Status:        Bound
+Volume:        pv-log
+Labels:        <none>
+Annotations:   pv.kubernetes.io/bind-completed: yes
+               pv.kubernetes.io/bound-by-controller: yes
+Finalizers:    [kubernetes.io/pvc-protection]
+Capacity:      100Mi
+```
 
 
-## Practice 28 - Storage Class
+왜 100이냐? PV 가 100으로 설정되어 있기 때문
+
+### Update the `webapp` pod to use the persistent volume claim as its storage.
+
+Replace `hostPath` configured earlier with the newly created `PersistentVolumeClaim`.
+
+```diff
+volumes:
+  - name: data-volume
+    hostPath:
+      path: /var/log/webapp
+      type: Directory
++ - name: my-pvc
++   persistentVolumeClaim:
++     claimName: claim-log-1
+```
+
+### What is the `Reclaim Policy` set on the Persistent Volume `pv-log`?
+
+```sh
+controlplane ~ ➜  k describe pv pv-log 
+Name:            pv-log
+Labels:          <none>
+Annotations:     pv.kubernetes.io/bound-by-controller: yes
+Finalizers:      [kubernetes.io/pv-protection]
+StorageClass:    
+Status:          Bound
+Claim:           default/claim-log-1
+Reclaim Policy:  Retain
+```
+
+### What would happen to the PV if the PVC was destroyed?
+
+=> The PV is made available again x => Recycle
+=> The PV is not deleted but not available => Retein
+
+### Try deleting the PVC and notice what happens.
+
+If the command hangs, you can use CTRL + C to get back to the bash prompt OR check the status of the pvc from another terminal
+
+```sh
+controlplane ~ ➜  k delete pvc claim-log-1 
+persistentvolumeclaim "claim-log-1" deleted
+^C
+controlplane ~ ✖ ^C
+
+controlplane ~ ✖ k get pvc claim-log-1 
+NAME          STATUS        VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+claim-log-1   Terminating   pv-log   100Mi      RWX                           <unset>                 16m
+```
+
+### Why is the PVC stuck in `Terminating` state?
+
+The PVC is being used by a POD
+
+### What is the state of the PVC now?
+
+```
+controlplane ~ ➜  k get pvc
+No resources found in default namespace.
+```
+
+### What is the state of the Persistent Volume now?
+
+Released (해제)
+
+## Practice 28 - KebeCOnfig
+
+### 
 
 ## Practice 29 - 
 
