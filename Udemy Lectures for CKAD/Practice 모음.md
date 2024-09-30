@@ -2129,7 +2129,11 @@ spec:
 
 ## Practice 27 - Persistent Volumes
 
-### Show log
+### The application stores logs at location `/log/app.log`. View the logs.
+
+You can exec in to the container and open the file:  
+  
+`kubectl exec webapp -- cat /log/app.log`
 
 ```sh
 $ k exec webapp -- cat /log/app.log
@@ -2143,9 +2147,53 @@ no
 
 Use the spec provided below.
 
+```diff
+spec:
+  containers:
+  - env:
+    - name: LOG_HANDLERS
+      value: file
+    image: kodekloud/event-simulator
+    imagePullPolicy: Always
+    name: event-simulator
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-hwff7
+      readOnly: true
++   - mountPath: /log
++     name: data-volume
++ volumes:
++ - name: data-volume
++   hostPath:
++     path: /var/log/webapp
++     type: Directory
+```
+
+### Create a `Persistent Volume` with the given specification.
+
+```yml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-log
+spec:
+  accessModes:
+    - ReadWriteMany
+  capacity:
+    storage: 100Mi
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /pv/log
+```
+
+### Let us claim some of that storage for our application. Create a `Persistent Volume Claim` with the given specification.
 
 
-## Practice 28 - 
+
+## Practice 28 - Storage Class
 
 ## Practice 29 - 
 
