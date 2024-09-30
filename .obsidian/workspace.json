@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/9 - 59. Know and use the libraries.md",
+                "file": "Java/9 - 67. Optimize judiciously.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/9 - 59. Know and use the libraries.md",
+                "file": "Java/9 - 67. Optimize judiciously.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/9 - 59. Know and use the libraries.md",
+                "file": "Java/9 - 67. Optimize judiciously.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/9 - 59. Know and use the libraries.md"
+                "file": "Java/9 - 67. Optimize judiciously.md"
               }
             }
           }
@@ -234,25 +234,25 @@
   },
   "active": "5e7daf5502eed837",
   "lastOpenFiles": [
-    "Java/9 - 61. Prefer primitive types to boxed primitives.md",
-    "Java/9 - 62. Avoid strings where other types are more appropriate.md",
-    "Java/10 - 70. Use checked exceptions for recoverable conditions and runtimeexceptions for programming errors.md",
-    "Java/10 - 69. Use exceptions only for exceptional conditions.md",
-    "Java/9 - 68. Adhere to generally accepted naming conventions.md",
-    "Java/9 - 67. Optimize judiciously.md",
     "Java/9 - 66. Use native methods judiciously.md",
+    "Java/9 - 67. Optimize judiciously.md",
     "Java/9 - 65. Prefer interfaces to reflection.md",
     "Java/9 - 64. Refer to objects by their interfaces.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
     "Java/9 - 63. Beware the performance of string concatenation.md",
+    "Java/9 - 62. Avoid strings where other types are more appropriate.md",
+    "Java/9 - 61. Prefer primitive types to boxed primitives.md",
     "Java/9 - 60. Avoid float and double if exact answers are required.md",
     "Java/9 - 59. Know and use the libraries.md",
     "Java/9 - 58. Prefer for-each loops to traditional for loops.md",
     "Java/9 - 57. Minimize the scope of local variables.md",
-    "Java/8 - 55. Return optionals judiciously.md",
-    "Java/8 - 54. Return empty collections or arrays, not nulls.md",
     "Java/8 - 56. Write doc comments for all exposed API elements.md",
+    "Java/8 - 55. Return optionals judiciously.md",
+    "Java/10 - 70. Use checked exceptions for recoverable conditions and runtimeexceptions for programming errors.md",
+    "Java/10 - 69. Use exceptions only for exceptional conditions.md",
+    "Java/9 - 68. Adhere to generally accepted naming conventions.md",
+    "Java/8 - 54. Return empty collections or arrays, not nulls.md",
     "Java/8 - 53. Use varargs judiciously.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Java/8 - 52. Use overloading judiciously.md",
     "Java/8 - 51. Design method signatures carefully.md",
     "Java/8 - 50. Make defensive copies when needed.md",
