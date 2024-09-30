@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/118. Network Policies.md",
+                "file": "Udemy Lectures for CKAD/119. Developing network policies.md",
                 "mode": "source",
                 "source": false
               }
@@ -234,9 +234,10 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
-    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/104. CronJobs.md",
@@ -246,7 +247,6 @@
     "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
     "Udemy Lectures for CKAD/122. Volume.md",
     "Udemy Lectures for CKAD/123. Persistent Volume.md",
-    "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/103. Jobs.md",
     "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
     "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",

@@ -1549,10 +1549,111 @@ payroll    1/1     Running   0          2m56s   name=payroll
 
 ### What type of traffic is this Network Policy configured to handle?
 
+```sh
+controlplane ~ ➜  k describe netpol payroll-policy 
+Name:         payroll-policy
+Namespace:    default
+Created on:   2024-09-30 01:43:58 +0000 UTC
+Labels:       <none>
+Annotations:  <none>
+Spec:
+  PodSelector:     name=payroll
+  Allowing ingress traffic:
+    To Port: 8080/TCP
+    From:
+      PodSelector: name=internal
+  Not affecting egress traffic
+  Policy Types: Ingress
 ```
 
+### What is the impact of the rule configured on this Network Policy?
+
+Traffic From Internal to Payroll POD is allowed
+
+### What is the impact of the rule configured on this Network Policy?
+
+Internal POD can access port 8080 on Payroll POD
+
+### Perform a connectivity test using the User Interface in these Applications to access the `payroll-service` at port `8080`.
+
+### Create a network policy to allow traffic from the `Internal` application only to the `payroll-service` and `db-service`.
+
+Use the spec given below. You might want to enable ingress traffic to the pod to test your rules in the UI.
+
+Also, ensure that you allow egress traffic to DNS ports TCP and UDP (port 53) to enable DNS resolution from the internal pod.
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: internal-policy
+  namespace: default
+spec:
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          name: payroll
+    ports:
+    - port: 8080
+      protocol: TCP
+  - to:
+    - podSelector:
+        matchLabels:
+          name: mysql
+    ports:
+    - port: 3306
+      protocol: TCP
+  policyTypes:
+  - Egress
 ```
 
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: internal-policy
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      name: internal
+  policyTypes:
+  - Egress
+  - Ingress
+  ingress:
+    - {}
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          name: mysql
+    ports:
+    - protocol: TCP
+      port: 3306
+
+  - to:
+    - podSelector:
+        matchLabels:
+          name: payroll
+    ports:
+    - protocol: TCP
+      port: 8080
+
+  - ports:
+    - port: 53
+      protocol: UDP
+    - port: 53
+      protocol: TCP
+```
+
+The `kube-dns` service is exposed on port `53`:
+
+```
+root@controlplane:~> kubectl get svc -n kube-system NAME TYPE CLUSTER-IP EXTERNAL-IP PORT(S) AGE kube-dns ClusterIP 10.96.0.10 <none> 53/UDP,53/TCP,9153/TCP 18m
+```
 ## Practice 25 - Ingress Networking - 1
+
+
 
 ## Practice 26 - Ingress Networking - 2
