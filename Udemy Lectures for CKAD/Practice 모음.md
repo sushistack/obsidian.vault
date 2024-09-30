@@ -1859,14 +1859,244 @@ kube-system      coredns                    2/2     2            2           35m
 
 webapp-pay
 
-### ou are requested to make the new application available at `/pay`.
+### You are requested to make the new application available at `/pay`.
 
 Identify and implement the best approach to making this application available on the ingress controller and test to make sure its working. Look into annotations: rewrite-target as well.
 
+```
+controlplane ~ ➜  k get services -n critical-space
+NAME          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+pay-service   ClusterIP   10.110.11.157   <none>        8282/TCP   11m
+```
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-wear-watch
+  namespace: critical-space
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: pay-service
+            port:
+              number: 8282
+        path: /pay
+        pathType: Prefix
+```
 
 ## Practice 26 - Ingress Networking - 2
 
+### Let us now deploy an Ingress Controller. First, create a namespace called `ingress-nginx`.
 
+We will isolate all ingress related objects into its own namespace.
+
+```sh
+$ k create namespace ingress-nginx
+```
+
+### The NGINX Ingress Controller requires a ConfigMap object. Create a ConfigMap object with name `ingress-nginx-controller` in the `ingress-nginx` namespace.
+
+No data needs to be configured in the ConfigMap.
+
+```sh
+$ k create configmap ingress-nginx-controller -n ingress-nginx
+```
+
+### The NGINX Ingress Controller requires two ServiceAccounts. Create both ServiceAccount with name `ingress-nginx` and `ingress-nginx-admission` in the `ingress-nginx` namespace.
+
+Use the spec provided below.
+
+```sh
+controlplane ~ ➜  k create sa ingress-nginx -n ingress-nginx
+serviceaccount/ingress-nginx created
+
+controlplane ~ ➜  k create sa ingress-nginx-admission -n ingress-nginx
+serviceaccount/ingress-nginx-admission created
+```
+
+### Let us now deploy the Ingress Controller. Create the Kubernetes objects using the given file.
+
+The Deployment and it's service configuration is given at `/root/ingress-controller.yaml`. There are several issues with it. Try to fix them.
+
+> **Note:** Do not edit the default image provided in the given file. The image validation check passes when other issues are resolved.
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/instance: ingress-nginx
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/part-of: ingress-nginx
+    app.kubernetes.io/version: 1.1.2
+    helm.sh/chart: ingress-nginx-4.0.18
+  name: ingress-nginx-controller
+  namespace: ingress-nginx
+spec:
+  minReadySeconds: 0
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app.kubernetes.io/component: controller
+      app.kubernetes.io/instance: ingress-nginx
+      app.kubernetes.io/name: ingress-nginx
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/component: controller
+        app.kubernetes.io/instance: ingress-nginx
+        app.kubernetes.io/name: ingress-nginx
+    spec:
+      containers:
+      - args:
+        - /nginx-ingress-controller
+        - --publish-service=$(POD_NAMESPACE)/ingress-nginx-controller
+        - --election-id=ingress-controller-leader
+        - --watch-ingress-without-class=true
+        - --default-backend-service=app-space/default-http-backend
+        - --controller-class=k8s.io/ingress-nginx
+        - --ingress-class=nginx
+        - --configmap=$(POD_NAMESPACE)/ingress-nginx-controller
+        - --validating-webhook=:8443
+        - --validating-webhook-certificate=/usr/local/certificates/cert
+        - --validating-webhook-key=/usr/local/certificates/key
+        env:
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        - name: LD_PRELOAD
+          value: /usr/local/lib/libmimalloc.so
+        image: registry.k8s.io/ingress-nginx/controller:v1.1.2@sha256:28b11ce69e57843de44e3db6413e98d09de0f6688e33d4bd384002a44f78405c
+        imagePullPolicy: IfNotPresent
+        lifecycle:
+          preStop:
+            exec:
+              command:
+              - /wait-shutdown
+        livenessProbe:
+          failureThreshold: 5
+          httpGet:
+            path: /healthz
+            port: 10254
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        name: controller
+        ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+        - containerPort: 443
+          name: https
+          protocol: TCP
+        - containerPort: 8443
+          name: webhook
+          protocol: TCP
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /healthz
+            port: 10254
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        resources:
+          requests:
+            cpu: 100m
+            memory: 90Mi
+        securityContext:
+          allowPrivilegeEscalation: true
+          capabilities:
+            add:
+            - NET_BIND_SERVICE
+            drop:
+            - ALL
+          runAsUser: 101
+        volumeMounts:
+        - mountPath: /usr/local/certificates/
+          name: webhook-cert
+          readOnly: true
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/os: linux
+      serviceAccountName: ingress-nginx
+      terminationGracePeriodSeconds: 300
+      volumes:
+      - name: webhook-cert
+        secret:
+          secretName: ingress-nginx-admission
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/instance: ingress-nginx
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/part-of: ingress-nginx
+    app.kubernetes.io/version: 1.1.2
+    helm.sh/chart: ingress-nginx-4.0.18
+  name: ingress-nginx-controller
+  namespace: ingress-nginx
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+    nodePort: 30080
+  selector:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/instance: ingress-nginx
+    app.kubernetes.io/name: ingress-nginx
+  type: NodePort
+```
+
+### Create the ingress resource to make the applications available at `/wear` and `/watch` on the Ingress service.  
+  
+Also, make use of `rewrite-target` annotation field: -
+
+`Ingress` resource comes under the `namespace` scoped, so don't forget to create the ingress in the `app-space` namespace.
+
+```sh
+controlplane ~ ➜  k get all -n app-space
+NAME                                  READY   STATUS    RESTARTS   AGE
+pod/default-backend-78f6fb8b4-gkgtx   1/1     Running   0          22m
+pod/webapp-video-74bdc86cb8-vrb96     1/1     Running   0          22m
+pod/webapp-wear-6f8947f6cc-jpbjg      1/1     Running   0          22m
+
+NAME                           TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+service/default-http-backend   ClusterIP   10.97.247.83     <none>        80/TCP     22m
+service/video-service          ClusterIP   10.105.181.220   <none>        8080/TCP   22m
+service/wear-service           ClusterIP   10.105.49.101    <none>        8080/TCP   22m
+
+NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/default-backend   1/1     1            1           22m
+deployment.apps/webapp-video      1/1     1            1           22m
+deployment.apps/webapp-wear       1/1     1            1           22m
+
+NAME                                        DESIRED   CURRENT   READY   AGE
+replicaset.apps/default-backend-78f6fb8b4   1         1         1       22m
+replicaset.apps/webapp-video-74bdc86cb8     1         1         1       22m
+replicaset.apps/webapp-wear-6f8947f6cc      1         1         1       22m
+```
 
 ## Practice 27 - 
 

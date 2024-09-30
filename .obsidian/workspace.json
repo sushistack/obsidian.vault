@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/119. Developing network policies.md",
+                "file": "Udemy Lectures for CKAD/111. Ingress Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -234,12 +234,12 @@
   },
   "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "images/Pasted image 20240930113614.png",
-    "Udemy Lectures for CKAD/119. Developing network policies.md",
-    "Udemy Lectures for CKAD/118. Network Policies.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
-    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/118. Network Policies.md",
+    "Udemy Lectures for CKAD/119. Developing network policies.md",
+    "images/Pasted image 20240930113614.png",
+    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/104. CronJobs.md",
     "Udemy Lectures for CKAD/129. Storage class.md",
@@ -274,7 +274,6 @@
     "images/Pasted image 20240926152500.png",
     "images/Pasted image 20240925173935.png",
     "images/Pasted image 20240925173917.png",
-    "images/Pasted image 20240925173859.png",
     "ELK Stack",
     "Ideas",
     "querydsl",
