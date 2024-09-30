@@ -2098,7 +2098,52 @@ replicaset.apps/webapp-video-74bdc86cb8     1         1         1       22m
 replicaset.apps/webapp-wear-6f8947f6cc      1         1         1       22m
 ```
 
-## Practice 27 - 
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-wear-watch
+  namespace: app-space
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /wear
+        pathType: Prefix
+        backend:
+          service:
+           name: wear-service
+           port: 
+            number: 8080
+      - path: /watch
+        pathType: Prefix
+        backend:
+          service:
+           name: video-service
+           port:
+            number: 8080
+```
+
+## Practice 27 - Persistent Volumes
+
+### Show log
+
+```sh
+$ k exec webapp -- cat /log/app.log
+```
+
+### If the POD was to get deleted now, would you be able to view these logs.
+
+no
+
+### Configure a volume to store these logs at `/var/log/webapp` on the host.
+
+Use the spec provided below.
+
+
 
 ## Practice 28 - 
 
