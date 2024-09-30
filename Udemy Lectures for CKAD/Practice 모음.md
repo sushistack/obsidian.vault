@@ -1503,10 +1503,55 @@ simple-webapp-deployment   4/4     4            4           17s
 ### What is the image used to create the pods in the deployment?
 
 ```
+Pod Template:
+  Labels:  name=simple-webapp
+  Containers:
+   simple-webapp:
+    Image:         kodekloud/simple-webapp:red
+```
 
+### Create a new service to access the web application using the `service-definition-1.yaml` file.
+
+```yml
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp-service
+  namespace: default
+spec:
+  ports:
+  - nodePort:  30080
+    port: 8080 
+    targetPort: 8080
+  selector:
+    name: simple-webapp
+  type: NodePort
 ```
 
 ## Practice 24 - Network Policies
+
+### How many network policies do you see in the environment?
+
+```sh
+controlplane ~ ✖ k get networkpolicies
+NAME             POD-SELECTOR   AGE
+payroll-policy   name=payroll   50s
+```
+
+### Which pod is the Network Policy applied on?
+
+```sh
+$ k get netpol
+$ k get pods --show-labels | grep name=payroll
+payroll    1/1     Running   0          2m56s   name=payroll
+```
+
+### What type of traffic is this Network Policy configured to handle?
+
+```
+
+```
 
 ## Practice 25 - Ingress Networking - 1
 
