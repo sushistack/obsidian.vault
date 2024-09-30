@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/11 - 81. Prefer concurrency utilities to wait and notify.md",
+                "file": "Kotlin/6 - 3. Collections and arrays.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/11 - 81. Prefer concurrency utilities to wait and notify.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/11 - 81. Prefer concurrency utilities to wait and notify.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/11 - 81. Prefer concurrency utilities to wait and notify.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -232,34 +232,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e7daf5502eed837",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Java/11 - 82. Document thread safety.md",
-    "Java/11 - 80. Prefer executors, tasks, and streams to threads.md",
-    "Java/11 - 79. Avoid excessive synchronization.md",
-    "Java/11 - 81. Prefer concurrency utilities to wait and notify.md",
-    "Java/11 - 78. Synchronize access to shared mutable data.md",
-    "Java/10 - 77. Don’t ignore exceptions.md",
-    "Java/10 - 76. Strive for failure atomicity.md",
+    "Kotlin/6 - 3. Collections and arrays.md",
+    "Kotlin/6 - 1. Nullability.md",
+    "Kotlin/5 - 5. Lambdas with receivers “with” and “apply”.md",
+    "Kotlin/5 - 4. Using Java functional interfaces.md",
+    "Kotlin/5 - 2. Functional APIs for collections.md",
+    "Kotlin/4 - 3. Compiler-generated methods data classes and class delegation.md",
+    "Kotlin/3 - 3. Adding methods to other people’s classes extension functions and properties.md",
+    "Kotlin/3 - 4. Working with collections varargs, infix calls, and library support.md",
+    "Kotlin/3 - 5. Working with strings and regular expressions.md",
+    "Kotlin/4 - 1. Defining class hierarchies.md",
+    "Kotlin/4 - 2. Declaring a class with nontrivial constructors or properties.md",
+    "Kotlin/4 - 4. The ‘object’ keyword declaring a class and creating an instance, combined.md",
+    "Kotlin/5 - 3. Lazy collection operations sequences.md",
+    "Java/2 - 1. Consider a builder when faced with many constructor parameters.md",
+    "Java/2 - 2. Consider static factory mehthods instead of constructors.md",
+    "Java/2 - 5. Prefer dependency injection to hardwiring resources.md",
     "Java/10 - 75. Include failure-capture information in detail messages.md",
-    "Java/10 - 74. Document all exceptions thrown by each method.md",
-    "Java/10 - 73. Throw exceptions appropriate to the abstraction.md",
-    "Java/10 - 72. Favor the use of standard exceptions.md",
-    "Java/12 - 90. Consider serialization proxies instead of serialized instances.md",
-    "Java/12 - 89. For instance control, prefer enum types to readResolve.md",
-    "Java/12 - 88. Write readObject methods defensively.md",
-    "Java/12 - 87. Consider using a custom serialized form.md",
-    "Java/12 - 86. Implement Serializable with great caution.md",
-    "Java/12 - 85. Prefer alternatives to Java serialization.md",
-    "Java/11 - 84. Don’t depend on the thread scheduler.md",
+    "Java/10 - 77. Don’t ignore exceptions.md",
     "Java/11 - 83. Use lazy initialization judiciously.md",
-    "Java/10 - 71. Avoid unnecessary use of checked exceptions.md",
-    "Java/10 - 70. Use checked exceptions for recoverable conditions and runtimeexceptions for programming errors.md",
-    "Java/10 - 69. Use exceptions only for exceptional conditions.md",
+    "Java/12 - 86. Implement Serializable with great caution.md",
     "Java/9 - 68. Adhere to generally accepted naming conventions.md",
-    "Java/9 - 67. Optimize judiciously.md",
-    "Java/9 - 66. Use native methods judiciously.md",
+    "Java/7 - 45. Use streams judiciously.md",
+    "Java/6 - 41. Use marker interfaces to define types.md",
     "Java/4 - 17. Minimize mutability.md",
+    "Java/3 - 10. Obey the general contract when overriding equals.md",
+    "Java/12 - 90. Consider serialization proxies instead of serialized instances.md",
     "images/Pasted image 20240929160554.png",
     "Interviews",
     "Kotlin",

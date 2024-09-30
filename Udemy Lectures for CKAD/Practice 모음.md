@@ -1448,6 +1448,64 @@ $ k create cronjob throw-dice-cron-job --schedule="30 21 * * *" --image=kodeklou
 
 ## Practice 23 - Kubernetes Services
 
+```sh
+kubernetes   ClusterIP   10.43.0.1    <none>        443/TCP   24m
+```
+That is a default service created by Kubernetes at launch.
+
+### What is the type of the default `kubernetes` service?
+
+ClusterIP
+
+### What is the `targetPort` configured on the `kubernetes` service?
+
+```sh
+controlplane ~ ➜  k describe service kubernetes 
+Name:              kubernetes
+Namespace:         default
+Labels:            component=apiserver
+                   provider=kubernetes
+Annotations:       <none>
+Selector:          <none>
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.43.0.1
+IPs:               10.43.0.1
+Port:              https  443/TCP
+TargetPort:        6443/TCP
+Endpoints:         192.2.153.3:6443
+Session Affinity:  None
+Events:            <none>
+```
+
+### How many labels are configured on the `kubernetes` service?
+
+```
+Labels:            component=apiserver
+                   provider=kubernetes
+```
+
+### How many Endpoints are attached on the `kubernetes` service?
+
+```
+Endpoints:         192.2.153.3:6443
+```
+
+### How many Deployments exist on the system now?
+
+```sh
+controlplane ~ ➜  k get deploy
+NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+simple-webapp-deployment   4/4     4            4           17s
+```
+
+### What is the image used to create the pods in the deployment?
+
+```
+
+```
+
 ## Practice 24 - Network Policies
 
 ## Practice 25 - Ingress Networking - 1
