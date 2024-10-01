@@ -312,7 +312,7 @@ spec:
 
 **capabilities**는 Linux 커널의 특정 기능을 제어하여 루트 권한을 세분화하고, 불필요한 권한을 최소화하는 방식
 
-## Service Account
+## 11. Service Account
 
 애플리케이션(컨테이너화된 프로세스)나 자동화된 작업이 **Kubernetes API**와 상호작용할 수 있도록 설계된 계정
 
@@ -359,3 +359,66 @@ roleRef:
   name: pod-reader # this must match the name of the Role or ClusterRole you wish to bind to
   apiGroup: rbac.authorization.k8s.io
 ```
+
+```sh
+$ k set serviceaccount deploy/web-dashboard dashboard-sa
+```
+
+default의 경우, 원래 kebe resource api 를 사용할 수 없게 되어 있음.
+
+## 12. Resource Requirements
+
+## Pod에 리소스 설정
+
+```diff
+spec:
+  containers:
+  - args:
++   resources:
++     limits:
++       cpu: "2"
++     requests:
++       cpu: "1"
+```
+
+## 13. Taints and Tolerations
+
+```sh
+$ k taint nodes node01 spay=mortein:NoSchedule
+```
+
+`key:value:effect` 가 하나의 키값으로 서로 다른 taint 로 인식 됨.
+### Pod 에 설정
+
+```diff
+spec:
++  tolerations:
++   - effect: NoSchedule
++      key: spray
++      value: mortein
+```
+
+## 14. Affinity
+
+Pod spec에 설정한다.
+
+```diff 
+affinity:
+	nodeAffinity:
+	  requiredDuringSchedulingIgnoredDuringExecution:
+		nodeSelectorTerms:
+		- matchExpressions:
+		  - key: color
+			operator: In
+			values:
+			- blue
+
+```
+
+node 정보 같이 보기
+
+```sh
+k get pods -o wide
+```
+
+## 15. Muliti-Container PODs
