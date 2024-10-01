@@ -46,24 +46,101 @@ status: {}
 
 ## 2. ReplicaSets
 
+생성 명령어 없음.
+
 ```yaml
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: replicaset-1
-  labels:
+  labels: # 이 레이블은 다른 리소스가 이 ReplicaSet을 찾는데 사용 됨.
+    type: replicaset
+    name: rs-nginx
 spec:
   replicas: 3
-  selector:
+  selector:  # 이 레이블과 매칭되는 Pod 만 관리.
     matchLabels:
       app: nginx-app
   template:
     metadata:
       name: nginx-pod
-      labels:
+      labels: # Pod의 Label
         app: nginx-app
     spec:
       containers:
         - name: nginx-container
           image: nginx
+```
+### 간단한 스케일링
+
+```sh
+$ k scale --replicas=5 rs <replicaset-name>
+```
+
+## 3. Deployments
+
+```sh
+$ k create deploy \
+my-deployment \
+--image=nginx \
+# --image=redis \ 멀티 컨테이너 설정 시에는 개별 포트 설정 불가
+--replicas=3 \
+--port=80 \
+--dry-run=client \
+-o yaml
+```
+
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: my-deployment  # 자동으로 붙었다
+  name: my-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: my-deployment
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        ports:
+        - containerPort: 80
+        resources: {}
+      - image: redis
+        name: redis
+        resources: {}
+status: {}
+```
+
+
+## Namespace
+
+```sh
+$ k create namespace my-namespace
+```
+
+```sh
+$ k [cmd] [kube-resource] -n [namespace]
+```
+
+```sh
+$ k [cmd] [kube-resource] --all-namespaces
+```
+
+
+## Imperative Commands
+
+```sh
+$ k [cmd] [kube-resource] --labels tier=db
 ```
