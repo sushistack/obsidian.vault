@@ -340,7 +340,12 @@ $ k create deploy redis-deploy --image=redis --replicas=2 -n dev-ns
 ### Create a pod called `httpd` using the image `httpd:alpine` in the default namespace. Next, create a service of type `ClusterIP` by the same name `(httpd)`. The target port for the service should be `80`.
 
 ```sh
-$ k run httpd --image=httpd:alpine --port=80 --expose
+$ k run httpd --image=httpd:alpine --expose
+```
+
+```sh
+$ k run httpd --image=httpd:alpine
+$ k expose po httpd --type=ClusterIP --name=httpd --target-port=80 --port=80
 ```
 
 

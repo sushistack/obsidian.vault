@@ -124,7 +124,7 @@ status: {}
 ```
 
 
-## Namespace
+## 4. Namespace
 
 ```sh
 $ k create namespace my-namespace
@@ -139,8 +139,55 @@ $ k [cmd] [kube-resource] --all-namespaces
 ```
 
 
-## Imperative Commands
+## 5. Imperative Commands
 
 ```sh
-$ k [cmd] [kube-resource] --labels tier=db
+$ k run redis --labels tier=db
+```
+
+### Service
+
+```sh
+$ k expose -h
+Expose a resource as a new Kubernetes service.
+```
+
+```sh
+$ k run httpd --image=httpd:alpine
+$ k expose po httpd --type=ClusterIP --name=httpd --target-port=80 --port=80
+```
+
+## 6. Docker Images 
+
+
+```Dockerfile
+FROM python:3.6
+RUN pip install flask
+COPY . /opt/
+EXPOSE 8080
+WORKDIR /opt
+
+ENTRYPOINT ["python", "app.py"] %% Fixed commands %%
+CMD ["--color", "red"] %% overridable commands %%
+```
+
+## 7. Command and Arguments
+
+```sh
+$ docker run --name docker-image-name --color green
+```
+
+```yml
+apiVersion: v1 
+kind: Pod 
+metadata:
+  name: webapp-green
+  labels:
+      name: webapp-green 
+spec:
+  containers:
+  - name: simple-webapp
+    image: docker-image-name
+    command: ["python3", "app2.py"]
+    args: ["--color", "green"]
 ```
