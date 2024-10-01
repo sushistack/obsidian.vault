@@ -206,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Udemy Lectures for CKAD/Review Practices.md"
               }
             }
           }
@@ -267,13 +267,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "5e7daf5502eed837",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
     "Udemy Lectures for CKAD/54. Docker Security.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Udemy Lectures for CKAD/Lighting Lab - 1.md",

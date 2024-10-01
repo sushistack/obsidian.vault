@@ -293,6 +293,69 @@ spec:
 +     runAsUser: 1002
 ```
 
+Pod 레벨 SC 보다 Container 레벨 SC가 우선 순위가 높다.
+### Capabilities 설정
 
+```diff
+spec:
+  securityContext:
+    runAsUser: 1001
+  containers:
+  -  image: ubuntu
+     name: web
+     command: ["sleep", "5000"]
++    securityContext:
++     capabilities:
++       add: ["SYS_TIME"]
++       drop: ["MKNOD"]
+```
 
-우선 순위는 Container 가 높다.
+**capabilities**는 Linux 커널의 특정 기능을 제어하여 루트 권한을 세분화하고, 불필요한 권한을 최소화하는 방식
+
+## Service Account
+
+애플리케이션(컨테이너화된 프로세스)나 자동화된 작업이 **Kubernetes API**와 상호작용할 수 있도록 설계된 계정
+
+1. **API 서버와의 인증**
+2. **권한 관리 (RBAC - Role-Based Access Control)**
+3. **Pod에 할당되는 기본 인증 정보**
+4. **애플리케이션의 권한 최소화**
+
+Kubernetes에서는 **전역적으로 RBAC**로 권한을 설정하고, **세부적으로 Pod 단위로 Service Account(SA)**를 지정하는 방식이 일반적입니다. 이 접근 방식은 Kubernetes 클러스터에서 보안과 권한 관리를 효과적으로 수행하기 위한 좋은 설계 방법
+
+### RBAC
+
+```yaml
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: default
+  name: pod-reader
+rules:
+- apiGroups:
+  - ''
+  resources:
+  - pods
+  verbs:
+  - get
+  - watch
+  - list
+```
+
+### Role Binding
+
+```
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: read-pods
+  namespace: default
+subjects:
+- kind: ServiceAccount
+  name: dashboard-sa # Name is case sensitive
+  namespace: default
+roleRef:
+  kind: Role #this must be Role or ClusterRole
+  name: pod-reader # this must match the name of the Role or ClusterRole you wish to bind to
+  apiGroup: rbac.authorization.k8s.io
+```
