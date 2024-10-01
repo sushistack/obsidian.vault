@@ -191,3 +191,108 @@ spec:
     command: ["python3", "app2.py"]
     args: ["--color", "green"]
 ```
+
+## 8. ConfigMaps
+
+```sh
+$ k create cm configmap-name --from-literal="key1=value1" --from-literal="key2=value2" 
+```
+
+```yml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-name
+  namespace: default
+data:
+  key1: value1
+  key2: value2
+```
+
+### 전체 로드
+
+컨테이너 별로 참조
+
+```diff
+spec:
+  containers:
++   - name: 
++     envFrom:
++       configMapRef:
++         name: configmap-name
+```
+
+### 일부만 타겟으로 가져오기
+
+```diff
+spec:
+  containers:
++ - env:
++   - name: key1
++     value: value1
+```
+
+or
+
+```diff
+spec:
+  containers:
++ - env:
++   - name: APP_COLOR
++     valueFrom:
++       configMapKeyRef:
++         name: configmap-name
++         key: key1
+```
+## 9. Secrets
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-secret
+  namespace: default
+data:
+  DB_Host: c3FsMDE=
+  DB_User: cm9vdA==
+  DB_Password: cGFzc3dvcmQxMjM=
+```
+
+```diff
+spec:
+  containers:
+  - image: kodekloud/simple-webapp-mysql
+    imagePullPolicy: Always
+    name: webapp
++   envFrom:
++   - secretRef:
++       name: db-secret
+```
+
+## 10. Security Context
+
+### pods 전역으로 설정
+
+```diff
+spec:
++ securityContext:
++   runAsUser: 1010
+```
+
+### 컨테이너 별 설정
+
+```diff
+spec:
+  securityContext:
+    runAsUser: 1001
+  containers:
+  -  image: ubuntu
+     name: web
+     command: ["sleep", "5000"]
++    securityContext:
++     runAsUser: 1002
+```
+
+
+
+우선 순위는 Container 가 높다.
