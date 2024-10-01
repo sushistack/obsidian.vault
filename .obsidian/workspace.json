@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
+                "file": "Udemy Lectures for CKAD/Lighting Lab - 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -232,13 +232,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e7daf5502eed837",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/Lighting Lab - 1.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/ReadMe.md",
+    "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
+    "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Spring/OpenFeign 같은 유용한 라이브러리?.md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
-    "Spring/OpenFeign 같은 유용한 라이브러리?.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
-    "Udemy Lectures for CKAD/모의 시험.md",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Udemy Lectures for CKAD/48. Secret.md",
     "Udemy Lectures for CKAD/124. Persistent Volume Claim.md",
@@ -257,9 +260,6 @@
     "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
     "Udemy Lectures for CKAD/85. Container Logging.md",
     "Udemy Lectures for CKAD/82. Liveness Probes.md",
-    "Udemy Lectures for CKAD/81. Readiness and Liveness Probes.md",
-    "Udemy Lectures for CKAD/78. Init Container.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",
