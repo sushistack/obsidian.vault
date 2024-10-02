@@ -2607,6 +2607,45 @@ rules:
 
 ### Add a new rule in the existing role `developer` to grant the `dev-user` permissions to create deployments in the `blue` namespace.
 
+### .kube/config
+
+
+```
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+current-context: kubernetes-admin@kubernetes
+kind: Config
+preferences: {}
+users:
+- name: dev-user
+  user:
+```
+
+### bindings
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  creationTimestamp: "2024-10-02T01:30:57Z"
+  name: dev-user-binding
+  namespace: blue
+  resourceVersion: "1340"
+  uid: 6eee4160-ee0f-43dd-920d-eea94e0c4b0f
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: developer
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: dev-user
+```
+
+
 Remember to add api group `"apps"`.
 
 ```diff
@@ -2629,6 +2668,7 @@ rules:
 +   verbs:
 +   - create
 ```
+
 
 ## Practice 30 - Cluster Roles
 
