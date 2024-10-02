@@ -1451,6 +1451,31 @@ status: {}
 $ k create cronjob throw-dice-cron-job --schedule="30 21 * * *" --image=kodekloud/throw-dice --dry-run=client -o yaml > throw-dice-cron-job.yaml
 ```
 
+```yaml
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  creationTimestamp: null
+  name: throw-dice-cron-job
+spec:
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: throw-dice-cron-job
+    spec:
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - image: kodekloud/throw-dice
+            name: throw-dice-cron-job
+            resources: {}
+          restartPolicy: OnFailure
+  schedule: 30 21 * * *
+status: {}
+```
+
 ## Practice 23 - Kubernetes Services
 
 ```sh
@@ -2504,6 +2529,34 @@ error: unable to read client-cert /etc/kubernetes/pki/users/dev-user/developer-u
 ```
 
 ## Practice 29 - Role Based Access Controls
+
+### authorization-mode in kube-apiserver
+
+```
+k describe po kube-apiserver-controlplane -n kube-system | grep -iA5 authorization
+```
+
+### What are the resources the `kube-proxy` role in the `kube-system` namespace is given access to?
+
+```sh
+$ k describe roles kube-proxy -n kube-system 
+Name:         kube-proxy
+Labels:       <none>
+Annotations:  <none>
+PolicyRule:
+  Resources   Non-Resource URLs  Resource Names  Verbs
+  ---------   -----------------  --------------  -----
+  configmaps  []                 [kube-proxy]    [get]
+```
+
+### What actions can the `kube-proxy` role perform on `configmaps`?
+
+Get
+
+### Which of the following statements are true?
+
+
+
 
 ## Practice 30 - Cluster Roles
 

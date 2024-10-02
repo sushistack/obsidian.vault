@@ -474,3 +474,53 @@ spec:
        labels:
 +       tier: front-end
 ```
+
+## 21. Rolling Updates & Rollbacks
+
+```
+strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+```
+
+```
+strategy:
+    type: Recreate
+```
+
+## 22. Jobs and CronJobs
+
+### Job
+
+```sh
+$ k create job throw-dice-job --image=kodekloud/throw-dice --dry-run=client -o yaml > throw-dice-job.yaml
+```
+
+```diff
+spec:
++ completions: 2
++ backoffLimit: 25
++ parallelism: 3
+```
+
+### CronJob
+
+```sh
+$ k create cronjob throw-dice-cron-job --schedule="30 21 * * *" --image=kodekloud/throw-dice --dry-run=client -o yaml > throw-dice-cron-job.yaml
+```
+
+
+
+## 23. Kubernetes Services
+
+## 24. Network Policies
+
+## 25. Ingress Networking - 1
+
+## 26. Ingress Networking - 2
+
+## 27. Persistent Volumes
+
+## 28. KebeConfig
