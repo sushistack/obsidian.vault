@@ -1,26 +1,50 @@
 ### Question 1 | Contexts
 
-#### 모든 컨텍스트 이름
 
 You have access to multiple clusters from your main terminal through kubectl contexts. Write all those context names into /opt/course/1/contexts.
 
+```sh
+$ k config get-contexts -o name > /opt/course/1/contexts
+```
+
 Next write a command to display the current context into /opt/course/1/context_default_kubectl.sh, the command should use kubectl.
-`
+
+```sh
+$ k config current-context > /opt/course/1/context_default_kubectl.sh
+```
 
 Finally write a second command doing the same thing into /opt/course/1/context_default_no_kubectl.sh, but without the use of kubectl.
+
+```sh
+$ cat ~/.kube/config | grep current-context | sed -e "s/current-context: //"
+```
 
 ---
 
 ### Question 2 | Schedule Pod on Controlplane Nodes
 
 Create a single Pod of image httpd:2.4.41-alpine in Namespace default. The Pod should be named pod1 and the container should be named pod1-container. This Pod should only be scheduled on controlplane nodes. Do not add new labels to any nodes.
-`
+
+```sh
+$ k run pod1 --image=httpd:2.4.41-alpine --dry-run=client -o yaml > pod1.yml
+```
+
+```
+tolerations:
+	- key: xx
+	  operator: "Exists"
+	  effect: xxx
+```
 
 ---
 
 ### Question 3 | Scale down StatefulSet
 
 There are two Pods named o3db-* in Namespace project-c13. C13 management asked you to scale the Pods down to one replica to save resources.
+
+```sh
+$ k scale sts o3db -n project-c13  --replicas=1
+```
 `
 
 ---
@@ -28,6 +52,10 @@ There are two Pods named o3db-* in Namespace project-c13. C13 management asked y
 ### Question 4 | Pod Ready if Service is reachable
 
 Do the following in Namespace default. Create a single Pod named ready-if-service-ready of image nginx:1.16.1-alpine. Configure a LivenessProbe which simply executes command true. Also configure a ReadinessProbe which does check if the url [http://service-am-i-ready:80](http://service-am-i-ready/) is reachable, you can use wget -T2 -O- [http://service-am-i-ready:80](http://service-am-i-ready/) for this. Start the Pod and confirm it isn't ready because of the ReadinessProbe.
+
+```sh
+$ k run pod4 --image=nginx:1.16.1-alpine --dry-run=client -o yaml > pod4.yml
+```
 
 Create a second Pod named am-i-ready of image nginx:1.16.1-alpine with label id: cross-server-ready. The already existing Service service-am-i-ready should now have that second Pod as endpoint.
 

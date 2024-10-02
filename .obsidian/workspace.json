@@ -152,7 +152,7 @@
             }
           },
           {
-            "id": "ebfd0bb759692d9f",
+            "id": "a47b544359d4d913",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -193,7 +193,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kubelet",
+                "query": "statefulset",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -291,14 +291,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ebfd0bb759692d9f",
+  "active": "a47b544359d4d913",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Udemy Lectures for CKAD/131. Stateful Sets.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+    "Udemy Lectures for CKAD/Review Practices.md",
+    "Udemy Lectures for CKAD/68. Node Affinity.md",
+    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
+    "Udemy Lectures for CKAD/29. Namescapces.md",
+    "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/78. Init Container.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
-    "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",
@@ -314,11 +319,6 @@
     "Udemy Lectures for CKAD/44. Environment Variables.md",
     "Untitled.md",
     "Udemy Lectures for CKAD/144. Role based Access Controls.md",
-    "Udemy Lectures for CKAD/39.Command and Arguments in Docker.md",
-    "Ideas/디자인 패턴을 이용한 로직 개선.md",
-    "Udemy Lectures for CKAD/145. Cluster roles.md",
-    "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
-    "Udemy Lectures for CKAD/29. Namescapces.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",
