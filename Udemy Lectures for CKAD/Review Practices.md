@@ -517,6 +517,16 @@ $ k create cronjob throw-dice-cron-job --schedule="30 21 * * *" --image=kodeklou
 
 ## 24. Network Policies
 
+```sh
+$ k get netpol
+payroll-policy   name=payroll   50s
+
+$ k get pods --show-labels | grep name=payroll
+payroll    1/1     Running   0          2m56s   name=payroll
+```
+
+
+
 ## 25. Ingress Networking - 1
 
 ## 26. Ingress Networking - 2

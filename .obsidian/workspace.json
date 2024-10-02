@@ -157,13 +157,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/58. Service Account.md",
+                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,7 +193,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "kubelet",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -229,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -269,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md"
               }
             }
           }
@@ -290,11 +291,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "ebfd0bb759692d9f",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/Review Practices.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/CKAD 대비.md",
+    "Udemy Lectures for CKAD/killer.sh 1 회차.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/78. Init Container.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",
@@ -315,9 +319,6 @@
     "Udemy Lectures for CKAD/145. Cluster roles.md",
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
-    "Udemy Lectures for CKAD/25. Deployments.md",
-    "Udemy Lectures for CKAD/CKAD 대비.md",
-    "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",
