@@ -6,7 +6,7 @@
       {
         "id": "cfe68a991937362f",
         "type": "tabs",
-        "dimension": 45.939086294416235,
+        "dimension": 45.93730006397953,
         "children": [
           {
             "id": "5e7daf5502eed837",
@@ -135,7 +135,7 @@
       {
         "id": "24f38bffb6af2c3c",
         "type": "tabs",
-        "dimension": 54.060913705583765,
+        "dimension": 54.06269993602047,
         "children": [
           {
             "id": "1c17822ab53f484b",
@@ -293,10 +293,10 @@
   },
   "active": "a47b544359d4d913",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/131. Stateful Sets.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
-    "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+    "Udemy Lectures for CKAD/131. Stateful Sets.md",
+    "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/68. Node Affinity.md",
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",

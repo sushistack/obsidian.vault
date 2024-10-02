@@ -57,7 +57,39 @@ Do the following in Namespace default. Create a single Pod named ready-if-servic
 $ k run pod4 --image=nginx:1.16.1-alpine --dry-run=client -o yaml > pod4.yml
 ```
 
+```
+apiVersion: v1  
+kind: Pod  
+metadata:  
+  labels:  
+    run: pod4  
+  name: pod4  
+spec:  
+  containers:  
+    - image: nginx:1.16.1-alpine  
+      name: pod4  
+      resources: {}  
+      readinessProbe:  
+        exec:  
+          command:  
+            - sh  
+            - '-c'  
+            - 'wget -T2 -O- http://service-am-i-ready:80'  
+      livenessProbe:  
+        exec:  
+          command:  
+            - 'true'  
+  dnsPolicy: ClusterFirst  
+  restartPolicy: Always
+```
+
 Create a second Pod named am-i-ready of image nginx:1.16.1-alpine with label id: cross-server-ready. The already existing Service service-am-i-ready should now have that second Pod as endpoint.
+
+```sh
+$ k run am-i-ready --image=nginx:1.16.1-alpine --dry-run=client -o yaml > am-i-ready.yml
+```
+
+
 
 Now the first Pod should be in ready state, confirm that.
 
