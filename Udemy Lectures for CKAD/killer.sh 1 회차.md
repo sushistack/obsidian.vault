@@ -99,7 +99,15 @@ Now the first Pod should be in ready state, confirm that.
 
 There are various Pods in all namespaces. Write a command into /opt/course/5/find_pods.sh which lists all Pods sorted by their AGE (metadata.creationTimestamp).
 
+```sh
+$ echo 'kubectl get pods --all-namespaces --sort-by=metadata.creationTimestamp' > /opt/course/5/find_pods.sh
+```
+
 Write a second command into /opt/course/5/find_pods_uid.sh which lists all Pods sorted by field metadata.uid. Use kubectl sorting for both commands.
+
+```sh
+$ echo 'kubectl get pods --all-namespaces --sort-by=metadata.uid' > /opt/course/5/find_pods.sh
+```
 
 ---
 

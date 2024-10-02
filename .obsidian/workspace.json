@@ -130,7 +130,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 9
       },
       {
         "id": "24f38bffb6af2c3c",
@@ -152,12 +153,24 @@
             }
           },
           {
-            "id": "a47b544359d4d913",
+            "id": "0310988ff2f4f2c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a47b544359d4d913",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "알고리즘/문제 유형 파악.md",
                 "mode": "source",
                 "source": false
               }
@@ -291,13 +304,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a47b544359d4d913",
+  "active": "0310988ff2f4f2c1",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
+    "Udemy Lectures for CKAD/Lighting Lab - 1.md",
+    "알고리즘/문제 유형 파악.md",
+    "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+    "알고리즘",
+    "Untitled.md",
     "Udemy Lectures for CKAD/131. Stateful Sets.md",
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
-    "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/68. Node Affinity.md",
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
@@ -309,16 +327,12 @@
     "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",
     "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
     "Udemy Lectures for CKAD/ReadMe.md",
-    "Udemy Lectures for CKAD/Lighting Lab - 1.md",
     "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
     "Udemy Lectures for CKAD/54. Docker Security.md",
     "Udemy Lectures for CKAD/55. Security Context.md",
     "Udemy Lectures for CKAD/45. ConfigMaps.md",
     "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "Udemy Lectures for CKAD/42. practice Test.md",
-    "Udemy Lectures for CKAD/44. Environment Variables.md",
-    "Untitled.md",
-    "Udemy Lectures for CKAD/144. Role based Access Controls.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",
@@ -338,7 +352,6 @@
     "Ideas",
     "querydsl",
     "Spring Data JPA",
-    "WebFlux",
     "Untitled.canvas"
   ]
 }
