@@ -368,7 +368,7 @@ default의 경우, 원래 kebe resource api 를 사용할 수 없게 되어 있�
 
 ## 12. Resource Requirements
 
-## Pod에 리소스 설정
+### Pod에 리소스 설정
 
 ```diff
 spec:

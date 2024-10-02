@@ -2555,10 +2555,84 @@ Get
 
 ### Which of the following statements are true?
 
+kube-proxy role can get details of configmap object by the name kube-proxy only
 
+### Which account is the `kube-proxy` role assigned to?
 
+```sh
+$ k describe rolebindings kube-proxy -n kube-system
+Name:         kube-proxy
+Labels:       <none>
+Annotations:  <none>
+Role:
+  Kind:  Role
+  Name:  kube-proxy
+Subjects:
+  Kind   Name                                             Namespace
+  ----   ----                                             ---------
+  Group  system:bootstrappers:kubeadm:default-node-token
+```
+
+### A user `dev-user` is created. User's details have been added to the `kubeconfig` file. Inspect the permissions granted to the user. Check if the user can list pods in the `default` namespace.
+
+Use the `--as dev-user` option with `kubectl` to run commands as the `dev-user`.
+
+```sh
+$ k get pods --as dev-user
+Error from server (Forbidden): pods is forbidden: User "dev-user" cannot list resource "pods" in API group "" in the namespace "default"
+```
+
+### Create the necessary roles and role bindings required for the `dev-user` to create, list and delete pods in the `default` namespace.
+
+Use the given spec:
+
+```sh
+$ k create role developer --verb=list,create,delete --resource=pods
+```
+
+```sh
+$ k create rolebinding dev-user-binding --role=developer --serviceaccount=default:dev-user
+```
+
+### A set of new roles and role-bindings are created in the `blue` namespace for the `dev-user`. However, the `dev-user` is unable to get details of the `dark-blue-app` pod in the `blue` namespace. Investigate and fix the issue.
+
+```diff
+rules:
+  - apiGroups:
+      - ""
+    resourceNames:
+-     - blue-app
++     - dark-blue-app
+```
+
+### Add a new rule in the existing role `developer` to grant the `dev-user` permissions to create deployments in the `blue` namespace.
+
+Remember to add api group `"apps"`.
+
+```diff
+rules:
+  - apiGroups:
+    - ""
+    resourceNames:
+    - dark-blue-app
+    resources:
+    - pods
+    verbs:
+    - get
+    - watch
+    - create
+    - delete
++ - apiGroups:
++   - apps
++   resources:
++   - deployments
++   verbs:
++   - create
+```
 
 ## Practice 30 - Cluster Roles
+
+
 
 ## Practice 31 - Custom Resource Definition
 
