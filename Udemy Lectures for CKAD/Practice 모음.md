@@ -1294,7 +1294,7 @@ $ k get pods -l env=dev
 ```
 
 ```sh
-k get pods --selector bu=finance
+$ k get pods --selector bu=finance
 ```
 
 ### How many objects are in the `prod` environment including PODs, ReplicaSets and any other objects?

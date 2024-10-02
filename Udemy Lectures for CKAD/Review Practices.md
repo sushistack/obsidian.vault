@@ -421,4 +421,56 @@ node 정보 같이 보기
 k get pods -o wide
 ```
 
-## 15. Muliti-Container PODs
+## 15. Multi-Container PODs
+
+```diff
+spec:
+	containers:
++	  - image: kodekloud/filebeat-configured
++	    name: sidecar
++	    volumeMounts:
++	    - mountPath: /var/log/event-simulator/
++	      name: log-volume
+```
+
+## 16. Readiness Probes
+
+```diff
+spec:
+  containers:
+  - env:
+    - name: APP_START_DELAY
+      value: "80"
+    image: kodekloud/webapp-delayed-start
+    imagePullPolicy: Always
+    name: simple-webapp
+    ports:
+    - containerPort: 8080
+      protocol: TCP
++   readinessProbe:
++     httpGet:
++       path: /ready
++       port: 8080
+```
+
+## 17. Logging
+
+## 18. Monitoring
+
+## 19. Init Containers
+
+## 20. Labels and Selectors
+
+### Replicaset
+
+```diff
+spec:
+   replicas: 2
+   selector:
+      matchLabels:
++       tier: front-end
+   template:
+     metadata:
+       labels:
++       tier: front-end
+```
