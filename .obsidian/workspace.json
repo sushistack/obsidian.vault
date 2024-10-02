@@ -192,7 +192,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RB",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -209,12 +209,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 248.5
+    "width": 312.5
   },
   "right": {
     "id": "adac3940191e22e6",
@@ -296,6 +295,9 @@
     "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
+    "Udemy Lectures for CKAD/111. Ingress Networking.md",
+    "Udemy Lectures for CKAD/107. Services.md",
+    "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",
     "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
     "Udemy Lectures for CKAD/ReadMe.md",
     "Udemy Lectures for CKAD/Lighting Lab - 1.md",
@@ -316,9 +318,6 @@
     "Udemy Lectures for CKAD/25. Deployments.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/14. Creating Pods with YAML.md",
-    "Udemy Lectures for CKAD/32. Implerative Commands.md",
-    "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
-    "Spring/OpenFeign 같은 유용한 라이브러리?.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",

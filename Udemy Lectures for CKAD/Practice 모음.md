@@ -2672,9 +2672,94 @@ rules:
 
 ## Practice 30 - Cluster Roles
 
+### What namespace is the `cluster-admin` clusterrole part of?
+
+```sh
+$ kubectl api-resources --namespaced=false
+```
+
+clusterrole은 네임스페이스 적용 받지 않는다.
+
+### What user/groups are the `cluster-admin` role bound to?
+
+The ClusterRoleBinding for the role is with the same name.
+
+```sh
+$ k describe clusterrolebindings.rbac.authorization.k8s.io cluster-admin
+Name:         cluster-admin
+Labels:       kubernetes.io/bootstrapping=rbac-defaults
+Annotations:  rbac.authorization.kubernetes.io/autoupdate: true
+Role:
+  Kind:  ClusterRole
+  Name:  cluster-admin
+Subjects:
+  Kind   Name            Namespace
+  ----   ----            ---------
+  Group  system:masters  
+```
+
+### What level of permission does the `cluster-admin` role grant?
+
+Inspect the `cluster-admin` role's privileges.
+
+```sh
+$ k describe clusterrole cluster-admin
+Name:         cluster-admin
+Labels:       kubernetes.io/bootstrapping=rbac-defaults
+Annotations:  rbac.authorization.kubernetes.io/autoupdate: true
+PolicyRule:
+  Resources  Non-Resource URLs  Resource Names  Verbs
+  ---------  -----------------  --------------  -----
+  *.*        []                 []              [*]
+             [*]                []              [*]
+```
+
+Perform any action on any resource in the cluster 
+
+### A new user `michelle` joined the team. She will be focusing on the `nodes` in the cluster. Create the required `ClusterRoles` and `ClusterRoleBindings` so she gets access to the `nodes`.
+
+```sh
+$ k create clusterrole node-access-role --verb=get,list --resource=nodes
+```
+
+```sh
+$ k create clusterrolebinding node-access-role-binding --clusterrole=node-access-role --user=michelle
+```
+
+### `michelle`'s responsibilities are growing and now she will be responsible for storage as well. Create the required `ClusterRoles` and `ClusterRoleBindings` to allow her access to Storage.  
+
+Get the API groups and resource names from command `kubectl api-resources`. Use the given spec:
+
+```sh
+$ k create clusterrole storage-admin --resource=persistentvolumes,storageclasses --verb=get,list
+```
+
+```sh
+$ k create clusterrolebinding michelle-storage-admin --user=michelle --clusterrole=storage-admin
+```
+
+## Practice 32 - Custom Resource Definition
+
+## Practice 33 - Deployment stractegies
+
+### A new deployment called `frontend-v2` has been created in the default namespace using the image `kodekloud/webapp-color:v2`. This deployment will be used to test a newer version of the same app.
 
 
-## Practice 31 - Custom Resource Definition
+Configure the deployment in such a way that the service called `frontend-service` routes less than 20% of traffic to the new deployment.  
+Do not increase the replicas of the `frontend` deployment.
+
+```sh
+k scale deploy frontend-v2 --replicas=1
+```
+
+### Scale down the `v1` version of the apps to `0` replicas and scale up the new(`v2`) version to `5` replicas.
+
+```sh
+$ k scale deploy frontend-v2 --replicas=5
+$ k scale deploy frontend --replicas=0
+```
+
+
 
 
 
