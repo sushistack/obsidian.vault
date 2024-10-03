@@ -124,7 +124,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "알고리즘/Python 표준 라이브러리.md",
+                "file": "Udemy Lectures for CKAD/107. Services.md",
                 "mode": "source",
                 "source": false
               }
@@ -242,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "알고리즘/Python 표준 라이브러리.md",
+                "file": "Udemy Lectures for CKAD/107. Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "알고리즘/Python 표준 라이브러리.md",
+                "file": "Udemy Lectures for CKAD/107. Services.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -282,7 +282,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "알고리즘/Python 표준 라이브러리.md"
+                "file": "Udemy Lectures for CKAD/107. Services.md"
               }
             }
           }
@@ -305,33 +305,33 @@
   },
   "active": "c9c873f7cd72b081",
   "lastOpenFiles": [
-    "알고리즘/문제 유형 파악.md",
-    "알고리즘/Python 표준 라이브러리.md",
-    "Udemy Lectures for CKAD/Lighting Lab - 1.md",
+    "Udemy Lectures for CKAD/111. Ingress Networking.md",
+    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
+    "Udemy Lectures for CKAD/107. Services.md",
+    "Udemy Lectures for CKAD/103. Jobs.md",
+    "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
+    "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
+    "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
+    "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
+    "Udemy Lectures for CKAD/85. Container Logging.md",
+    "Udemy Lectures for CKAD/82. Liveness Probes.md",
+    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
+    "Udemy Lectures for CKAD/68. Node Affinity.md",
+    "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+    "Spring IO/Spring Boot - Advanced Testing Techniques.md",
+    "알고리즘/Python 표준 라이브러리.md",
+    "알고리즘/문제 유형 파악.md",
+    "Udemy Lectures for CKAD/Lighting Lab - 1.md",
     "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
-    "Udemy Lectures for CKAD/Review Practices.md",
     "알고리즘",
     "Untitled.md",
     "Udemy Lectures for CKAD/131. Stateful Sets.md",
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
-    "Udemy Lectures for CKAD/68. Node Affinity.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
     "Udemy Lectures for CKAD/CKAD 대비.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
-    "Udemy Lectures for CKAD/78. Init Container.md",
-    "Udemy Lectures for CKAD/111. Ingress Networking.md",
-    "Udemy Lectures for CKAD/107. Services.md",
-    "Udemy Lectures for CKAD/94. Rolling Update & Rollbacks in Deployments.md",
-    "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
-    "Udemy Lectures for CKAD/ReadMe.md",
-    "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
-    "Udemy Lectures for CKAD/54. Docker Security.md",
-    "Udemy Lectures for CKAD/55. Security Context.md",
-    "Udemy Lectures for CKAD/45. ConfigMaps.md",
-    "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",
