@@ -136,7 +136,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "JPA/7. 다양한 연관 관계.md",
                 "mode": "source",
                 "source": false
               }
@@ -174,14 +174,6 @@
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "a47b544359d4d913",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ]
@@ -230,8 +222,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -251,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "JPA/7. 다양한 연관 관계.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -268,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "JPA/7. 다양한 연관 관계.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -291,7 +282,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "JPA/7. 다양한 연관 관계.md"
               }
             }
           }
@@ -314,6 +305,20 @@
   },
   "active": "aadbd051ef763e3d",
   "lastOpenFiles": [
+    "JPA/6. 연관 관계 매핑.md",
+    "JPA/5. 기본키 매핑.md",
+    "Spring Data JPA/5. 부가 기능.md",
+    "Spring Data JPA/4. JPA 내부.md",
+    "Spring Data JPA/3. 확장 기능.md",
+    "Spring Data JPA/1. Basic.md",
+    "Spring Data JPA/2. 기능.md",
+    "JPA/10. 타입.md",
+    "JPA/9. 프록시.md",
+    "JPA/9. CASCADE & 고아 객체.md",
+    "JPA/8. 상속관계 매핑.md",
+    "JPA/7. 다양한 연관 관계.md",
+    "JPA/4. Entity Mapping.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
     "알고리즘/문제 유형 파악.md",
     "알고리즘/Python 표준 라이브러리.md",
     "알고리즘",
@@ -332,25 +337,12 @@
     "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (2).png",
     "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (11).png",
     "Udemy Lectures for CKAD/Lighting Lab - 1.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/107. Services.md",
-    "Udemy Lectures for CKAD/103. Jobs.md",
-    "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
-    "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
-    "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
-    "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
-    "Udemy Lectures for CKAD/85. Container Logging.md",
-    "Udemy Lectures for CKAD/82. Liveness Probes.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
-    "Udemy Lectures for CKAD/68. Node Affinity.md",
-    "Udemy Lectures for CKAD/killer.sh 1 회차.md",
-    "Spring IO/Spring Boot - Advanced Testing Techniques.md",
-    "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
     "Interviews",
     "Kotlin",
     "Spring",
