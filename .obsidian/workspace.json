@@ -129,8 +129,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "aadbd051ef763e3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Udemy Lectures for CKAD/Lighting Lab - 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 10
       },
       {
         "id": "24f38bffb6af2c3c",
@@ -241,7 +254,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/Lighting Lab - 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -258,7 +271,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/Lighting Lab - 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -281,7 +294,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Udemy Lectures for CKAD/Lighting Lab - 1.md"
               }
             }
           }
@@ -302,7 +315,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "aadbd051ef763e3d",
   "lastOpenFiles": [
     "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
