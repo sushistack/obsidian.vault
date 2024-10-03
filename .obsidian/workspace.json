@@ -124,14 +124,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/107. Services.md",
+                "file": "Udemy Lectures for CKAD/119. Developing network policies.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 9
+        ]
       },
       {
         "id": "24f38bffb6af2c3c",
@@ -242,7 +241,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/107. Services.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +258,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/107. Services.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -282,7 +281,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/107. Services.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -303,9 +302,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c9c873f7cd72b081",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/Review Practices.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
+    "Udemy Lectures for CKAD/118. Network Policies.md",
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "Udemy Lectures for CKAD/107. Services.md",
     "Udemy Lectures for CKAD/103. Jobs.md",
@@ -317,8 +320,6 @@
     "Udemy Lectures for CKAD/82. Liveness Probes.md",
     "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
     "Udemy Lectures for CKAD/68. Node Affinity.md",
-    "Udemy Lectures for CKAD/Review Practices.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/killer.sh 1 회차.md",
     "Spring IO/Spring Boot - Advanced Testing Techniques.md",
     "알고리즘/Python 표준 라이브러리.md",
@@ -330,8 +331,6 @@
     "Udemy Lectures for CKAD/131. Stateful Sets.md",
     "Udemy Lectures for CKAD/41. notes on editing Pods and Deployments.md",
     "Udemy Lectures for CKAD/29. Namescapces.md",
-    "Udemy Lectures for CKAD/CKAD 대비.md",
-    "Udemy Lectures for CKAD/58. Service Account.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",

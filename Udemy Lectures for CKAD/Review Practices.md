@@ -529,6 +529,10 @@ payroll    1/1     Running   0          2m56s   name=payroll
 
 ## 25. Ingress Networking - 1
 
+```sh
+$ k get ingress --all-namespaces
+```
+
 ## 26. Ingress Networking - 2
 
 ## 27. Persistent Volumes
