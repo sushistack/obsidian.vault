@@ -11,15 +11,13 @@
           {
             "id": "5e7daf5502eed837",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "mode": "source",
                 "source": false
-              },
-              "pinned": true
+              }
             }
           },
           {
@@ -133,13 +131,15 @@
           {
             "id": "aadbd051ef763e3d",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ],
@@ -234,8 +234,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -255,7 +254,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -272,7 +271,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -295,7 +294,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Udemy Lectures for CKAD/Review Practices.md"
               }
             }
           }
@@ -318,11 +317,12 @@
   },
   "active": "aadbd051ef763e3d",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/ReadMe.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
     "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/Lighting Lab - 1.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
@@ -344,7 +344,6 @@
     "알고리즘/문제 유형 파악.md",
     "Udemy Lectures for CKAD/Kube 에 대한 궁금증들?.md",
     "알고리즘",
-    "Untitled.md",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
     "Interviews",
