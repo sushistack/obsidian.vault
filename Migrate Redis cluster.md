@@ -94,3 +94,31 @@ sudo systemctl stop redis && sudo systemctl disable redis && sudo systemctl stat
 ```sh
 $ rm 7101/nodes.conf
 ```
+
+
+### 4. 구 레디스 클러스터에 신규 노드 추가
+
+#### 사전 클러스터 정보
+
+```
+> cluster nodes 42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001@17001 master - 0 1728005236000 7 connected 5795-10922 81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000@17000 master - 0 1728005235797 1 connected 433-5460 8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002@17002 master - 0 1728005236800 3 connected 11256-16383 f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 myself,master - 0 1728005236000 5 connected 0-432 5461-5794 10923-11255 8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004@17004 slave 42012ea854090f6ded8ca52a5b2d71a37567baee 0 1728005235000 7 connected
+```
+
+
+### 1. 신규 노드 생성 및 구 레디스 클러스터에 추가
+
+#### 신규 레디스 노드 시작
+
+```
+$ redis-server ~/redis-cluster/7101/redis.conf
+
+$ ps -ef | grep redis
+redis-server *:7101 [cluster]
+```
+
+#### 새 노드를 기존 클러스터에 추가
+
+```sh
+# 기존 레디스 클러스터 서버에서
+$ redis-cli -h 10.162.5.39 -p 7000 cluster meet 10.162.5.222 7101
+```
