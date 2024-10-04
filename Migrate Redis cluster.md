@@ -46,4 +46,51 @@ $ redis-cli -h 127.0.0.1 -p 7104 cluster reset hard
 OK
 ```
 
+#### master 노드 삭제를 위한 모든 키 제거
 
+```sh
+$ redis-cli -h 127.0.0.1 -p 7101 FLUSHALL
+$ redis-cli -h 127.0.0.1 -p 7102 FLUSHALL
+$ redis-cli -h 127.0.0.1 -p 7103 FLUSHALL
+```
+
+```sh
+$ redis-cli -h 127.0.0.1 -p 7101 FLUSHALL
+OK
+```
+
+```
+$ redis-cli -h 127.0.0.1 -p 7101 cluster reset hard
+$ redis-cli -h 127.0.0.1 -p 7102 cluster reset hard
+$ redis-cli -h 127.0.0.1 -p 7103 cluster reset hard
+```
+
+#### 마스터 노드 클러스터에서 제거
+
+```
+$ redis-cli -h 127.0.0.1 -p 7101 cluster reset hard
+OK
+```
+
+
+#### 클러스터 확인
+
+```
+cluster nodes d84d733729d83a2dc5810470bed4fed87a83744c 10.162.5.222:7102@17102 myself,master - 0 1728003804000 0 connected
+```
+
+각 노드 별로 개별 클러스터로 떠 있는 것으로 확인
+
+### 3. 각 레디스 노드 종료
+
+#### 종료 및 systemd 중지
+
+```
+sudo systemctl stop redis && sudo systemctl disable redis && sudo systemctl status redis
+```
+
+#### 클러스터 정보 제거
+
+```sh
+$ rm 7101/nodes.conf
+```
