@@ -122,12 +122,14 @@ redis-server *:7101 [cluster]
 # 기존 레디스 클러스터 서버에서
 $ redis-cli -h 10.162.5.39 -p 7000 cluster meet 10.162.5.222 7101
 
-
-
 ```
 
 ```
 redis-cli --cluster add-node 10.162.5.222:7101 10.162.5.39:7000 --cluster-slave --cluster-master-id 81e57f3e4fe49604d40b63ad4c3fc124af130f4a
+
+redis-cli --cluster add-node 10.162.5.222:7102 10.162.5.39:7001 --cluster-slave --cluster-master-id 8ce0a48d33af04962114460baad4c46f860fd57c
+
+
 ```
 
 => 노드 추가가 안됨.
@@ -146,4 +148,11 @@ f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 master - 0 17280
 
 ```
 $ redis-cli --cluster fix 10.162.5.39:7003
+
+>>> Fixing open slot 5693
+*** Found keys about slot 5693 in non-owner node 10.162.5.39:7001!
+Set as importing in: 10.162.5.39:7001
+>>> Nobody claims ownership, selecting an owner..
 ```
+
+
