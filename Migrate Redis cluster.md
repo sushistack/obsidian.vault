@@ -156,3 +156,6 @@ Set as importing in: 10.162.5.39:7001
 ```
 
 
+```
+redis-cli --cluster add-node 10.162.5.222:7103 10.162.5.222:7101 --cluster-slave --cluster-master-id 46ab98d0e8f9d5e9ea7b2419a0af711f0d08a740
+```
