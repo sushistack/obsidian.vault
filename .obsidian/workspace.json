@@ -6,18 +6,20 @@
       {
         "id": "cfe68a991937362f",
         "type": "tabs",
-        "dimension": 51.24760076775432,
+        "dimension": 45.93730006397953,
         "children": [
           {
             "id": "5e7daf5502eed837",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
@@ -131,36 +133,22 @@
           {
             "id": "aadbd051ef763e3d",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/Review Practices.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "aeed3f13290fd4f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Migrate Redis cluster.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 10
       },
       {
         "id": "24f38bffb6af2c3c",
         "type": "tabs",
-        "dimension": 48.75239923224568,
+        "dimension": 54.06269993602047,
         "children": [
           {
             "id": "1c17822ab53f484b",
@@ -177,18 +165,6 @@
             }
           },
           {
-            "id": "6be4b4f9a32c9fd2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "gRPC/Spring-boot gRPC server 성능 테스트.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0310988ff2f4f2c1",
             "type": "leaf",
             "state": {
@@ -199,21 +175,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "a47b544359d4d913",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "알고리즘/문제 유형 파악.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -242,7 +205,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "token",
+                "query": "c3FsMDEK",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -259,8 +222,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -280,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Migrate Redis cluster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -297,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Migrate Redis cluster.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -320,7 +282,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Migrate Redis cluster.md"
               }
             }
           }
@@ -341,53 +303,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a952d5b1e817530",
+  "active": "aadbd051ef763e3d",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/137. Basic Authentication.md",
+    "JPA/7. 다양한 연관 관계.md",
     "Migrate Redis cluster.md",
-    "gRPC/Spring-boot gRPC server 성능 테스트.md",
-    "알고리즘/문제 유형 파악.md",
-    "conflict-files-obsidian-git.md",
+    "JPA/6. 연관 관계 매핑.md",
+    "JPA/5. 기본키 매핑.md",
+    "Spring Data JPA/5. 부가 기능.md",
+    "Spring Data JPA/4. JPA 내부.md",
+    "Spring Data JPA/3. 확장 기능.md",
+    "Spring Data JPA/1. Basic.md",
+    "Spring Data JPA/2. 기능.md",
+    "JPA/10. 타입.md",
+    "JPA/9. 프록시.md",
+    "JPA/9. CASCADE & 고아 객체.md",
+    "JPA/8. 상속관계 매핑.md",
+    "JPA/4. Entity Mapping.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
-    "Udemy Lectures for CKAD/Review Practices.md",
-    "Udemy Lectures for CKAD/ReadMe.md",
-    "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
-    "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
-    "Udemy Lectures for CKAD/58. Service Account.md",
-    "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
+    "알고리즘/문제 유형 파악.md",
+    "알고리즘/Python 표준 라이브러리.md",
+    "알고리즘",
+    "querydsl/2. 기본 문법.md",
+    "querydsl/1. 기초.md",
+    "querydsl/0. Github Link.md",
+    "querydsl",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0.png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (9).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (8).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (7).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (6).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (5).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (4).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (3).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (2).png",
+    "images/www.udemy.com_course_master-microservices-with-spring-docker-kubernetes_learn_lecture_27348378_start=0 (11).png",
     "Udemy Lectures for CKAD/Lighting Lab - 1.md",
+    "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
-    "Udemy Lectures for CKAD/107. Services.md",
-    "Udemy Lectures for CKAD/103. Jobs.md",
-    "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
-    "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
-    "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
-    "Udemy Lectures for CKAD/85. Container Logging.md",
-    "Udemy Lectures for CKAD/82. Liveness Probes.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
-    "Udemy Lectures for CKAD/68. Node Affinity.md",
-    "알고리즘",
-    "images/Pasted image 20240930113614.png",
-    "images/Pasted image 20240929160554.png",
     "Interviews",
     "Kotlin",
-    "images/Pasted image 20240928160432.png",
     "Spring",
     "Java",
-    "images/Pasted image 20240927095356.png",
-    "images/Pasted image 20240927095029.png",
-    "images/Pasted image 20240927094845.png",
     "Spring IO",
-    "images/Pasted image 20240926152527.png",
-    "images/Pasted image 20240926152500.png",
-    "images/Pasted image 20240925173935.png",
-    "images/Pasted image 20240925173917.png",
     "ELK Stack",
     "Ideas",
-    "querydsl",
     "Spring Data JPA",
     "Untitled.canvas"
   ]
