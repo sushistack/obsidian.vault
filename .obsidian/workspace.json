@@ -242,7 +242,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "password123",
+                "query": "token",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -341,7 +341,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aeed3f13290fd4f0",
+  "active": "8a952d5b1e817530",
   "lastOpenFiles": [
     "Udemy Lectures for CKAD/137. Basic Authentication.md",
     "Migrate Redis cluster.md",
