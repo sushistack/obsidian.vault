@@ -3,6 +3,18 @@
 $ kubectl -n default get pod pod1 -o jsonpath="{.status.phase}"
 ```
 
+```
+$ k run tmp --restart=Never --rm --image=nginx:alpine -i -- curl http://project-plt-6cc-svc.pluto:3333
+```
+
+```
+# 노드 선택하기
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: project-earthflower
+```
 
 ## 1. Pods
 
