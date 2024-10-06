@@ -16,6 +16,22 @@ spec:
       app: project-earthflower
 ```
 
+```
+k -n moon exec secret-handler -- env | grep SECRET1
+
+k -n moon exec secret-handler -- find /tmp/secret2
+
+k -n moon exec secret-handler -- cat /tmp/secret2/key
+```
+
+```
+k -n moon rollout restart deploy web-moon
+```
+
+```
+k run tmp --restart=Never --rm -i --image=nginx:alpine -- curl 10.44.0.78
+```
+
 ## 1. Pods
 
 ```sh
