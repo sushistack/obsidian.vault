@@ -1,4 +1,9 @@
 
+```
+$ kubectl -n default get pod pod1 -o jsonpath="{.status.phase}"
+```
+
+
 ## 1. Pods
 
 ```sh
