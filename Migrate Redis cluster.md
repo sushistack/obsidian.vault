@@ -610,6 +610,6 @@ irteam   3793771       1  0 15:00 ?        00:00:11 /usr/local/redis6/bin/redis-
 
 ```sh
 $ /usr/local/redis6/bin/redis-cli -p 7101 cluster meet 10.162.5.222 7104
-$ redis-cli -p 7101 cluster meet 10.162.5.222 7105
-$ redis-cli -p 7101 cluster meet 10.162.5.222 7106
+$ /usr/local/redis6/bin/redis-cli -p 7101 cluster meet 10.162.5.222 7105
+$ /usr/local/redis6/bin/redis-cli -p 7101 cluster meet 10.162.5.222 7106
 ```
