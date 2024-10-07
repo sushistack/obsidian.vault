@@ -179,5 +179,53 @@ sudo make PREFIX=/usr/local/redis6 install
 ```
 
 ```
+/usr/local/redis6/redis-server ~/redis-cluster/7101/redis.conf
+```
+
+실행하여, 신규 우분투 서버에 redis6 의 redis cluster 1대를 띄움.
+
+```
+$ redis-cli -h 10.162.5.39 -p 7000 cluster meet 10.162.5.222 7101
+```
+
+위 명령어를 실행하여 클러스터에 redis6 버전의 신규 노드를 추가함.
+
+
+```
+-wb801:~/redis-cluster$ redis-cli -p 7101 cluster nodes                          
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728278971000 0 connected
+8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004@17004 slave 42012ea854090f6ded8ca52a5b2d71a37567baee 0 1728278971594 9 connected             f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 master - 0 1728278970587 5 connected 305-432 10923-11255                                    42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001@17001 master - 0 1728278970286 9 connected 5461-10922                                             8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002@17002 master - 0 1728278971292 3 connected 13300-16383                                            81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000@17000 master - 0 1728278970789 8 connected 0-304 433-5460 11256-13299
+```
+
+정상적으로 연결되었다.
+
+
+16,384 / 6 = 2730.6666 = 약2732으로 슬럿을 분리하도록 하겠다.
+
+리샤딩을 진행한다. 
+
+```
+wb801:~/redis-cluster$ /usr/local/redis6/bin/redis-cli --cluster reshard 10.162.5.222:7101  
+        >>> Performing Cluster Check (using node 10.162.5.222:7101)  
+M: 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101  
+slots: (0 slots) master  
+S: 8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004  
+slots: (0 slots) slave  
+replicates 42012ea854090f6ded8ca52a5b2d71a37567baee  
+M: f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003  
+slots:[305-432],[10923-11255] (461 slots) master  
+M: 42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001  
+slots:[5461-10922] (5462 slots) master  
+   1 additional replica(s)  
+M: 8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002  
+slots:[13300-16383] (3084 slots) master  
+M: 81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000  
+slots:[0-304],[433-5460],[11256-13299] (7377 slots) master  
+[OK] All nodes agree about slots configuration.  
+        >>> Check for open slots...  
+        >>> Check slots coverage...  
+        [OK] All 16384 slots covered.  
+        How many slots do you want to move (from 1 to 16384)? 2732  
+        What is the receiving node ID? 
 
 ```
