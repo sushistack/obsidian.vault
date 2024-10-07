@@ -148,7 +148,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/Redis > meet packet received  NULL.md",
+                "file": "Migrate Redis cluster.md",
                 "mode": "source",
                 "source": false
               }
@@ -291,7 +291,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/Redis > meet packet received  NULL.md",
+                "file": "Migrate Redis cluster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -308,7 +308,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/Redis > meet packet received  NULL.md",
+                "file": "Migrate Redis cluster.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -331,7 +331,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/Redis > meet packet received  NULL.md"
+                "file": "Migrate Redis cluster.md"
               }
             }
           }
@@ -354,10 +354,10 @@
   },
   "active": "acfa14d0787a3d1d",
   "lastOpenFiles": [
+    "Ideas/Redis > meet packet received  NULL.md",
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
     "Untitled.md",
-    "Ideas/Redis > meet packet received  NULL.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/137. Basic Authentication.md",
@@ -395,7 +395,6 @@
     "Spring IO",
     "images/Pasted image 20240926152527.png",
     "images/Pasted image 20240926152500.png",
-    "images/Pasted image 20240925173935.png",
     "ELK Stack",
     "Ideas",
     "querydsl",

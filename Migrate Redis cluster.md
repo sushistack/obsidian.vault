@@ -159,3 +159,22 @@ Set as importing in: 10.162.5.39:7001
 ```
 redis-cli --cluster add-node 10.162.5.222:7103 10.162.5.222:7101 --cluster-slave --cluster-master-id 46ab98d0e8f9d5e9ea7b2419a0af711f0d08a740
 ```
+
+### 미해결
+
+https://github.com/redis/redis/issues/12685
+
+미해결 이슈로 남아 있고, 단계적으로 업그레이드를 해야할 것으로 보임
+
+
+6.2.14 버전을 설치하기로 함
+
+```sh
+irteam@cupw-alpha-wb801:~$ cd /home1/irteam/apps
+irteam@cupw-alpha-wb801:~$ wget https://github.com/redis/redis/archive/refs/tags/6.2.14.tar.gz
+
+```
+
+```
+make PREFIX=/usr/local/redis6 install
+```
