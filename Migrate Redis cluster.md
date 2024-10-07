@@ -613,3 +613,51 @@ $ /usr/local/redis6/bin/redis-cli -p 7101 cluster meet 10.162.5.222 7104
 $ /usr/local/redis6/bin/redis-cli -p 7101 cluster meet 10.162.5.222 7105
 $ /usr/local/redis6/bin/redis-cli -p 7101 cluster meet 10.162.5.222 7106
 ```
+
+
+redis6 클러스터에 redis7 노드가 추가 되지 않는다.
+
+redis6 신규 노드로 추가한 뒤, 노드 연결을 시킨 후, redis6 신규 노드를 redis7 신규 노드로 새로 띄운다.
+
+```
+/usr/local/redis6/bin/redis-cli -p 7104 cluster meet 10.162.5.222 7104
+```
+
+정상 연결되었다.
+```sh
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728288607000 10 connected 0-380 433-6370 11256-13813  
+        4ea766f257e5d41c34c252c9ce62913c68bfd416 10.162.5.222:7104@17104 master - 0 1728288607246 0 connected  
+967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103@17103 master - 0 1728288607000 13 connected 381-432 10923-11255 13814-16383  
+c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728288607747 12 connected 6371-10922
+```
+
+redis 6.x -> 7.2 는 호환성이 완벽하지 않다고함.
+6.x -> 7.0 -> 7.2 순으로 가야한다고 함.
+6.x -> 7.0 -> 7.4 순으로 진행
+
+
+```sh
+irteam@cupw-alpha-wb801:~$ cd /home1/irteam/apps
+irteam@cupw-alpha-wb801:~$ wget https://github.com/redis/redis/archive/refs/tags/7.0.15.tar.gz
+
+
+make -> c 권한 실패
+make distclean -> make 캐시 삭제
+sudo make
+sudo make PREFIX=/usr/local/redis7.0 install
+```
+
+```sh
+/usr/local/redis7.0/bin$ ls 
+redis-benchmark  redis-check-aof  redis-check-rdb  redis-cli  redis-sentinel  redis-server
+```
+
+설치 완료
+
+redis7.0 node 실행
+
+```
+/usr/local/redis7.0/bin/redis-server ~/redis-cluster/7104/redis.conf
+/usr/local/redis7.0/bin/redis-server ~/redis-cluster/7105/redis.conf
+/usr/local/redis7.0/bin/redis-server ~/redis-cluster/7106/redis.conf
+```
