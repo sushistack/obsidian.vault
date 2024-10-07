@@ -148,7 +148,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Migrate Redis cluster.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -167,7 +167,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 10
       },
       {
         "id": "24f38bffb6af2c3c",
@@ -291,7 +291,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Migrate Redis cluster.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -308,7 +308,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Migrate Redis cluster.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -331,7 +331,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Migrate Redis cluster.md"
+                "file": "Udemy Lectures for CKAD/Review Practices.md"
               }
             }
           }
@@ -352,17 +352,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acfa14d0787a3d1d",
+  "active": "aadbd051ef763e3d",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Migrate Redis cluster.md",
     "images/Pasted image 20241007161646.png",
     "Ideas/Redis > meet packet received  NULL.md",
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
-    "Untitled.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/137. Basic Authentication.md",
-    "Migrate Redis cluster.md",
     "gRPC/Spring-boot gRPC server 성능 테스트.md",
     "알고리즘/문제 유형 파악.md",
     "conflict-files-obsidian-git.md",
@@ -395,7 +395,6 @@
     "images/Pasted image 20240927094845.png",
     "Spring IO",
     "images/Pasted image 20240926152527.png",
-    "images/Pasted image 20240926152500.png",
     "ELK Stack",
     "Ideas",
     "querydsl",
