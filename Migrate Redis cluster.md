@@ -179,7 +179,7 @@ sudo make PREFIX=/usr/local/redis6 install
 ```
 
 ```
-/usr/local/redis6/redis-server ~/redis-cluster/7101/redis.conf
+/usr/local/redis6/bin/redis-server ~/redis-cluster/7101/redis.conf
 ```
 
 실행하여, 신규 우분투 서버에 redis6 의 redis cluster 1대를 띄움.
@@ -205,7 +205,7 @@ $ redis-cli -h 10.162.5.39 -p 7000 cluster meet 10.162.5.222 7101
 리샤딩을 진행한다. 
 
 ```
-wb801:~/redis-cluster$ /usr/local/redis6/bin/redis-cli --cluster reshard 10.162.5.222:7101  
+irteam@cupw-alpha-wb801:~/redis-cluster$ /usr/local/redis6/bin/redis-cli --cluster reshard 10.162.5.222:7101  
         >>> Performing Cluster Check (using node 10.162.5.222:7101)  
 M: 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101  
 slots: (0 slots) master  
@@ -226,6 +226,163 @@ slots:[0-304],[433-5460],[11256-13299] (7377 slots) master
         >>> Check slots coverage...  
         [OK] All 16384 slots covered.  
         How many slots do you want to move (from 1 to 16384)? 2732  
-        What is the receiving node ID? 
+        What is the receiving node ID? 9020d0fb028ae9ad2b6e30a6e61ce2328c874670  
+        Please enter all the source node IDs.  
+        Type 'all' to use all the nodes as source nodes for the hash slots.  
+        Type 'done' once you entered all the source nodes IDs.  
+        Source node #1: all  
+  
+        Ready to move 2732 slots.  
+        Source nodes:  
+        M: f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003  
+        slots:[305-432],[10923-11255] (461 slots) master  
+        M: 42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001  
+        slots:[5461-10922] (5462 slots) master  
+        1 additional replica(s)  
+        M: 8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002  
+        slots:[13300-16383] (3084 slots) master  
+        M: 81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000  
+        slots:[0-304],[433-5460],[11256-13299] (7377 slots) master  
+        Destination node:  
+        M: 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101  
+        slots: (0 slots) master
+```
+
 
 ```
+wb801:~/redis-cluster$ /usr/local/redis6/bin/redis-cli -p 7101 cluster nodes  
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728279596000 10 connected 0-380 433-1358 5461-6370 13300-13813  
+        8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004@17004 slave 42012ea854090f6ded8ca52a5b2d71a37567baee 0 1728279596156 9 connected  
+f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 master - 0 1728279597162 5 connected 381-432 10923-11255  
+        42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001@17001 master - 0 1728279596659 9 connected 6371-10922  
+        8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002@17002 master - 0 1728279597061 3 connected 13814-16383  
+        81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000@17000 master - 0 1728279596558 8 connected 1359-5460 11256-13299
+```
+
+리샤딩 잘 되었다.
+
+이제 노드 하나를 삭제해보자
+
+
+```
+irteam@cupw-alpha-wb801:~/redis-cluster$ /usr/local/redis6/bin/redis-cli --cluster reshard 10.162.5.222:7101  
+        >>> Performing Cluster Check (using node 10.162.5.222:7101)  
+M: 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101  
+slots:[0-380],[433-1358],[5461-6370],[13300-13813] (2731 slots) master  
+S: 8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004  
+slots: (0 slots) slave  
+replicates 42012ea854090f6ded8ca52a5b2d71a37567baee  
+M: f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003  
+slots:[381-432],[10923-11255] (385 slots) master  
+M: 42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001  
+slots:[6371-10922] (4552 slots) master  
+   1 additional replica(s)  
+M: 8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002  
+slots:[13814-16383] (2570 slots) master  
+M: 81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000  
+slots:[1359-5460],[11256-13299] (6146 slots) master  
+[OK] All nodes agree about slots configuration.  
+        >>> Check for open slots...  
+        >>> Check slots coverage...  
+        [OK] All 16384 slots covered.  
+        How many slots do you want to move (from 1 to 16384)? 6146  
+        What is the receiving node ID? 9020d0fb028ae9ad2b6e30a6e61ce2328c874670  
+        Please enter all the source node IDs.  
+        Type 'all' to use all the nodes as source nodes for the hash slots.  
+        Type 'done' once you entered all the source nodes IDs.  
+        Source node #1: 81e57f3e4fe49604d40b63ad4c3fc124af130f4a  
+        Source node #2: done
+
+```
+
+```
+Node 10.162.5.39:7000 replied with error:  
+ERR Please use SETSLOT only with masters.  
+        irteam@cupw-alpha-wb801:~/redis-cluster$ /usr/local/redis6/bin/redis-cli -p 7101 cluster nodes  
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728280596000 10 connected 0-380 433-6370 11256-13813  
+        8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004@17004 slave 42012ea854090f6ded8ca52a5b2d71a37567baee 0 1728280598000 9 connected  
+f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 master - 0 1728280598408 5 connected 381-432 10923-11255  
+        42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001@17001 master - 0 1728280597905 9 connected 6371-10922  
+        8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002@17002 master - 0 1728280599011 3 connected 13814-16383  
+        81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000@17000 slave 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 0 1728280598910 10 connected
+```
+
+슬럿 = 0 이되니 slave가 되었다.
+
+### 2, 3번째 노드도 띄운다.
+
+
+```
+/usr/local/redis6/bin/redis-server ~/redis-cluster/7102/redis.conf
+/usr/local/redis6/bin/redis-server ~/redis-cluster/7103/redis.conf
+```
+
+
+```
+alpha-wb801:~/redis-cluster$ ps -ef | grep redis  
+irteam   3758519       1  0 14:26 ?        00:00:10 /usr/local/redis6/bin/redis-server 0.0.0.0:7101 [cluster]  
+irteam   3793562       1  0 15:00 ?        00:00:00 /usr/local/redis6/bin/redis-server *:7102 [cluster]  
+irteam   3793771       1  0 15:00 ?        00:00:00 /usr/local/redis6/bin/redis-server *:7103 [cluster]
+```
+
+미팅을 주선한다.
+
+```sh
+# 우분투 서버에서 진행
+/usr/local/redis6/bin/redis-cli -p 7101 cluster meet 10.162.5.222 7102
+/usr/local/redis6/bin/redis-cli -p 7101 cluster meet 10.162.5.222 7103
+```
+
+
+```
+$ /usr/local/redis6/bin/redis-cli -p 7101 cluster nodes  
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728280971000 10 connected 0-380 433-6370 11256-13813  
+        8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004@17004 slave 42012ea854090f6ded8ca52a5b2d71a37567baee 0 1728280971601 9 connected  
+f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 master - 0 1728280972607 5 connected 381-432 10923-11255  
+        967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103@17103 master - 0 1728280972506 11 connected  
+c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728280972506 0 connected  
+42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001@17001 master - 0 1728280971601 9 connected 6371-10922  
+        8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002@17002 master - 0 1728280972103 3 connected 13814-16383  
+        81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000@17000 slave 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 0 1728280972000 10 connected
+```
+
+2대도 잘 붙었다.
+
+### 리샤딩
+
+```
+$ /usr/local/redis6/bin/redis-cli --cluster reshard 10.162.5.222:7101  
+        >>> Performing Cluster Check (using node 10.162.5.222:7101)  
+M: 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101  
+slots:[0-380],[433-6370],[11256-13813] (8877 slots) master  
+   1 additional replica(s)  
+S: 8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004  
+slots: (0 slots) slave  
+replicates 42012ea854090f6ded8ca52a5b2d71a37567baee  
+M: f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003  
+slots:[381-432],[10923-11255] (385 slots) master  
+M: 967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103  
+slots: (0 slots) master  
+M: c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102  
+slots: (0 slots) master  
+M: 42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001  
+slots:[6371-10922] (4552 slots) master  
+   1 additional replica(s)  
+M: 8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002  
+slots:[13814-16383] (2570 slots) master  
+S: 81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000  
+slots: (0 slots) slave  
+replicates 9020d0fb028ae9ad2b6e30a6e61ce2328c874670  
+[OK] All nodes agree about slots configuration.  
+        >>> Check for open slots...  
+        >>> Check slots coverage...  
+        [OK] All 16384 slots covered.  
+        How many slots do you want to move (from 1 to 16384)? 4552  
+        What is the receiving node ID? c2219f3543e03fb5b3ddc128f677c5fe87ee1e09  
+        Please enter all the source node IDs.  
+        Type 'all' to use all the nodes as source nodes for the hash slots.  
+        Type 'done' once you entered all the source nodes IDs.  
+        Source node #1: 42012ea854090f6ded8ca52a5b2d71a37567baee  
+        Source node #2: done
+```
+
