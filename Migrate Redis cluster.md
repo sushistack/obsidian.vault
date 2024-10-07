@@ -503,3 +503,113 @@ c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728
 81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000@17000 slave 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 0 1728284777609 10 connected
 ```
 
+```sh
+# 7000
+/usr/local/redis6/bin/redis-cli --cluster del-node 10.162.5.222:7101 81e57f3e4fe49604d40b63ad4c3fc124af130f4a
+
+# 7002
+/usr/local/redis6/bin/redis-cli --cluster del-node 10.162.5.222:7101 8ce0a48d33af04962114460baad4c46f860fd57c
+
+# 7004
+/usr/local/redis6/bin/redis-cli --cluster del-node 10.162.5.222:7101 8db916dabb8ad8d1130da6821ec2e4857e7e0606
+```
+
+
+
+```sh
+$ /usr/local/redis6/bin/redis-cli --cluster del-node 10.162.5.222:7101 81e57f3e4fe49604d40b63ad4c3fc124af130f4a  
+>>> Removing node 81e57f3e4fe49604d40b63ad4c3fc124af130f4a from cluster 10.162.5.222:7101  
+        >>> Sending CLUSTER FORGET messages to the cluster...  
+        >>> Sending CLUSTER RESET SOFT to the deleted node.  
+
+$ redis-cli -p 7101 cluster nodes  
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728285025000 10 connected 0-380 433-6370 11256-13813  
+        8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004@17004 slave c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 0 1728285026844 12 connected  
+f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 master - 0 1728285026000 5 connected  
+967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103@17103 master - 0 1728285026040 13 connected 381-432 10923-11255 13814-16383  
+c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728285026341 12 connected 6371-10922  
+        42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001@17001 master - 0 1728285026542 9 connected  
+8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002@17002 slave 967b110d370b6f38077ccec78968e206bb2ba91a 0 1728285026000 13 connected
+```
+
+
+```sh
+$ /usr/local/redis6/bin/redis-cli --cluster del-node 10.162.5.222:7101 8ce0a48d33af04962114460baad4c46f860fd57c  
+>>> Removing node 8ce0a48d33af04962114460baad4c46f860fd57c from cluster 10.162.5.222:7101  
+        >>> Sending CLUSTER FORGET messages to the cluster...  
+        >>> Sending CLUSTER RESET SOFT to the deleted node.  
+
+$ redis-cli -p 7101 cluster nodes  
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728285108000 10 connected 0-380 433-6370 11256-13813  
+        8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004@17004 slave c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 0 1728285109580 12 connected  
+f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 master - 0 1728285109000 5 connected  
+967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103@17103 master - 0 1728285109078 13 connected 381-432 10923-11255 13814-16383  
+c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728285108777 12 connected 6371-10922  
+        42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001@17001 master - 0 1728285109000 9 connected
+```
+
+
+```sh
+$ /usr/local/redis6/bin/redis-cli --cluster del-node 10.162.5.222:7101 8db916dabb8ad8d1130da6821ec2e4857e7e0606  
+>>> Removing node 8db916dabb8ad8d1130da6821ec2e4857e7e0606 from cluster 10.162.5.222:7101  
+        >>> Sending CLUSTER FORGET messages to the cluster...  
+        >>> Sending CLUSTER RESET SOFT to the deleted node.  
+
+
+$ redis-cli -p 7101 cluster nodes  
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728285160000 10 connected 0-380 433-6370 11256-13813  
+f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 master - 0 1728285161021 5 connected  
+967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103@17103 master - 0 1728285161522 13 connected 381-432 10923-11255 13814-16383  
+c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728285161523 12 connected 6371-10922  
+        42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001@17001 master - 0 1728285160520 9 connected
+```
+
+```sh
+$ /usr/local/redis6/bin/redis-cli --cluster del-node 10.162.5.222:7101 42012ea854090f6ded8ca52a5b2d71a37567baee
+```
+
+```sh
+$ /usr/local/redis6/bin/redis-cli --cluster del-node 10.162.5.222:7101 f717e501df1e87e4e98c9dd0ff0aa5db8398fc36  
+>>> Removing node f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 from cluster 10.162.5.222:7101  
+        >>> Sending CLUSTER FORGET messages to the cluster...  
+        >>> Sending CLUSTER RESET SOFT to the deleted node.  
+
+
+```
+
+신규 노드만 존재함을 확인
+
+```
+$ redis-cli -p 7101 cluster nodes  
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728285462000 10 connected 0-380 433-6370 11256-13813  
+        967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103@17103 master - 0 1728285462577 13 connected 381-432 10923-11255 13814-16383  
+c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728285463580 12 connected 6371-10922
+```
+
+
+![](Pasted%20image%2020241007161646.png)
+
+### redis 7 버전 노드 생성
+
+```sh
+$ redis-server ~/redis-cluster/7104/redis.conf
+$ redis-server ~/redis-cluster/7105/redis.conf
+$ redis-server ~/redis-cluster/7106/redis.conf
+```
+
+```diff
+$ ps -ef | grep redis  
+irteam   3758519       1  0 14:26 ?        00:00:26 /usr/local/redis6/bin/redis-server 0.0.0.0:7101 [cluster]  
+irteam   3793562       1  0 15:00 ?        00:00:24 /usr/local/redis6/bin/redis-server *:7102 [cluster]  
+irteam   3793771       1  0 15:00 ?        00:00:11 /usr/local/redis6/bin/redis-server *:7103 [cluster]  
++irteam   3895006       1  0 16:19 ?        00:00:00 redis-server *:7104 [cluster]  
++irteam   3895756       1  0 16:20 ?        00:00:00 redis-server *:7105 [cluster]  
++irteam   3895966       1  0 16:20 ?        00:00:00 redis-server *:7106 [cluster]
+```
+
+
+```sh
+$ /usr/local/redis6/bin/redis-cli -p 7101 cluster meet 10.162.5.222 7104
+$ redis-cli -p 7101 cluster meet 10.162.5.222 7105
+$ redis-cli -p 7101 cluster meet 10.162.5.222 7106
+```
