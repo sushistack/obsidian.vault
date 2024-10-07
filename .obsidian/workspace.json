@@ -143,6 +143,18 @@
             }
           },
           {
+            "id": "acfa14d0787a3d1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ideas/Redis > meet packet received  NULL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "aeed3f13290fd4f0",
             "type": "leaf",
             "state": {
@@ -155,7 +167,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       },
       {
         "id": "24f38bffb6af2c3c",
@@ -259,8 +271,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -280,7 +291,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Review Practices.md",
+                "file": "Ideas/Redis > meet packet received  NULL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -297,7 +308,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Review Practices.md",
+                "file": "Ideas/Redis > meet packet received  NULL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -320,7 +331,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Review Practices.md"
+                "file": "Ideas/Redis > meet packet received  NULL.md"
               }
             }
           }
@@ -341,15 +352,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aadbd051ef763e3d",
+  "active": "acfa14d0787a3d1d",
   "lastOpenFiles": [
+    "images/Pasted image 20241007094300.png",
+    "images/Pasted image 20241007094250.png",
+    "Untitled.md",
+    "Ideas/Redis > meet packet received  NULL.md",
+    "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/137. Basic Authentication.md",
     "Migrate Redis cluster.md",
     "gRPC/Spring-boot gRPC server 성능 테스트.md",
     "알고리즘/문제 유형 파악.md",
     "conflict-files-obsidian-git.md",
-    "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/ReadMe.md",
     "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
     "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
@@ -366,9 +381,6 @@
     "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
     "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
     "Udemy Lectures for CKAD/85. Container Logging.md",
-    "Udemy Lectures for CKAD/82. Liveness Probes.md",
-    "Udemy Lectures for CKAD/75. Multi-Container Pods.md",
-    "Udemy Lectures for CKAD/68. Node Affinity.md",
     "알고리즘",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
@@ -384,7 +396,6 @@
     "images/Pasted image 20240926152527.png",
     "images/Pasted image 20240926152500.png",
     "images/Pasted image 20240925173935.png",
-    "images/Pasted image 20240925173917.png",
     "ELK Stack",
     "Ideas",
     "querydsl",
