@@ -449,3 +449,57 @@ c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728
 8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002@17002 slave 967b110d370b6f38077ccec78968e206bb2ba91a 0 1728281662629 13 connected  
 81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000@17000 slave 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 0 1728281663534 10 connected
 ```
+
+
+### 슬럿 제거
+
+```sh
+$ /usr/local/redis6/bin/redis-cli --cluster reshard 10.162.5.222:7101  
+        >>> Performing Cluster Check (using node 10.162.5.222:7101)  
+M: 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101  
+slots:[0-380],[433-6370],[11256-13813] (8877 slots) master  
+   1 additional replica(s)  
+S: 8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004  
+slots: (0 slots) slave  
+replicates c2219f3543e03fb5b3ddc128f677c5fe87ee1e09  
+M: f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003  
+slots:[381-432],[10923-11255] (385 slots) master  
+M: 967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103  
+slots:[13814-16383] (2570 slots) master  
+   1 additional replica(s)  
+M: c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102  
+slots:[6371-10922] (4552 slots) master  
+   1 additional replica(s)  
+M: 42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001  
+slots: (0 slots) master  
+S: 8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002  
+slots: (0 slots) slave  
+replicates 967b110d370b6f38077ccec78968e206bb2ba91a  
+S: 81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000  
+slots: (0 slots) slave  
+replicates 9020d0fb028ae9ad2b6e30a6e61ce2328c874670  
+[OK] All nodes agree about slots configuration.  
+        >>> Check for open slots...  
+        >>> Check slots coverage...  
+        [OK] All 16384 slots covered.  
+        How many slots do you want to move (from 1 to 16384)? 385  
+        What is the receiving node ID? 967b110d370b6f38077ccec78968e206bb2ba91a  
+        Please enter all the source node IDs.  
+        Type 'all' to use all the nodes as source nodes for the hash slots.  
+        Type 'done' once you entered all the source nodes IDs.  
+        Source node #1: f717e501df1e87e4e98c9dd0ff0aa5db8398fc36  
+        Source node #2: done
+```
+
+```
+$ redis-cli -p 7101 cluster nodes  
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728284776000 10 connected 0-380 433-6370 11256-13813  
+        8db916dabb8ad8d1130da6821ec2e4857e7e0606 10.162.5.39:7004@17004 slave c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 0 1728284777910 12 connected  
+f717e501df1e87e4e98c9dd0ff0aa5db8398fc36 10.162.5.39:7003@17003 master - 0 1728284778111 5 connected  
+967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103@17103 master - 0 1728284777000 13 connected 381-432 10923-11255 13814-16383  
+c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728284777000 12 connected 6371-10922  
+        42012ea854090f6ded8ca52a5b2d71a37567baee 10.162.5.39:7001@17001 master - 0 1728284777000 9 connected  
+8ce0a48d33af04962114460baad4c46f860fd57c 10.162.5.39:7002@17002 slave 967b110d370b6f38077ccec78968e206bb2ba91a 0 1728284778011 13 connected  
+81e57f3e4fe49604d40b63ad4c3fc124af130f4a 10.162.5.39:7000@17000 slave 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 0 1728284777609 10 connected
+```
+
