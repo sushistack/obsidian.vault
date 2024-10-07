@@ -877,5 +877,142 @@ cluster_slots_ok:16384
 ```
 
 ```sh
-$ redis-cli -p 7101 s
+$ redis-cli -p 7101 shutdown && redis-server ~/redis-cluster/7101/redis.conf
+$ redis-cli -p 7102 shutdown && redis-server ~/redis-cluster/7102/redis.conf
+$ redis-cli -p 7103 shutdown && redis-server ~/redis-cluster/7103/redis.conf
+```
+
+#### reshard
+
+```sh
+$ redis-cli --cluster reshard 10.162.5.222:7101  
+        >>> Performing Cluster Check (using node 10.162.5.222:7101)  
+M: 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101  
+slots: (0 slots) master  
+M: 4ea766f257e5d41c34c252c9ce62913c68bfd416 10.162.5.222:7104  
+slots:[0-380],[433-6370],[11256-13813] (8877 slots) master  
+M: c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102  
+slots: (0 slots) master  
+M: e8f7c1165da26734a5b030533f495bece4734f5c 10.162.5.222:7106  
+slots:[381-432],[10923-11255],[13814-16383] (2955 slots) master  
+M: 967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103  
+slots: (0 slots) master  
+M: 58d698d89e7fa36f01710c9b9dc556b637f32a09 10.162.5.222:7105  
+slots:[6371-10922] (4552 slots) master  
+[OK] All nodes agree about slots configuration.  
+        >>> Check for open slots...  
+        >>> Check slots coverage...  
+        [OK] All 16384 slots covered.  
+        How many slots do you want to move (from 1 to 16384)? 5462  
+        What is the receiving node ID? 9020d0fb028ae9ad2b6e30a6e61ce2328c874670  
+        Please enter all the source node IDs.  
+        Type 'all' to use all the nodes as source nodes for the hash slots.  
+        Type 'done' once you entered all the source nodes IDs.  
+        Source node #1: 4ea766f257e5d41c34c252c9ce62913c68bfd416  
+        Source node #2: done
+```
+
+
+```sh
+$ redis-cli --cluster reshard 10.162.5.222:7101  
+        >>> Performing Cluster Check (using node 10.162.5.222:7101)  
+M: 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101  
+slots:[0-380],[433-5513] (5462 slots) master  
+M: 4ea766f257e5d41c34c252c9ce62913c68bfd416 10.162.5.222:7104  
+slots:[5514-6370],[11256-13813] (3415 slots) master  
+M: c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102  
+slots: (0 slots) master  
+M: e8f7c1165da26734a5b030533f495bece4734f5c 10.162.5.222:7106  
+slots:[381-432],[10923-11255],[13814-16383] (2955 slots) master  
+M: 967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103  
+slots: (0 slots) master  
+M: 58d698d89e7fa36f01710c9b9dc556b637f32a09 10.162.5.222:7105  
+slots:[6371-10922] (4552 slots) master  
+[OK] All nodes agree about slots configuration.  
+        >>> Check for open slots...  
+        >>> Check slots coverage...  
+        [OK] All 16384 slots covered.  
+        How many slots do you want to move (from 1 to 16384)? 5462  
+        What is the receiving node ID? c2219f3543e03fb5b3ddc128f677c5fe87ee1e09  
+        Please enter all the source node IDs.  
+        Type 'all' to use all the nodes as source nodes for the hash slots.  
+        Type 'done' once you entered all the source nodes IDs.  
+        Source node #1: 4ea766f257e5d41c34c252c9ce62913c68bfd416  
+        Source node #2: e8f7c1165da26734a5b030533f495bece4734f5c  
+        Source node #3: done
+```
+
+
+```sh
+$ redis-cli --cluster reshard 10.162.5.222:7101  
+        >>> Performing Cluster Check (using node 10.162.5.222:7101)  
+M: 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101  
+slots:[0-380],[433-5513] (5462 slots) master  
+M: 4ea766f257e5d41c34c252c9ce62913c68bfd416 10.162.5.222:7104  
+slots:[13328-13813] (486 slots) master  
+M: c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102  
+slots:[381-432],[5514-6370],[10923-13327],[13814-15961] (5462 slots) master  
+M: e8f7c1165da26734a5b030533f495bece4734f5c 10.162.5.222:7106  
+slots:[15962-16383] (422 slots) master  
+M: 967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103  
+slots: (0 slots) master  
+M: 58d698d89e7fa36f01710c9b9dc556b637f32a09 10.162.5.222:7105  
+slots:[6371-10922] (4552 slots) master  
+[OK] All nodes agree about slots configuration.  
+        >>> Check for open slots...  
+        >>> Check slots coverage...  
+        [OK] All 16384 slots covered.  
+        How many slots do you want to move (from 1 to 16384)? 5460  
+        What is the receiving node ID? 967b110d370b6f38077ccec78968e206bb2ba91a  
+        Please enter all the source node IDs.  
+        Type 'all' to use all the nodes as source nodes for the hash slots.  
+        Type 'done' once you entered all the source nodes IDs.  
+        Source node #1: 4ea766f257e5d41c34c252c9ce62913c68bfd416  
+        Source node #2: 58d698d89e7fa36f01710c9b9dc556b637f32a09  
+        Source node #3: e8f7c1165da26734a5b030533f495bece4734f5c  
+        Source node #4: done
+```
+
+
+
+```
+$ redis-cli -p 7104 shutdown && redis-server ~/redis-cluster/7104/redis.conf
+$ redis-cli -p 7105 shutdown && redis-server ~/redis-cluster/7105/redis.conf
+$ redis-cli -p 7106 shutdown && redis-server ~/redis-cluster/7106/redis.conf
+```
+
+```
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728292092280 19 connected 0-380 433-5513 0-380 433-5513 0-380 433-5513 0-380 433-5513 0-380 433-5513 0-380 433-5513  
+        4ea766f257e5d41c34c252c9ce62913c68bfd416 10.162.5.222:7104@17104 master - 0 1728292988591 16 connected  
+c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728292989000 20 connected 381-432 5514-6370 10923-13327 13814-15961  
+e8f7c1165da26734a5b030533f495bece4734f5c 10.162.5.222:7106@17106 master - 0 1728292989396 18 connected  
+967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103@17103 master - 0 1728292989000 21 connected 6371-10922 13328-13813 15962-16383  
+        58d698d89e7fa36f01710c9b9dc556b637f32a09 10.162.5.222:7105@17105 master - 0 1728292989597 17 connected
+```
+
+```
+# M:7101 S: 7104
+redis-cli -p 7104 cluster replicate 9020d0fb028ae9ad2b6e30a6e61ce2328c874670
+
+# M:7102 S: 7105
+redis-cli -p 7105 cluster replicate c2219f3543e03fb5b3ddc128f677c5fe87ee1e09
+
+# M:7103 S: 7106
+redis-cli -p 7106 cluster replicate 967b110d370b6f38077ccec78968e206bb2ba91a
+```
+
+
+```sh
+$ redis-cli -p 7101 cluster nodes  
+9020d0fb028ae9ad2b6e30a6e61ce2328c874670 10.162.5.222:7101@17101 myself,master - 0 1728292092280 19 connected 0-380 433-5513 0-380 433-5513  
+
+4ea766f257e5d41c34c252c9ce62913c68bfd416 10.162.5.222:7104@17104 slave 9020d0fb028ae9ad2b6e30a6e61ce2328c874670 0 1728293089539 19 connected  
+
+c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 10.162.5.222:7102@17102 master - 0 1728293089036 20 connected 381-432 5514-6370 10923-13327 13814-15961  
+
+e8f7c1165da26734a5b030533f495bece4734f5c 10.162.5.222:7106@17106 slave 967b110d370b6f38077ccec78968e206bb2ba91a 0 1728293089036 21 connected  
+
+967b110d370b6f38077ccec78968e206bb2ba91a 10.162.5.222:7103@17103 master - 0 1728293089036 21 connected 6371-10922 13328-13813 15962-16383  
+
+58d698d89e7fa36f01710c9b9dc556b637f32a09 10.162.5.222:7105@17105 slave c2219f3543e03fb5b3ddc128f677c5fe87ee1e09 0 1728293088532 20 connected
 ```
