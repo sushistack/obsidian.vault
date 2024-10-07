@@ -172,9 +172,12 @@ https://github.com/redis/redis/issues/12685
 ```sh
 irteam@cupw-alpha-wb801:~$ cd /home1/irteam/apps
 irteam@cupw-alpha-wb801:~$ wget https://github.com/redis/redis/archive/refs/tags/6.2.14.tar.gz
-
+make -> c 권한 실패
+make distclean -> make 캐시 삭제
+sudo make
+sudo make PREFIX=/usr/local/redis6 install
 ```
 
 ```
-make PREFIX=/usr/local/redis6 install
+
 ```
