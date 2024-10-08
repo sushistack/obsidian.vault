@@ -32,6 +32,32 @@ k -n moon rollout restart deploy web-moon
 k run tmp --restart=Never --rm -i --image=nginx:alpine -- curl 10.44.0.78
 ```
 
+### Helm
+
+```sh
+# 네임스페이스 mercury 에서 container 조회 
+$ helm -n mercury ls
+
+$ helm -n mercury uninstall internal-issue-report-apiv1
+
+$ helm repo list
+
+$ helm repo update
+
+$ helm -n mercury upgrade internal-issue-report-apiv2 bitnami/nginx
+
+$ helm show values bitnami/apache
+
+$ helm -n mercury install internal-issue-report-apache bitnami/apache --set replicaCount=2
+
+$ helm -n mercury install internal-issue-report-apache bitnami/apache \
+  --set replicaCount=2 \
+  --set image.debug=true
+```
+
+
+
+
 ## 1. Pods
 
 ```sh
