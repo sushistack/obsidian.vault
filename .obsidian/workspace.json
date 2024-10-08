@@ -254,7 +254,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "token",
+                "query": "github.com",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -271,7 +271,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -352,7 +353,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6be4b4f9a32c9fd2",
+  "active": "8a952d5b1e817530",
   "lastOpenFiles": [
     "Udemy Lectures for CKAD/Review Practices.md",
     "Untitled.md",
