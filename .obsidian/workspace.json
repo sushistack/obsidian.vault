@@ -6,7 +6,7 @@
       {
         "id": "cfe68a991937362f",
         "type": "tabs",
-        "dimension": 51.24760076775432,
+        "dimension": 39.15547024952015,
         "children": [
           {
             "id": "5e7daf5502eed837",
@@ -172,7 +172,7 @@
       {
         "id": "24f38bffb6af2c3c",
         "type": "tabs",
-        "dimension": 48.75239923224568,
+        "dimension": 60.84452975047985,
         "children": [
           {
             "id": "1c17822ab53f484b",
@@ -224,8 +224,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -292,7 +291,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Migrate Redis cluster.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -309,7 +308,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Migrate Redis cluster.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -332,7 +331,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Migrate Redis cluster.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -353,11 +352,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a952d5b1e817530",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
+    "Migrate Redis cluster.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Untitled.md",
-    "Migrate Redis cluster.md",
     "images/Pasted image 20241007161646.png",
     "Ideas/Redis > meet packet received  NULL.md",
     "images/Pasted image 20241007094300.png",
