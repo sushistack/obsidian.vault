@@ -292,7 +292,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -309,7 +309,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -332,7 +332,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md"
+                "file": "Udemy Lectures for CKAD/Review Practices.md"
               }
             }
           }
@@ -353,11 +353,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0310988ff2f4f2c1",
+  "active": "aadbd051ef763e3d",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/killer.sh 1 회차.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Untitled.md",
-    "Udemy Lectures for CKAD/killer.sh 1 회차.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Migrate Redis cluster.md",
     "images/Pasted image 20241007161646.png",
