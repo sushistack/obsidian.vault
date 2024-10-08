@@ -242,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Migrate Redis cluster.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Migrate Redis cluster.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -282,7 +282,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Migrate Redis cluster.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -303,10 +303,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aadbd051ef763e3d",
+  "active": "1c17822ab53f484b",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Migrate Redis cluster.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
