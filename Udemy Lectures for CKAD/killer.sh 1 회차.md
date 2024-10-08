@@ -10,7 +10,7 @@ $ k config get-contexts -o name > /opt/course/1/contexts
 Next write a command to display the current context into /opt/course/1/context_default_kubectl.sh, the command should use kubectl.
 
 ```sh
-$ k config current-context > /opt/course/1/context_default_kubectl.sh
+$ echo 'kubectl config current-context' > /opt/course/1/context_default_kubectl.sh
 ```
 
 Finally write a second command doing the same thing into /opt/course/1/context_default_no_kubectl.sh, but without the use of kubectl.

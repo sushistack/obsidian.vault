@@ -6,7 +6,7 @@
       {
         "id": "cfe68a991937362f",
         "type": "tabs",
-        "dimension": 39.15547024952015,
+        "dimension": 47.664747280870124,
         "children": [
           {
             "id": "5e7daf5502eed837",
@@ -172,7 +172,7 @@
       {
         "id": "24f38bffb6af2c3c",
         "type": "tabs",
-        "dimension": 60.84452975047985,
+        "dimension": 52.335252719129876,
         "children": [
           {
             "id": "1c17822ab53f484b",
@@ -224,7 +224,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -291,7 +292,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -308,7 +309,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -331,7 +332,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md"
               }
             }
           }
@@ -352,16 +353,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c17822ab53f484b",
+  "active": "0310988ff2f4f2c1",
   "lastOpenFiles": [
-    "Migrate Redis cluster.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Untitled.md",
+    "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Migrate Redis cluster.md",
     "images/Pasted image 20241007161646.png",
     "Ideas/Redis > meet packet received  NULL.md",
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/137. Basic Authentication.md",
     "gRPC/Spring-boot gRPC server 성능 테스트.md",
     "알고리즘/문제 유형 파악.md",
