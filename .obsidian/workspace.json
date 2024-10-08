@@ -206,7 +206,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+                "file": "Udemy Lectures for CKAD/Resource 기본 사용법.md",
                 "mode": "source",
                 "source": false
               }
@@ -271,8 +271,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -292,7 +291,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+                "file": "Udemy Lectures for CKAD/Resource 기본 사용법.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -309,7 +308,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md",
+                "file": "Udemy Lectures for CKAD/Resource 기본 사용법.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -332,7 +331,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/killer.sh 1 회차.md"
+                "file": "Udemy Lectures for CKAD/Resource 기본 사용법.md"
               }
             }
           }
@@ -356,6 +355,7 @@
   "active": "0310988ff2f4f2c1",
   "lastOpenFiles": [
     "Udemy Lectures for CKAD/Review Practices.md",
+    "Udemy Lectures for CKAD/Resource 기본 사용법.md",
     "Udemy Lectures for CKAD/killer.sh 1 회차.md",
     "Untitled.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
@@ -383,7 +383,6 @@
     "Udemy Lectures for CKAD/100. Deployment Strategy - Canary.md",
     "Udemy Lectures for CKAD/99. Deployment Strategy  - Blue Green.md",
     "Udemy Lectures for CKAD/88. Monitor and Debug Applications.md",
-    "Udemy Lectures for CKAD/85. Container Logging.md",
     "알고리즘",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
