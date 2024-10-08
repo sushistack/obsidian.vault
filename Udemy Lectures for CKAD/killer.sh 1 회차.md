@@ -242,22 +242,16 @@ Container c3 should be of image busybox:1.31.1 and constantly send the content o
 You're ask to find out following information about the cluster k8s-c1-H:
 
 1. How many controlplane nodes are available?
-    
 2. How many worker nodes are available?
-    
 3. What is the Service CIDR?
-    
 4. Which Networking (or CNI Plugin) is configured and where is its config file?
-    
 5. Which suffix will static pods have that run on cluster1-node1?
-    
 
 ---
 
 ### Question 15 | Cluster Event Logging
 
 Write a command into /opt/course/15/cluster_events.sh which shows the latest events in the whole cluster, ordered by time (metadata.creationTimestamp). Use kubectl for it.
-
 
 Now delete the kube-proxy Pod running on node cluster2-node1 and write the events this caused into /opt/course/15/pod_kill.log.
 
