@@ -206,7 +206,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Udemy Lectures for CKAD/157. API Deprecations.md",
+                "file": "Udemy Lectures for CKAD/Resource 기본 사용법.md",
                 "mode": "source",
                 "source": false
               }
@@ -291,7 +291,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/157. API Deprecations.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -308,7 +308,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/157. API Deprecations.md",
+                "file": "Udemy Lectures for CKAD/Review Practices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -331,7 +331,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/157. API Deprecations.md"
+                "file": "Udemy Lectures for CKAD/Review Practices.md"
               }
             }
           }
@@ -352,15 +352,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1c711a44534636b",
+  "active": "aadbd051ef763e3d",
   "lastOpenFiles": [
-    "Udemy Lectures for CKAD/156. API Versions.md",
-    "Udemy Lectures for CKAD/157. API Deprecations.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
-    "Udemy Lectures for CKAD/Review Practices.md",
-    "Udemy Lectures for CKAD/Lighting Lab - 1.md",
-    "Udemy Lectures for CKAD/killer.sh 1 회차.md",
     "Udemy Lectures for CKAD/Resource 기본 사용법.md",
+    "Udemy Lectures for CKAD/ReadMe.md",
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Udemy Lectures for CKAD/Lighting Lab - 1.md",
+    "Udemy Lectures for CKAD/157. API Deprecations.md",
+    "Udemy Lectures for CKAD/156. API Versions.md",
+    "Udemy Lectures for CKAD/Review Practices.md",
+    "Udemy Lectures for CKAD/killer.sh 1 회차.md",
     "Untitled.md",
     "Migrate Redis cluster.md",
     "images/Pasted image 20241007161646.png",
@@ -371,7 +372,6 @@
     "gRPC/Spring-boot gRPC server 성능 테스트.md",
     "알고리즘/문제 유형 파악.md",
     "conflict-files-obsidian-git.md",
-    "Udemy Lectures for CKAD/ReadMe.md",
     "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
     "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
