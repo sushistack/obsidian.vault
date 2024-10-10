@@ -12,3 +12,10 @@
 ## 4. Spring Boot의 자동 구성(Auto-Configuration) 메커니즘이 내부적으로 어떻게 동작하는지 상세히 설명하고, 특정 자동 구성 클래스를 제외하거나 사용자 정의로 대체하는 방법은 무엇인가요?
 
 **추가 질문:** _Spring Boot에서 조건부 빈 등록(Conditional Bean Registration)이 어떻게 이루어지는지 설명하고, `@Conditional` 애노테이션을 사용하여 커스텀 조건을 정의하는 방법은 무엇인가요?_
+
+
+
+## 5. HikariCP 동작방식 
+
+
+## 6. Isolation Level
