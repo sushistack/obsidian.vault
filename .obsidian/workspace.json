@@ -143,18 +143,6 @@
             }
           },
           {
-            "id": "acfa14d0787a3d1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "aeed3f13290fd4f0",
             "type": "leaf",
             "state": {
@@ -167,7 +155,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       },
       {
         "id": "24f38bffb6af2c3c",
@@ -206,7 +194,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Migrate Redis cluster.md",
                 "mode": "source",
                 "source": false
               }
@@ -291,7 +279,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -308,7 +296,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Udemy Lectures for CKAD/Practice 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -331,7 +319,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/Java.md"
+                "file": "Udemy Lectures for CKAD/Practice 모음.md"
               }
             }
           }
@@ -352,12 +340,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0310988ff2f4f2c1",
+  "active": "aeed3f13290fd4f0",
   "lastOpenFiles": [
-    "Interviews/Kotlin.md",
-    "Interviews/Java.md",
-    "Interviews/Spring framework.md",
+    "Untitled.md",
     "Udemy Lectures for CKAD/Review Practices.md",
+    "Migrate Redis cluster.md",
+    "WebFlux/왜 반응형을 써야하는가?.md",
+    "Interviews/Java.md",
+    "Interviews/Kotlin.md",
+    "Interviews/Spring framework.md",
     "Udemy Lectures for CKAD/Resource 기본 사용법.md",
     "Udemy Lectures for CKAD/ReadMe.md",
     "Udemy Lectures for CKAD/Practice 모음.md",
@@ -365,8 +356,6 @@
     "Udemy Lectures for CKAD/157. API Deprecations.md",
     "Udemy Lectures for CKAD/156. API Versions.md",
     "Udemy Lectures for CKAD/killer.sh 1 회차.md",
-    "Untitled.md",
-    "Migrate Redis cluster.md",
     "images/Pasted image 20241007161646.png",
     "Ideas/Redis > meet packet received  NULL.md",
     "images/Pasted image 20241007094300.png",
@@ -382,7 +371,6 @@
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
-    "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
     "알고리즘",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
