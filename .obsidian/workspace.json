@@ -352,10 +352,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1c711a44534636b",
+  "active": "0310988ff2f4f2c1",
   "lastOpenFiles": [
-    "Interviews/Spring framework.md",
+    "Interviews/Kotlin.md",
     "Interviews/Java.md",
+    "Interviews/Spring framework.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Udemy Lectures for CKAD/Resource 기본 사용법.md",
     "Udemy Lectures for CKAD/ReadMe.md",
@@ -382,7 +383,6 @@
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
     "Udemy Lectures for CKAD/118. Network Policies.md",
     "Udemy Lectures for CKAD/108. Services - Cluster IP.md",
-    "Udemy Lectures for CKAD/107. Services.md",
     "알고리즘",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
