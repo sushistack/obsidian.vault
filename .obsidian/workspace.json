@@ -9,54 +9,6 @@
         "dimension": 47.664747280870124,
         "children": [
           {
-            "id": "5e7daf5502eed837",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/Review Practices.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0029797bbd8caa03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/144. Role based Access Controls.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0b0414153f23ea0e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/145. Cluster roles.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2453c577334a5361",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c2bcb6b8dd8fef96",
             "type": "leaf",
             "state": {
@@ -67,139 +19,14 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "9ecb497d713a5da1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/Lighting Lab - 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c147909aa21990d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/40. Commands and Arguments in Kube.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "394505497ee799cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/45. ConfigMaps.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d0c78e7ee46b6c1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/53. Demo Encrypting Secret Data at Rest.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c9c873f7cd72b081",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/119. Developing network policies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aadbd051ef763e3d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/Review Practices.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "aeed3f13290fd4f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 11
+        ]
       },
       {
         "id": "24f38bffb6af2c3c",
         "type": "tabs",
         "dimension": 52.335252719129876,
         "children": [
-          {
-            "id": "1c17822ab53f484b",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "6be4b4f9a32c9fd2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Migrate Redis cluster.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0310988ff2f4f2c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Migrate Redis cluster.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "a47b544359d4d913",
             "type": "leaf",
@@ -212,8 +39,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -279,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "알고리즘/문제 유형 파악.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -296,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md",
+                "file": "알고리즘/문제 유형 파악.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -319,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Udemy Lectures for CKAD/Practice 모음.md"
+                "file": "알고리즘/문제 유형 파악.md"
               }
             }
           }
@@ -340,8 +166,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aeed3f13290fd4f0",
+  "active": "a47b544359d4d913",
   "lastOpenFiles": [
+    "Udemy Lectures for CKAD/Practice 모음.md",
+    "Ideas/Migrate Redis cluster.md",
     "Untitled.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Migrate Redis cluster.md",
@@ -351,7 +179,6 @@
     "Interviews/Spring framework.md",
     "Udemy Lectures for CKAD/Resource 기본 사용법.md",
     "Udemy Lectures for CKAD/ReadMe.md",
-    "Udemy Lectures for CKAD/Practice 모음.md",
     "Udemy Lectures for CKAD/Lighting Lab - 1.md",
     "Udemy Lectures for CKAD/157. API Deprecations.md",
     "Udemy Lectures for CKAD/156. API Versions.md",
@@ -370,7 +197,6 @@
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
     "Udemy Lectures for CKAD/119. Developing network policies.md",
     "Udemy Lectures for CKAD/111. Ingress Networking.md",
-    "Udemy Lectures for CKAD/118. Network Policies.md",
     "알고리즘",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
