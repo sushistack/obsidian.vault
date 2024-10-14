@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Junit5/StaticMock.md",
+                "file": "Ideas/Gateway.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Junit5/StaticMock.md",
+                "file": "Ideas/Gateway.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Junit5/StaticMock.md",
+                "file": "Ideas/Gateway.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Junit5/StaticMock.md"
+                "file": "Ideas/Gateway.md"
               }
             }
           }
@@ -168,8 +168,9 @@
   },
   "active": "a47b544359d4d913",
   "lastOpenFiles": [
-    "알고리즘/문제 유형 파악.md",
+    "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Junit5/StaticMock.md",
+    "알고리즘/문제 유형 파악.md",
     "Junit5",
     "Udemy Lectures for CKAD/Practice 모음.md",
     "Ideas/Migrate Redis cluster.md",
@@ -197,7 +198,6 @@
     "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
     "Udemy Lectures for CKAD/58. Service Account.md",
     "Udemy Lectures for CKAD/22. Recap - ReplicaSets.md",
-    "Udemy Lectures for CKAD/119. Developing network policies.md",
     "알고리즘",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
