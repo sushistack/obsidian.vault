@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
+                "file": "Interviews/Infra.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
+                "file": "Interviews/Infra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
+                "file": "Interviews/Infra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md"
+                "file": "Interviews/Infra.md"
               }
             }
           }
@@ -148,16 +148,18 @@
   },
   "active": "a47b544359d4d913",
   "lastOpenFiles": [
+    "Interviews/Spring framework.md",
+    "Interviews/Infra.md",
+    "Interviews/Java.md",
+    "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
+    "Spring/Untitled.md",
     "Spring/OpenFeign 같은 유용한 라이브러리?.md",
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
     "Ideas/실시간 통신 성능 개선.md",
     "Interviews/Redis.md",
-    "Interviews/Java.md",
-    "Interviews/Spring framework.md",
     "Interviews/Kotlin.md",
     "Ideas/Gateway.md",
-    "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Junit5/StaticMock.md",
     "알고리즘/문제 유형 파악.md",
     "Junit5",
@@ -174,10 +176,8 @@
     "Udemy Lectures for CKAD/156. API Versions.md",
     "Udemy Lectures for CKAD/killer.sh 1 회차.md",
     "images/Pasted image 20241007161646.png",
-    "Ideas/Redis > meet packet received  NULL.md",
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
-    "Udemy Lectures for CKAD/137. Basic Authentication.md",
     "알고리즘",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
