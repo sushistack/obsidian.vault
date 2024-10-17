@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Redis.md",
+                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/Redis.md",
+                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/Redis.md",
+                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/Redis.md"
+                "file": "Spring/OpenFeign 같은 유용한 라이브러리?.md"
               }
             }
           }
@@ -148,9 +148,13 @@
   },
   "active": "a47b544359d4d913",
   "lastOpenFiles": [
+    "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
+    "Spring/OpenFeign 같은 유용한 라이브러리?.md",
+    "Spring/다중 Datasource 환경에서의 tx 매니징.md",
+    "Ideas/실시간 통신 성능 개선.md",
+    "Interviews/Redis.md",
     "Interviews/Java.md",
     "Interviews/Spring framework.md",
-    "Interviews/Redis.md",
     "Interviews/Kotlin.md",
     "Ideas/Gateway.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
@@ -174,10 +178,6 @@
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
     "Udemy Lectures for CKAD/137. Basic Authentication.md",
-    "gRPC/Spring-boot gRPC server 성능 테스트.md",
-    "conflict-files-obsidian-git.md",
-    "Udemy Lectures for CKAD/153. Validating and Mutating Admission Controllers.md",
-    "Udemy Lectures for CKAD/91. Labels Selector and Annotations.md",
     "알고리즘",
     "images/Pasted image 20240930113614.png",
     "images/Pasted image 20240929160554.png",
