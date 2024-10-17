@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Redis.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Redis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Redis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/Java.md"
+                "file": "Interviews/Redis.md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "a47b544359d4d913",
   "lastOpenFiles": [
+    "Interviews/Java.md",
     "Interviews/Spring framework.md",
     "Interviews/Redis.md",
     "Interviews/Kotlin.md",
-    "Interviews/Java.md",
     "Ideas/Gateway.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Junit5/StaticMock.md",
