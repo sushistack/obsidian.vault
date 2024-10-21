@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Infra.md",
+                "file": "Interviews/Redis.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/Infra.md",
+                "file": "Interviews/Redis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/Infra.md",
+                "file": "Interviews/Redis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/Infra.md"
+                "file": "Interviews/Redis.md"
               }
             }
           }
@@ -148,9 +148,10 @@
   },
   "active": "a47b544359d4d913",
   "lastOpenFiles": [
-    "Interviews/Spring framework.md",
-    "Interviews/Infra.md",
+    "Interviews/Kotlin.md",
     "Interviews/Java.md",
+    "Interviews/Infra.md",
+    "Interviews/Spring framework.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
     "Spring/Untitled.md",
@@ -158,7 +159,6 @@
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
     "Ideas/실시간 통신 성능 개선.md",
     "Interviews/Redis.md",
-    "Interviews/Kotlin.md",
     "Ideas/Gateway.md",
     "Junit5/StaticMock.md",
     "알고리즘/문제 유형 파악.md",

@@ -42,7 +42,7 @@
 - 실제 프로젝트에서 멀티스레드 문제를 해결한 사례 공유.
 
 
-## 3. ava의 동시성(concurrency) 처리에서 `synchronized` 키워드와 `ReentrantLock`, 그리고 `java.util.concurrent.atomic` 패키지의 클래스들 간의 차이점을 설명해주세요. 각각이 적합한 사용 사례는 무엇이며, 이들을 사용할 때 발생할 수 있는 잠재적인 문제점이나 성능상의 고려 사항은 무엇인가요?
+## 3. Java의 동시성(concurrency) 처리에서 `synchronized` 키워드와 `ReentrantLock`, 그리고 `java.util.concurrent.atomic` 패키지의 클래스들 간의 차이점을 설명해주세요. 각각이 적합한 사용 사례는 무엇이며, 이들을 사용할 때 발생할 수 있는 잠재적인 문제점이나 성능상의 고려 사항은 무엇인가요?
 
 **추가 질문:** _`CompletableFuture`와 같은 비동기 프로그래밍 도구를 사용하여 동시성을 관리하는 방법을 설명해주세요. 또한, `ForkJoinPool`과 병렬 스트림(parallel streams)이 멀티코어 시스템에서 어떻게 성능을 향상시키는지 논의해주세요._
 
