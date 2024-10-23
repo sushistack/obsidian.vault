@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Spring framework.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Spring framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Spring framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/Java.md"
+                "file": "Interviews/Spring framework.md"
               }
             }
           }
@@ -148,23 +148,25 @@
   },
   "active": "a47b544359d4d913",
   "lastOpenFiles": [
-    "Interviews/Spring framework.md",
-    "Interviews/Redis.md",
     "Interviews/Kotlin.md",
+    "Interviews/Redis.md",
     "Interviews/Java.md",
-    "Interviews/Infra.md",
+    "Ideas/Redis > meet packet received  NULL.md",
+    "Ideas/Migrate Redis cluster.md",
+    "Ideas/디자인 패턴을 이용한 로직 개선.md",
+    "Ideas/실시간 통신 성능 개선.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
+    "Ideas/Gateway.md",
+    "Interviews/Spring framework.md",
+    "Interviews/Infra.md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
     "Spring/Untitled.md",
     "Spring/OpenFeign 같은 유용한 라이브러리?.md",
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
-    "Ideas/실시간 통신 성능 개선.md",
-    "Ideas/Gateway.md",
     "Junit5/StaticMock.md",
     "알고리즘/문제 유형 파악.md",
     "Junit5",
     "Udemy Lectures for CKAD/Practice 모음.md",
-    "Ideas/Migrate Redis cluster.md",
     "Untitled.md",
     "Udemy Lectures for CKAD/Review Practices.md",
     "Migrate Redis cluster.md",
@@ -173,8 +175,6 @@
     "Udemy Lectures for CKAD/ReadMe.md",
     "Udemy Lectures for CKAD/Lighting Lab - 1.md",
     "Udemy Lectures for CKAD/157. API Deprecations.md",
-    "Udemy Lectures for CKAD/156. API Versions.md",
-    "Udemy Lectures for CKAD/killer.sh 1 회차.md",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
