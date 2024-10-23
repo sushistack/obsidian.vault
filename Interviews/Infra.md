@@ -48,3 +48,8 @@ IAC는 다음과 같은 이점을 제공합니다:
 **요약**
 
 IAC는 인프라를 코드로 관리하여 일관성, 자동화, 재사용성을 높이고, 수작업으로 인한 오류를 줄이는 방법입니다. 대표적인 도구로는 **Terraform**, **AWS CloudFormation**, **Ansible**, **Pulumi**, **Google Cloud Deployment Manager** 등이 있으며, 각 도구는 특정 클라우드 환경이나 요구사항에 따라 선택할 수 있습니다.
+
+
+## 비관적 락, 낙관적 락
+
+https://github.com/esperar/estudy/blob/master/DataBase/lock.md
