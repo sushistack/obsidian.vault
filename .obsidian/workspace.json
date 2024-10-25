@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/아키텍처.md",
+                "file": "Interviews/Java.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/아키텍처.md",
+                "file": "Interviews/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/아키텍처.md",
+                "file": "Interviews/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/아키텍처.md"
+                "file": "Interviews/Java.md"
               }
             }
           }
@@ -159,12 +160,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c5baa55e0c12b411",
+  "active": "8a952d5b1e817530",
   "lastOpenFiles": [
-    "Junit5/StaticMock.md",
-    "Interviews/아키텍처.md",
-    "Interviews/Kotlin.md",
+    "Java/Untitled.md",
     "Interviews/Java.md",
+    "Interviews/아키텍처.md",
+    "Junit5/StaticMock.md",
+    "Interviews/Kotlin.md",
     "Interviews/Infra.md",
     "Interviews/Spring framework.md",
     "Interviews/Redis.md",
@@ -187,7 +189,6 @@
     "WebFlux/왜 반응형을 써야하는가?.md",
     "Udemy Lectures for CKAD/Resource 기본 사용법.md",
     "Udemy Lectures for CKAD/ReadMe.md",
-    "Udemy Lectures for CKAD/Lighting Lab - 1.md",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
