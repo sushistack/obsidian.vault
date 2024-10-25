@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Spring framework.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Spring framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/Java.md",
+                "file": "Interviews/Spring framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/Java.md"
+                "file": "Interviews/Spring framework.md"
               }
             }
           }
@@ -160,16 +159,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a952d5b1e817530",
+  "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
-    "Java/Untitled.md",
+    "Interviews/Redis.md",
+    "Interviews/JPA.md",
+    "Interviews/G1 GC.md",
     "Interviews/Java.md",
+    "Java/Untitled.md",
     "Interviews/아키텍처.md",
     "Junit5/StaticMock.md",
     "Interviews/Kotlin.md",
     "Interviews/Infra.md",
     "Interviews/Spring framework.md",
-    "Interviews/Redis.md",
     "Ideas/Redis > meet packet received  NULL.md",
     "Ideas/Migrate Redis cluster.md",
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
@@ -187,8 +188,6 @@
     "Udemy Lectures for CKAD/Review Practices.md",
     "Migrate Redis cluster.md",
     "WebFlux/왜 반응형을 써야하는가?.md",
-    "Udemy Lectures for CKAD/Resource 기본 사용법.md",
-    "Udemy Lectures for CKAD/ReadMe.md",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
