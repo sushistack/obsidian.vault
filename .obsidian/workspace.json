@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Spring framework.md",
+                "file": "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/Spring framework.md",
+                "file": "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/Spring framework.md",
+                "file": "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/Spring framework.md"
+                "file": "Java/2 - 4. Enforce noninstantiability with a private constructor.md"
               }
             }
           }
@@ -161,16 +161,21 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "Java/2 - 3. Enforce the singleton property with a private constructor or an enum type.md",
+    "Java/2 - 2. Consider static factory mehthods instead of constructors.md",
+    "Java/2 - 1. Consider a builder when faced with many constructor parameters.md",
+    "Java/10 - 75. Include failure-capture information in detail messages.md",
+    "Java/10 - 76. Strive for failure atomicity.md",
     "Interviews/Redis.md",
+    "Interviews/Kotlin.md",
+    "Interviews/Spring framework.md",
     "Interviews/JPA.md",
     "Interviews/G1 GC.md",
     "Interviews/Java.md",
     "Java/Untitled.md",
     "Interviews/아키텍처.md",
     "Junit5/StaticMock.md",
-    "Interviews/Kotlin.md",
     "Interviews/Infra.md",
-    "Interviews/Spring framework.md",
     "Ideas/Redis > meet packet received  NULL.md",
     "Ideas/Migrate Redis cluster.md",
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
@@ -183,11 +188,6 @@
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
     "알고리즘/문제 유형 파악.md",
     "Junit5",
-    "Udemy Lectures for CKAD/Practice 모음.md",
-    "Untitled.md",
-    "Udemy Lectures for CKAD/Review Practices.md",
-    "Migrate Redis cluster.md",
-    "WebFlux/왜 반응형을 써야하는가?.md",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
     "images/Pasted image 20241007094250.png",
