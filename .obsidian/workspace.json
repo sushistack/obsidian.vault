@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Untitled.md",
+                "file": "Interviews/아키텍처.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/Untitled.md",
+                "file": "Interviews/아키텍처.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/Untitled.md",
+                "file": "Interviews/아키텍처.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/Untitled.md",
+                "file": "Interviews/아키텍처.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/Untitled.md"
+                "file": "Interviews/아키텍처.md"
               }
             }
           }
@@ -162,7 +162,7 @@
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
     "Junit5/StaticMock.md",
-    "Interviews/Untitled.md",
+    "Interviews/아키텍처.md",
     "Interviews/Kotlin.md",
     "Interviews/Java.md",
     "Interviews/Infra.md",
