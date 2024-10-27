@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
+                "file": "Interviews/G1 GC.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
+                "file": "Interviews/G1 GC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
+                "file": "Interviews/G1 GC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/2 - 4. Enforce noninstantiability with a private constructor.md"
+                "file": "Interviews/G1 GC.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
     "Java/2 - 3. Enforce the singleton property with a private constructor or an enum type.md",
     "Java/2 - 2. Consider static factory mehthods instead of constructors.md",
     "Java/2 - 1. Consider a builder when faced with many constructor parameters.md",
@@ -186,7 +187,6 @@
     "Spring/Untitled.md",
     "Spring/OpenFeign 같은 유용한 라이브러리?.md",
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
-    "알고리즘/문제 유형 파악.md",
     "Junit5",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
