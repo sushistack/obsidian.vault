@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md",
+                "file": "Interviews/MQ를 사용한 이유.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md",
+                "file": "Interviews/MQ를 사용한 이유.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md",
+                "file": "Interviews/MQ를 사용한 이유.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md"
+                "file": "Interviews/MQ를 사용한 이유.md"
               }
             }
           }
@@ -161,10 +161,14 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "Interviews/JPA.md",
+    "Interviews/MQ를 사용한 이유.md",
+    "Interviews/Java.md",
+    "Interviews/Infra.md",
+    "Ideas/실시간 통신 성능 개선.md",
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "알고리즘/Python 표준 라이브러리.md",
     "알고리즘/문제 유형 파악.md",
-    "Interviews/Infra.md",
     "Interviews/G1 GC.md",
     "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
     "Java/2 - 3. Enforce the singleton property with a private constructor or an enum type.md",
@@ -175,18 +179,14 @@
     "Interviews/Redis.md",
     "Interviews/Kotlin.md",
     "Interviews/Spring framework.md",
-    "Interviews/JPA.md",
-    "Interviews/Java.md",
     "Java/Untitled.md",
     "Interviews/아키텍처.md",
     "Junit5/StaticMock.md",
     "Ideas/Redis > meet packet received  NULL.md",
     "Ideas/Migrate Redis cluster.md",
-    "Ideas/실시간 통신 성능 개선.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Ideas/Gateway.md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
-    "Spring/Untitled.md",
     "Junit5",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
