@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/배포의 종류.md",
+                "file": "Interviews/Kotlin.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/배포의 종류.md",
+                "file": "Interviews/Kotlin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/배포의 종류.md",
+                "file": "Interviews/Kotlin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/배포의 종류.md"
+                "file": "Interviews/Kotlin.md"
               }
             }
           }
@@ -161,16 +161,19 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "Interviews/MQ를 사용한 이유.md",
+    "Interviews/Redis.md",
+    "Interviews/Java.md",
+    "Interviews/Infra.md",
+    "Interviews/G1 GC.md",
     "Interviews/아키텍처.md",
     "Interviews/배포의 종류.md",
-    "Interviews/G1 GC.md",
-    "Interviews/Infra.md",
+    "Spring/다중 Datasource 환경에서의 tx 매니징.md",
+    "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
+    "Spring/OpenFeign 같은 유용한 라이브러리?.md",
     "Interviews/JPA.md",
-    "Interviews/Java.md",
     "Interviews/Kotlin.md",
-    "Interviews/MQ를 사용한 이유.md",
     "Interviews/Spring framework.md",
-    "Interviews/Redis.md",
     "Ideas/Redis > meet packet received  NULL.md",
     "Ideas/Migrate Redis cluster.md",
     "Ideas/Gateway.md",
@@ -185,8 +188,6 @@
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
     "알고리즘/Python 표준 라이브러리.md",
-    "알고리즘/문제 유형 파악.md",
-    "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
     "Junit5",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
