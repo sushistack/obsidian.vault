@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/2. JPA 소개.md",
+                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JPA/2. JPA 소개.md",
+                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JPA/2. JPA 소개.md",
+                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JPA/2. JPA 소개.md"
+                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md"
               }
             }
           }
@@ -159,8 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1c711a44534636b",
+  "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "Interviews/아키텍처.md",
+    "Interviews/배포의 종류.md",
+    "JPA/3. Persistant Context.md",
+    "JPA/2. JPA 소개.md",
     "JPA/1. SQL 중심적인 개발의 문제점.md",
     "JPA/0. 강좌 소개.md",
     "Interviews/JPA.md",
@@ -182,12 +186,8 @@
     "Interviews/Kotlin.md",
     "Interviews/Java.md",
     "Interviews/G1 GC.md",
-    "Interviews/아키텍처.md",
-    "Interviews/배포의 종류.md",
     "gRPC/Spring-boot gRPC server.md",
-    "gRPC/Spring-boot gRPC client.md",
     "images/Pasted image 20240823112953.png",
-    "gRPC/Netty 서버에서 hikariCP 사용하기.md",
     "Junit5",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
