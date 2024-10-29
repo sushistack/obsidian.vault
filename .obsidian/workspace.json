@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
+                "file": "Ideas/Gateway.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "slf",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
+                "file": "Ideas/Gateway.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
+                "file": "Ideas/Gateway.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md"
+                "file": "Ideas/Gateway.md"
               }
             }
           }
@@ -161,32 +162,32 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
-    "Interviews/G1 GC.md",
-    "Interviews/아키텍처.md",
-    "Interviews/Infra.md",
-    "Interviews/Java.md",
-    "Interviews/JPA.md",
-    "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
-    "Interviews/MQ를 사용한 이유.md",
-    "Interviews/Kotlin.md",
-    "Interviews/Spring framework.md",
-    "Interviews/Redis.md",
-    "Ideas/실시간 통신 성능 개선.md",
-    "Ideas/디자인 패턴을 이용한 로직 개선.md",
-    "알고리즘/Python 표준 라이브러리.md",
-    "알고리즘/문제 유형 파악.md",
-    "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
-    "Java/2 - 3. Enforce the singleton property with a private constructor or an enum type.md",
-    "Java/2 - 2. Consider static factory mehthods instead of constructors.md",
-    "Java/2 - 1. Consider a builder when faced with many constructor parameters.md",
-    "Java/10 - 75. Include failure-capture information in detail messages.md",
-    "Java/10 - 76. Strive for failure atomicity.md",
-    "Java/Untitled.md",
-    "Junit5/StaticMock.md",
     "Ideas/Redis > meet packet received  NULL.md",
     "Ideas/Migrate Redis cluster.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Ideas/Gateway.md",
+    "Ideas/실시간 통신 성능 개선.md",
+    "gRPC/Spring-boot gRPC server.md",
+    "gRPC/Spring-boot gRPC client.md",
+    "images/Pasted image 20240823112953.png",
+    "gRPC/Netty 서버에서 hikariCP 사용하기.md",
+    "gRPC/Spring-boot gRPC server 성능 테스트.md",
+    "gRPC/Spring-boot gRPC.md",
+    "Interviews/아키텍처.md",
+    "Ideas/디자인 패턴을 이용한 로직 개선.md",
+    "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
+    "Interviews/배포의 종류.md",
+    "Interviews/G1 GC.md",
+    "Interviews/Infra.md",
+    "Interviews/Java.md",
+    "Interviews/JPA.md",
+    "Interviews/MQ를 사용한 이유.md",
+    "Interviews/Kotlin.md",
+    "Interviews/Spring framework.md",
+    "Interviews/Redis.md",
+    "알고리즘/Python 표준 라이브러리.md",
+    "알고리즘/문제 유형 파악.md",
+    "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
     "Junit5",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
@@ -203,7 +204,6 @@
     "images/Pasted image 20240927095029.png",
     "images/Pasted image 20240927094845.png",
     "Spring IO",
-    "images/Pasted image 20240926152527.png",
     "ELK Stack",
     "Ideas",
     "querydsl",
