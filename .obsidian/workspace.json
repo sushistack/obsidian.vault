@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/Gateway.md",
+                "file": "Interviews/배포의 종류.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "slf",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/Gateway.md",
+                "file": "Interviews/배포의 종류.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/Gateway.md",
+                "file": "Interviews/배포의 종류.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/Gateway.md"
+                "file": "Interviews/배포의 종류.md"
               }
             }
           }
@@ -162,10 +161,20 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "Interviews/아키텍처.md",
+    "Interviews/배포의 종류.md",
+    "Interviews/G1 GC.md",
+    "Interviews/Infra.md",
+    "Interviews/JPA.md",
+    "Interviews/Java.md",
+    "Interviews/Kotlin.md",
+    "Interviews/MQ를 사용한 이유.md",
+    "Interviews/Spring framework.md",
+    "Interviews/Redis.md",
     "Ideas/Redis > meet packet received  NULL.md",
     "Ideas/Migrate Redis cluster.md",
-    "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Ideas/Gateway.md",
+    "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Ideas/실시간 통신 성능 개선.md",
     "gRPC/Spring-boot gRPC server.md",
     "gRPC/Spring-boot gRPC client.md",
@@ -173,18 +182,8 @@
     "gRPC/Netty 서버에서 hikariCP 사용하기.md",
     "gRPC/Spring-boot gRPC server 성능 테스트.md",
     "gRPC/Spring-boot gRPC.md",
-    "Interviews/아키텍처.md",
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
-    "Interviews/배포의 종류.md",
-    "Interviews/G1 GC.md",
-    "Interviews/Infra.md",
-    "Interviews/Java.md",
-    "Interviews/JPA.md",
-    "Interviews/MQ를 사용한 이유.md",
-    "Interviews/Kotlin.md",
-    "Interviews/Spring framework.md",
-    "Interviews/Redis.md",
     "알고리즘/Python 표준 라이브러리.md",
     "알고리즘/문제 유형 파악.md",
     "Java/2 - 4. Enforce noninstantiability with a private constructor.md",
