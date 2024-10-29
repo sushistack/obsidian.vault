@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Junit5/StaticMock.md",
+                "file": "JPA/2. JPA 소개.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Junit5/StaticMock.md",
+                "file": "JPA/2. JPA 소개.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Junit5/StaticMock.md",
+                "file": "JPA/2. JPA 소개.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Junit5/StaticMock.md"
+                "file": "JPA/2. JPA 소개.md"
               }
             }
           }
@@ -159,8 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c5baa55e0c12b411",
+  "active": "d1c711a44534636b",
   "lastOpenFiles": [
+    "JPA/1. SQL 중심적인 개발의 문제점.md",
+    "JPA/0. 강좌 소개.md",
+    "Interviews/JPA.md",
+    "Interviews/Infra.md",
+    "Interviews/어려웠던 점.md",
+    "Junit5/StaticMock.md",
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
     "Spring/OpenFeign 같은 유용한 라이브러리?.md",
@@ -173,11 +179,8 @@
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "Ideas/실시간 통신 성능 개선.md",
     "Ideas/Migrate Redis cluster.md",
-    "Interviews/어려웠던 점.md",
     "Interviews/Kotlin.md",
     "Interviews/Java.md",
-    "Interviews/JPA.md",
-    "Interviews/Infra.md",
     "Interviews/G1 GC.md",
     "Interviews/아키텍처.md",
     "Interviews/배포의 종류.md",
@@ -185,9 +188,6 @@
     "gRPC/Spring-boot gRPC client.md",
     "images/Pasted image 20240823112953.png",
     "gRPC/Netty 서버에서 hikariCP 사용하기.md",
-    "gRPC/Spring-boot gRPC server 성능 테스트.md",
-    "gRPC/Spring-boot gRPC.md",
-    "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
     "Junit5",
     "images/Pasted image 20241007161646.png",
     "images/Pasted image 20241007094300.png",
