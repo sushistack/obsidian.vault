@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
+                "file": "Junit5/StaticMock.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
+                "file": "Junit5/StaticMock.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
+                "file": "Junit5/StaticMock.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md"
+                "file": "Junit5/StaticMock.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
     "Interviews/아키텍처.md",
     "Interviews/배포의 종류.md",
     "JPA/3. Persistant Context.md",
@@ -186,7 +187,6 @@
     "Interviews/Kotlin.md",
     "Interviews/Java.md",
     "Interviews/G1 GC.md",
-    "gRPC/Spring-boot gRPC server.md",
     "images/Pasted image 20240823112953.png",
     "Junit5",
     "images/Pasted image 20241007161646.png",
