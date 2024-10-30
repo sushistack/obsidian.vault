@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Junit5/StaticMock.md",
+                "file": "Ideas/실시간 통신 성능 개선.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Junit5/StaticMock.md",
+                "file": "Ideas/실시간 통신 성능 개선.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Junit5/StaticMock.md",
+                "file": "Ideas/실시간 통신 성능 개선.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Junit5/StaticMock.md"
+                "file": "Ideas/실시간 통신 성능 개선.md"
               }
             }
           }
@@ -161,6 +161,9 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "gRPC/Netty 서버에서 hikariCP 사용하기.md",
+    "Github Actions/Sonar 4 Github Action.md",
+    "Junit5/StaticMock.md",
     "Interviews/대용량 트래픽의 서비스를 구축해야한다면.md",
     "Interviews/아키텍처.md",
     "Interviews/배포의 종류.md",
@@ -171,7 +174,6 @@
     "Interviews/JPA.md",
     "Interviews/Infra.md",
     "Interviews/어려웠던 점.md",
-    "Junit5/StaticMock.md",
     "Spring/다중 Datasource 환경에서의 tx 매니징.md",
     "Spring/Transaction 이 어떤 구조를 갖고 있고, 어떻게 동작하는가?.md",
     "Spring/OpenFeign 같은 유용한 라이브러리?.md",
@@ -185,8 +187,6 @@
     "Ideas/실시간 통신 성능 개선.md",
     "Ideas/Migrate Redis cluster.md",
     "Interviews/Kotlin.md",
-    "Interviews/Java.md",
-    "Interviews/G1 GC.md",
     "images/Pasted image 20240823112953.png",
     "Junit5",
     "images/Pasted image 20241007161646.png",
