@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md",
+                "file": "Ideas/VisualVM.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md",
+                "file": "Ideas/VisualVM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md",
+                "file": "Ideas/VisualVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md"
+                "file": "Ideas/VisualVM.md"
               }
             }
           }
@@ -161,10 +161,12 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "images/Pasted image 20241101101619.png",
+    "Ideas/실시간 통신 성능 개선.md",
+    "Ideas/VisualVM.md",
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "Ideas/Gateway.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
-    "Ideas/실시간 통신 성능 개선.md",
     "gRPC/Netty 서버에서 hikariCP 사용하기.md",
     "Github Actions/Sonar 4 Github Action.md",
     "Junit5/StaticMock.md",
@@ -185,8 +187,6 @@
     "Interviews/Redis.md",
     "Interviews/MQ를 사용한 이유.md",
     "Ideas/Redis > meet packet received  NULL.md",
-    "Ideas/Migrate Redis cluster.md",
-    "Interviews/Kotlin.md",
     "images/Pasted image 20240823112953.png",
     "Junit5",
     "images/Pasted image 20241007161646.png",
