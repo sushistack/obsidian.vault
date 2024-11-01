@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/VisualVM.md",
+                "file": "Ideas/실시간 통신 성능 개선.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/VisualVM.md",
+                "file": "Ideas/실시간 통신 성능 개선.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/VisualVM.md",
+                "file": "Ideas/실시간 통신 성능 개선.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/VisualVM.md"
+                "file": "Ideas/실시간 통신 성능 개선.md"
               }
             }
           }
@@ -161,11 +161,12 @@
   },
   "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "gRPC/Spring-boot gRPC client.md",
+    "Ideas/VisualVM.md",
     "images/Pasted image 20241101113217.png",
     "images/Pasted image 20241101112938.png",
     "images/Pasted image 20241101101619.png",
     "Ideas/실시간 통신 성능 개선.md",
-    "Ideas/VisualVM.md",
     "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "Ideas/Gateway.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
@@ -202,7 +203,6 @@
     "images/Pasted image 20240928160432.png",
     "Spring",
     "Java",
-    "images/Pasted image 20240927095356.png",
     "Spring IO",
     "ELK Stack",
     "Ideas",
