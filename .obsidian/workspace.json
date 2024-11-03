@@ -27,28 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/실시간 통신 성능 개선.md",
+                "file": "Kafka/4. Introduction to Kafka.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "실시간 통신 성능 개선"
-            }
-          },
-          {
-            "id": "a11bb55d9b8d036d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.4"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
+              "title": "4. Introduction to Kafka"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -120,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interviews/아키텍처.md",
+                "file": "Kafka/4. Introduction to Kafka.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 아키텍처"
+              "title": "Backlinks for 4. Introduction to Kafka"
             }
           },
           {
@@ -139,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interviews/아키텍처.md",
+                "file": "Kafka/4. Introduction to Kafka.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 아키텍처"
+              "title": "Outgoing links from 4. Introduction to Kafka"
             }
           },
           {
@@ -166,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interviews/아키텍처.md"
+                "file": "Kafka/4. Introduction to Kafka.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 아키텍처"
+              "title": "Outline of 4. Introduction to Kafka"
             }
           }
         ]
@@ -189,15 +177,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a11bb55d9b8d036d",
+  "active": "c5baa55e0c12b411",
   "lastOpenFiles": [
+    "Ideas/실시간 통신 성능 개선.md",
+    "Kafka/4. Introduction to Kafka.md",
+    "Untitled.md",
+    "Kafka",
+    "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "gRPC/Spring-boot gRPC client.md",
     "Ideas/VisualVM.md",
     "images/Pasted image 20241101113217.png",
     "images/Pasted image 20241101112938.png",
     "images/Pasted image 20241101101619.png",
-    "Ideas/실시간 통신 성능 개선.md",
-    "Ideas/디자인 패턴을 이용한 로직 개선.md",
     "Ideas/Gateway.md",
     "Ideas/APM 과 AsyncRequest Observerbilty (feat Coroutine).md",
     "gRPC/Netty 서버에서 hikariCP 사용하기.md",
@@ -218,8 +209,6 @@
     "Spring/OpenFeign 같은 유용한 라이브러리?.md",
     "Interviews/Spring framework.md",
     "Interviews/Redis.md",
-    "Interviews/MQ를 사용한 이유.md",
-    "Ideas/Redis > meet packet received  NULL.md",
     "images/Pasted image 20240823112953.png",
     "Junit5",
     "images/Pasted image 20241007161646.png",
@@ -236,7 +225,6 @@
     "Spring IO",
     "ELK Stack",
     "Ideas",
-    "querydsl",
     "Untitled.canvas"
   ]
 }
