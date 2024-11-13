@@ -73,5 +73,5 @@ After method: void com.example.service.MyService.b()
 
 --- 
 
-CGLIB 의 경우는 바이트 코드를 조작하여 
+CGLIB 의 경우는 바이트 코드를 조작하여 타겟 클래스를 상속한 클래스를 생성한다.
 
