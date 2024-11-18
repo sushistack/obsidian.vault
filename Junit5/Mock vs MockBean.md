@@ -27,35 +27,20 @@
 
 ```java
 @RunWith(MockitoJUnitRunner.class)
-
 public class MyServiceTest {
 
-  
+    @Mock
+    private DependencyService dependencyService;
 
-    @Mock
+    @InjectMocks
+    private MyService myService;
 
-    private DependencyService dependencyService;
-
-  
-
-    @InjectMocks
-
-    private MyService myService;
-
-  
-
-    @Test
-
-    public void testServiceMethod() {
-
-        when(dependencyService.someMethod()).thenReturn("Mocked Value");
-
-        String result = myService.serviceMethod();
-
-        assertEquals("Expected Result", result);
-
-    }
-
+    @Test
+    public void testServiceMethod() {
+        when(dependencyService.someMethod()).thenReturn("Mocked Value");
+        String result = myService.serviceMethod();
+        assertEquals("Expected Result", result);
+    }
 }
 ```
 
@@ -81,10 +66,7 @@ public class MyServiceTest {
 
 **개요**
 
-  
-
 • **라이브러리**: Spring Boot Test
-
 • **목적**: 스프링 애플리케이션 컨텍스트에서 특정 빈(bean)을 모킹하여 통합 테스트나 슬라이스 테스트에서 사용
 
   
@@ -94,54 +76,34 @@ public class MyServiceTest {
   
 
 • **Spring 컨텍스트 통합**: 모킹된 빈이 스프링의 애플리케이션 컨텍스트에 등록되어 실제 빈 대신 사용됨
-
 • **자동 주입**: @Autowired 등으로 주입되는 모든 곳에서 모킹된 빈이 사용
 
 • **사용 예**:
 
   
 
+```kotlin
 @SpringBootTest
-
 public class MyServiceIntegrationTest {
 
-  
+    @MockBean
+    private DependencyService dependencyService;
 
-    @MockBean
+    @Autowired
+    private MyService myService;
 
-    private DependencyService dependencyService;
-
-  
-
-    @Autowired
-
-    private MyService myService;
-
-  
-
-    @Test
-
-    public void testServiceMethod() {
-
-        when(dependencyService.someMethod()).thenReturn("Mocked Value");
-
-        String result = myService.serviceMethod();
-
-        assertEquals("Expected Result", result);
-
-    }
-
+    @Test
+    public void testServiceMethod() {
+        when(dependencyService.someMethod()).thenReturn("Mocked Value");
+        String result = myService.serviceMethod();
+        assertEquals("Expected Result", result);
+    }
 }
-
-  
-
-  
+```
 
   
 
 **사용 시기**
-
-  
 
 • **통합 테스트**: 스프링 컨텍스트를 로드하면서 특정 빈만 모킹하여 실제 환경과 유사하게 테스트할 때
 
@@ -152,8 +114,6 @@ public class MyServiceIntegrationTest {
   
 
 **주요 차이점 요약**
-
-  
 
 **항목** @Mock **(Mockito)** @MockBean **(Spring Boot)**
 
