@@ -1,0 +1,30 @@
+스프링 IoC 컨테이너는 하나 이상의 빈을 관리합니다. 이러한 빈들은 컨테이너에 제공한 구성 메타데이터(예: XML `<bean/>` 정의의 형태)를 사용하여 생성됩니다.
+
+컨테이너 내에서 이러한 빈 정의는 `BeanDefinition` 객체로 표현되며, 이 객체는 다음과 같은 메타데이터를 포함합니다:
+
+- **패키지 한정 클래스 이름**: 일반적으로 정의되는 빈의 실제 구현 클래스입니다.
+- **빈의 동작을 정의하는 구성 요소**: 빈이 컨테이너 내에서 어떻게 동작해야 하는지를 나타냅니다(스코프, 라이프사이클 콜백 등).
+- **빈이 작업을 수행하는 데 필요한 다른 빈에 대한 참조**: 이러한 참조는 협력자(collaborators) 또는 의존성(dependencies)이라고도 합니다.
+- **새로 생성된 객체에 설정할 기타 구성 설정**: 예를 들어, 풀의 크기 제한이나 커넥션 풀을 관리하는 빈에서 사용할 커넥션 수 등입니다.
+
+이 메타데이터는 각 빈 정의를 구성하는 일련의 속성으로 변환됩니다. 다음 표는 이러한 속성들을 설명합니다:
+
+|Property|Explained in…​|
+|---|---|
+|Class|[Instantiating Beans](https://docs.spring.io/spring-framework/reference/core/beans/definition.html#beans-factory-class)|
+|Name|[Naming Beans](https://docs.spring.io/spring-framework/reference/core/beans/definition.html#beans-beanname)|
+|Scope|[Bean Scopes](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html)|
+|Constructor arguments|[Dependency Injection](https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html)|
+|Properties|[Dependency Injection](https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html)|
+|Autowiring mode|[Autowiring Collaborators](https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-autowire.html)|
+|Lazy initialization mode|[Lazy-initialized Beans](https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-lazy-init.html)|
+|Initialization method|[Initialization Callbacks](https://docs.spring.io/spring-framework/reference/core/beans/factory-nature.html#beans-factory-lifecycle-initializingbean)|
+|Destruction method|[Destruction Callbacks](https://docs.spring.io/spring-framework/reference/core/beans/factory-nature.html#beans-factory-lifecycle-disposablebean)|
+
+특정 빈을 생성하는 방법에 대한 정보를 포함하는 빈 정의 외에도, `ApplicationContext` 구현체는 컨테이너 외부에서 생성된 기존 객체(사용자에 의해)를 등록하는 것도 허용합니다. 이는 `getBeanFactory()` 메소드를 통해 `ApplicationContext`의 `BeanFactory`에 접근하여 수행되며, 이는 `DefaultListableBeanFactory` 구현체를 반환합니다. `DefaultListableBeanFactory`는 `registerSingleton(..)` 및 `registerBeanDefinition(..)` 메소드를 통해 이러한 등록을 지원합니다. 그러나 일반적인 애플리케이션은 정규 빈 정의 메타데이터를 통해 정의된 빈만을 사용합니다.
+
+### 주의
+
+빈 메타데이터와 수동으로 제공된 싱글톤 인스턴스는 자동 주입 및 기타 인스펙션 단계 동안 컨테이너가 이를 적절히 처리할 수 있도록 가능한 한 빨리 등록되어야 합니다. 기존 메타데이터와 기존 싱글톤 인스턴스를 어느 정도 덮어쓰는 것은 지원되지만, 런타임에 새로운 빈을 등록하는 것(공장에 대한 실시간 접근과 동시에)은 공식적으로 지원되지 않으며, 동시 접근 예외, 빈 컨테이너의 일관성 없는 상태 또는 그 둘 다를 초래할 수 있습니다.
+
+
