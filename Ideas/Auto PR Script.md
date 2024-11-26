@@ -9,9 +9,9 @@ body_sample=$(cat "$HOME/.git-body-sample")
   
 echo "has_changes: $has_changes"  
   
-        if [ ! $has_changes -eq 0 ]; then  
-echo "You have changes. it is staged now."  
-git add .  
+if [ ! $has_changes -eq 0 ]; then  
+	echo "You have changes. it is staged now."  
+	git add .  
 fi  
   
 read -rep "Title: " title  
@@ -35,10 +35,10 @@ fi
   
 if [ ! "$has_a" -eq 0 ]; then  
 read -rep "Merge to alpha(y/n)? " merge_alpha_yn  
-if [ "$merge_alpha_yn" = "n" ]; then  
-exit 0  
+	if [ "$merge_alpha_yn" = "n" ]; then  
+	exit 0  
+	fi  
 fi  
-        fi  
   
 git checkout alpha  
 git pull origin alpha  
