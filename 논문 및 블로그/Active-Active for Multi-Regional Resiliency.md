@@ -1,0 +1,1 @@
+https://netflixtechblog.com/active-active-for-multi-regional-resiliency-c47719f6685b
