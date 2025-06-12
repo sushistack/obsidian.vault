@@ -1,5 +1,36 @@
 # 구축
 
+## 사전구성
+
+<details>
+  <summary>NHN Private을 통한 Instance 구성</summary>
+
+### NHN Priavate을 통한 Instance 구성
+
+* NHN Private Project 접속
+* 좌측 메뉴에서 Compute > Instance 선택
+    * ![Inline-image-2024-11-18 09.29.32.667.png](/files/3939170961361019406)
+* 인스턴스 생성 > 원하는 OS이미지 버전 선택
+    * ![Inline-image-2024-11-18 09.34.51.376.png](/files/3939173635124299937)
+    * 가용성 영역 : 상관 없음
+    * 인스턴스 이름 : btpa-onk8s-wa800
+    * 인스턴스 타입 : v04-008-D100
+        * ![Inline-image-2024-11-18 09.55.21.188.png](/files/3939183951615988995)
+    * 네트워크 설정 (dmz, int, db)
+        * ![Inline-image-2024-11-18 09.56.10.587.png](/files/3939184366360425269)
+    * ![Inline-image-2024-11-18 09.56.41.791.png](/files/3939184633243886954)
+
+</details>
+
+<details>
+  <summary>IDMS권한 신청</summary>
+
+### IDMS 권한 신청
+
+* [https://apms.nhnent.com/aprvDoc/draft/D059#null](https://apms.nhnent.com/aprvDoc/draft/D059#null)
+
+</details>
+
 ## K8s 구성
 
 <details>
@@ -158,6 +189,59 @@ alias k='/usr/bin/kubectl'
 kubeadm reset
 ```
 
+- 전체 재설치 스크립트 (calico 까지 설치)
+```
+cat << EOT > ./reinstall_k8s.sh
+
+#!/bin/bash
+
+## 마스터 노드 kubeadm reset
+kubeadm reset -f
+rm -rf /etc/cni/net.d
+
+## 마스터 노드 재 설치
+
+read -p "본인의 HAProxy IP를 입력하세요:" H_IP
+kubeadm init --control-plane-endpoint=\$H_IP:6443 --pod-network-cidr=172.16.0.0/16 --upload-certs
+
+find / -name test2_ysh.pem -exec cp -avfpr {} ./ \;
+
+mkdir -p \$HOME/.kube
+sudo cp /etc/kubernetes/admin.conf \$HOME/.kube/config
+sudo chown \$(id -u):\$(id -g) \$HOME/.kube/config
+
+WC=\`kubeadm token create --print-join-command\`
+
+## 워커 노드 kubeadm reset 및 재 설치
+
+read -p "본인의 Worker node IP를 입력하세요:" W_IP
+
+echo "워커노드 reset 진행 중..."
+ssh -i ./test2_ysh.pem ubuntu@\$W_IP "sudo kubeadm reset -f ; sudo rm -rf /etc/cni/net.d"
+ssh -i ./test2_ysh.pem ubuntu@\$W_IP "sudo \$WC"
+ssh -i ./test2_ysh.pem ubuntu@\$W_IP "sudo systemctl restart kubelet containerd"
+
+echo "워커노드 재 설치 완료"
+
+## calico 설치
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.30.0/manifests/tigera-operator.yaml
+curl https://raw.githubusercontent.com/projectcalico/calico/v3.30.0/manifests/custom-resources.yaml -O
+
+sed -i "s/192.168.0.0/172.16.0.0/g" ./custom-resources.yaml
+
+kubectl create -f custom-resources.yaml
+
+## 최종 node 확인
+ systemctl restart containerd
+ systemctl restart kubelet
+
+kubectl get no
+
+
+EOT
+
+```
+
 </details>
 
 <details>
@@ -307,6 +391,8 @@ chmod 700 get_helm.sh
     * ![Inline-image-2024-11-20 14.20.41.593.png](/files/3940767057236626551)
     * ![Inline-image-2024-11-20 14.22.09.085.png](/files/3940767791891399620)
     * ![Inline-image-2024-11-20 14.22.38.424.png](/files/3940768037760857297)
+
+</details>
 
 </details>
 
@@ -475,7 +561,7 @@ kubectl create namespace argocd
 
 ```
 helm repo add argocd https://argoproj.github.io/argo-helm
-helm install argocd argo/argo-cd --namespace argocd --create-namespace --set server.service.type=LoadBalancer
+helm install argocd argocd/argo-cd --namespace argocd --create-namespace --set server.service.type=LoadBalancer
 
 echo `kubectl get secrets argocd-initial-admin-secret -o jsonpath='{.data.password}' | base64 -d`
 ```
@@ -768,9 +854,9 @@ calicoctl ipam show
 </details>
 
 <details>
-<summary>vxlan ebpf</summary>
+  <summary>vxlan > ebpf</summary>
 
-### vxlan  ebpf
+### vxlan > ebpf
 
 * ebpf 변경
 
@@ -782,8 +868,8 @@ metadata:
   name: kubernetes-services-endpoint
   namespace: tigera-operator
 data:
-  KUBERNETES_SERVICE_HOST: '{API server host}'
-  KUBERNETES_SERVICE_PORT: '{API server port}'
+  KUBERNETES_SERVICE_HOST: 'API server host'
+  KUBERNETES_SERVICE_PORT: 'API server port'
 EOF
 ```
 
