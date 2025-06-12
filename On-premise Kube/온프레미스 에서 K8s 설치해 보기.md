@@ -1,75 +1,4 @@
-# Agenda
-
-1. 구축
-    1. 사전 구성
-        1. [NHN Private을 통한 Instance 구성](#NHN%20Priavate%EC%9D%84%20%ED%86%B5%ED%95%9C%20Instance%20%EA%B5%AC%EC%84%B1)
-        2. [IDMS 권한 신청](#IDMS%20%EA%B6%8C%ED%95%9C%20%EC%8B%A0%EC%B2%AD)
-    2. K8s 구성
-        1. [Kubeadm 을 이용한 K8s 구축](#Kubeadm%20%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20K8s%20%EA%B5%AC%EC%B6%95)
-        2. [Haproxy 를 활용한 Master 다중화 설명](#Haproxy%20%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20Master%20%EB%8B%A4%EC%A4%91%ED%99%94%20%EC%84%A4%EB%AA%85)
-    3. Calico cni 를 이용한 network 구성
-        1. [Calico 구성](#Calico%20%EA%B5%AC%EC%84%B1)
-2. 구성
-    1. Package 관리자 helm
-        1. [Package 관리자 helm](#Package%20%EA%B4%80%EB%A6%AC%EC%9E%90%20helm)
-    2. Dynamic ephemeral volume
-        1. [PV, PVC, SC 그리고 Provisioner](#PV,%20PVC,%20SC%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20Provisioner)
-        2. [NHN Private Online NAS](#NHN%20Private%20Online%20NAS)
-        3. [Persistent Volume 설정](#Persistent%20Volume%20%EC%84%A4%EC%A0%95)
-    3. 배포관리
-        1. [배포관리 Argocd](#%EB%B0%B0%ED%8F%AC%EA%B4%80%EB%A6%AC%20Argocd)
-    4. Loadbalancing을 위한 metallb 구성
-        1. [클라우드 환경의 K8s LB 와 On-prem 환경 LB의 차이 이해](#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%20%ED%99%98%EA%B2%BD%EC%9D%98%20K8s%20LB%20%EC%99%80%20On-prem%20%ED%99%98%EA%B2%BD%20LB%EC%9D%98%20%EC%B0%A8%EC%9D%B4%20%EC%9D%B4%ED%95%B4)
-        2. [MetalLB](#MetalLB)
-    5. 웹 서비스 구성을 위한 Ingress-nginx
-        1. [Ingress-nginx](#Ingress-nginx)
-        2. [ingress 설정](#ingress%20%EC%84%A4%EC%A0%95)
-    6. Service Mesh
-        1. [istio](#istio)
-        2. [kiali](#kiali)
-3. 기타
-    1. 운영을 편리하게 해주는 운영도구
-        1. [kubectx, kubens](#kubectx,%20kubens)
-        2. [k9s](#k9s)
-    2. cni를 변경해 보자
-        1. [calicoctl mode 변경 설정](#calicoctl%20mode%20%EB%B3%80%EA%B2%BD%20%EC%84%A4%EC%A0%95)
-        2. [vxlan > ebpf](#vxlan%20%3E%20ebpf)
-4. 첨부 파일
-    1. 교육
-        1. <span style="color:rgb(34, 34, 34);">[https://nhnent.dooray.com/web-office/v1/tenants/!1387695619080878080/office/drives/2533566007900153910/files/3945098868399289478](https://nhnent.dooray.com/web-office/v1/tenants/!1387695619080878080/office/drives/2533566007900153910/files/3945098868399289478)</span>
-
 # 구축
-
-## 사전구성
-
-<details>
-  <summary>NHN Private을 통한 Instance 구성</summary>
-
-### NHN Priavate을 통한 Instance 구성
-
-* NHN Private Project 접속
-* 좌측 메뉴에서 Compute > Instance 선택
-    * ![Inline-image-2024-11-18 09.29.32.667.png](/files/3939170961361019406)
-* 인스턴스 생성 > 원하는 OS이미지 버전 선택
-    * ![Inline-image-2024-11-18 09.34.51.376.png](/files/3939173635124299937)
-    * 가용성 영역 : 상관 없음
-    * 인스턴스 이름 : btpa-onk8s-wa800
-    * 인스턴스 타입 : v04-008-D100
-        * ![Inline-image-2024-11-18 09.55.21.188.png](/files/3939183951615988995)
-    * 네트워크 설정 (dmz, int, db)
-        * ![Inline-image-2024-11-18 09.56.10.587.png](/files/3939184366360425269)
-    * ![Inline-image-2024-11-18 09.56.41.791.png](/files/3939184633243886954)
-
-</details>
-
-<details>
-  <summary>IDMS권한 신청</summary>
-
-### IDMS 권한 신청
-
-* [https://apms.nhnent.com/aprvDoc/draft/D059#null](https://apms.nhnent.com/aprvDoc/draft/D059#null)
-
-</details>
 
 ## K8s 구성
 
@@ -378,8 +307,6 @@ chmod 700 get_helm.sh
     * ![Inline-image-2024-11-20 14.20.41.593.png](/files/3940767057236626551)
     * ![Inline-image-2024-11-20 14.22.09.085.png](/files/3940767791891399620)
     * ![Inline-image-2024-11-20 14.22.38.424.png](/files/3940768037760857297)
-
-</details>
 
 </details>
 
@@ -815,7 +742,6 @@ EOF
 
 </details>
 
-
 ## cni를 변경해 보자
 
 <details>
@@ -842,9 +768,9 @@ calicoctl ipam show
 </details>
 
 <details>
-<summary>vxlan > ebpf</summary>
+<summary>vxlan ebpf</summary>
 
-### vxlan > ebpf
+### vxlan  ebpf
 
 * ebpf 변경
 
@@ -856,8 +782,8 @@ metadata:
   name: kubernetes-services-endpoint
   namespace: tigera-operator
 data:
-  KUBERNETES_SERVICE_HOST: '<API server host>'
-  KUBERNETES_SERVICE_PORT: '<API server port>'
+  KUBERNETES_SERVICE_HOST: '{API server host}'
+  KUBERNETES_SERVICE_PORT: '{API server port}'
 EOF
 ```
 
