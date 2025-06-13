@@ -1,35 +1,3 @@
-# 구축
-
-## 사전구성
-
-<details>
-  <summary>NHN Private을 통한 Instance 구성</summary>
-
-### NHN Priavate을 통한 Instance 구성
-
-* NHN Private Project 접속
-* 좌측 메뉴에서 Compute > Instance 선택
-    * ![Inline-image-2024-11-18 09.29.32.667.png](/files/3939170961361019406)
-* 인스턴스 생성 > 원하는 OS이미지 버전 선택
-    * ![Inline-image-2024-11-18 09.34.51.376.png](/files/3939173635124299937)
-    * 가용성 영역 : 상관 없음
-    * 인스턴스 이름 : btpa-onk8s-wa800
-    * 인스턴스 타입 : v04-008-D100
-        * ![Inline-image-2024-11-18 09.55.21.188.png](/files/3939183951615988995)
-    * 네트워크 설정 (dmz, int, db)
-        * ![Inline-image-2024-11-18 09.56.10.587.png](/files/3939184366360425269)
-    * ![Inline-image-2024-11-18 09.56.41.791.png](/files/3939184633243886954)
-
-</details>
-
-<details>
-  <summary>IDMS권한 신청</summary>
-
-### IDMS 권한 신청
-
-* [https://apms.nhnent.com/aprvDoc/draft/D059#null](https://apms.nhnent.com/aprvDoc/draft/D059#null)
-
-</details>
 
 ## K8s 구성
 
@@ -249,51 +217,42 @@ EOT
 
 ### Haproxy 를 활용한 Master 다중화 설명
 
-* NHN Private 에서 상품 사용 할 때 (Network > Load Balancer > 로드 밸런서 생성 > L4 라우팅)
-    * ![Inline-image-2024-11-18 14.42.31.139.png](/files/3939328487285782441)
-    * ![Inline-image-2024-11-18 14.44.01.324.png](/files/3939329248912010659)
-    * ![Inline-image-2024-11-18 14.45.20.651.png](/files/3939329908400479676)
-* On-prem 환경에서 사용 할 때
-    * ![Inline-image-2024-11-18 15.09.37.238.png](/files/3939342127562226654)
-    * ![Inline-image-2024-11-18 15.10.02.434.png](/files/3939342339141265934)
-    * 구성
+```
+apt update 
+apt install haproxy  
 
-    ```
-    apt update 
-    apt install haproxy  
-    
-    cat << EOF > /etc/haproxy/haproxy.cfg
-    global
-       maxconn      4096
-       nbproc       2
-       log          /dev/log local0
-       log          /dev/log local1 notice
-    
-    defaults
-       log global
-       timeout http-request    10s
-       timeout queue           1m
-       timeout connect         10s
-       timeout client          1m
-       timeout server          1m
-       timeout http-keep-alive 10s
-       timeout check           10s
-    
-    frontend kubernetes-master-lb
-       bind 0.0.0.0:6443
-       option tcplog
-       mode tcp
-       default_backend kubernetes-master-nodes
-    
-    backend kubernetes-master-nodes
-       mode tcp
-       balance roundrobin
-       option tcp-check
-       option tcplog
-       server {마스터서버Hostname} {마스터서버IP}:6443 check
-    EOF
-    
-    ```
+cat << EOF > /etc/haproxy/haproxy.cfg
+global
+   maxconn      4096
+   nbproc       2
+   log          /dev/log local0
+   log          /dev/log local1 notice
+
+defaults
+   log global
+   timeout http-request    10s
+   timeout queue           1m
+   timeout connect         10s
+   timeout client          1m
+   timeout server          1m
+   timeout http-keep-alive 10s
+   timeout check           10s
+
+frontend kubernetes-master-lb
+   bind 0.0.0.0:6443
+   option tcplog
+   mode tcp
+   default_backend kubernetes-master-nodes
+
+backend kubernetes-master-nodes
+   mode tcp
+   balance roundrobin
+   option tcp-check
+   option tcplog
+   server {마스터서버Hostname} {마스터서버IP}:6443 check
+EOF
+
+```
 
 </details>
 
@@ -306,9 +265,9 @@ EOT
 
 * k8s 내부에서의 네트워크 통신.
     * Pod to Pod
-        * ![Inline-image-2024-11-27 10.24.46.891.png](/files/3945721753578263140)
+        ![](Pasted%20image%2020250613092132.png)
     * 멀티노드 pod
-        * ![Inline-image-2024-11-27 10.25.12.563.png](/files/3945721967362444653)
+        ![](Pasted%20image%2020250613092228.png)
 * CNI(Container Network Interface)란 무엇인가?
     * 컨테이너 간의 네트워킹을 제어할 수 있는 플러그인의 표준.
     * ![Inline-image-2024-11-18 15.32.14.413.png](/files/3939353511744532792)
@@ -324,7 +283,6 @@ EOT
     curl https://raw.githubusercontent.com/projectcalico/calico/v3.30.0/manifests/custom-resources.yaml -O
     kubectl create -f custom-resources.yaml
     ```
-
 </details>
 
 # 구성
@@ -355,7 +313,7 @@ chmod 700 get_helm.sh
 
 ### PV, PVC, SC 그리고 Provisioner
 
-![k8s volume type](https://nhnent.dooray.com/files/3945146265007420586)
+![](volume_type.gif)
 
 * PV (PersistentVolume)
     * K8s 클러스터 내의 저장소를 추상화한 객체이며 사용자가 데이터를 저장할 수 있는 실제 저장소, 볼륨 그 자체를 뜻함.
@@ -378,21 +336,6 @@ chmod 700 get_helm.sh
     * Role 과 비슷하지만 Cluster 전체에 적용
 * ClusterRoleBiding
     * Cluster Role 을 SA에게 연결하는 객체
-
-</details>
-
-<details>
-  <summary>NHN Private Online NAS</summary>
-
-### NHN Private Online NAS
-
-* Private 에서 Online NAS 생성
-    * ![Inline-image-2024-11-20 14.20.16.492.png](/files/3940766846961840725)
-    * ![Inline-image-2024-11-20 14.20.41.593.png](/files/3940767057236626551)
-    * ![Inline-image-2024-11-20 14.22.09.085.png](/files/3940767791891399620)
-    * ![Inline-image-2024-11-20 14.22.38.424.png](/files/3940768037760857297)
-
-</details>
 
 </details>
 
