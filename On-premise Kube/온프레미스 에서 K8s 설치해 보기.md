@@ -544,7 +544,7 @@ argocd app create argocd --repo https://argoproj.github.io/argo-helm --helm-char
 
 ### 클라우드 환경의 K8s LB 와 On-prem 환경 LB의 차이 이해
 
-* ![Inline-image-2024-11-21 07.37.26.840.png](/files/3941288871940747503)
+* ![](Pasted%20image%2020250613092503.png)
 * 클라우드 환경의 K8s의 경우 Service Type 으로 LB를 생성 할 경우, 자동으로 IP를 할당 하지만
     On-premises 환경에서는 별도로 로드밸런서를 구성해야 함, MetalLB는 이러한 기능을 담당.
 * L2 (ARP), L3(BGP) 방식 모두 지원
@@ -614,8 +614,6 @@ EOF
 ### Ingress-nginx
 
 * dns 신규 신청
-    * [https://apms.nhnent.com/aprvDoc/draft/D075](https://apms.nhnent.com/aprvDoc/draft/D075)
-    * ![Inline-image-2024-11-20 14.43.35.188.png](/files/3940778580357188662)
 * ingress-nginx 구성
 
 ```
@@ -624,10 +622,7 @@ helm upgrade --install ingress-nginx ingress-nginx \
   --namespace ingress-nginx --create-namespace
 ```
 
-![Inline-image-2024-11-20 15.22.34.159.png](/files/3940798201814006214)
-![Inline-image-2024-11-20 15.26.28.555.png](/files/3940800167133569728)
-![Inline-image-2024-11-20 15.29.55.591.png](/files/3940801903612997695)
-![Inline-image-2024-11-25 13.48.31.905.png](/files/3944374749061738258)
+![](Pasted%20image%2020250613092638.png)
 
 </details>
 
@@ -779,7 +774,7 @@ EOF
 ### calico mode 변경 설정
 
 * vxlan 과 ebpf 설정의 장단점
-    ![Inline-image-2024-11-25 10.19.04.408.png](/files/3944269325342959926)
+    ![](Pasted%20image%2020250613092733.png)
 * calicoctl install
 
 ```
