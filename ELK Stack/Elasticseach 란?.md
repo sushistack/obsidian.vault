@@ -1,5 +1,4 @@
-
-> Distribute Document Store
+ Distribute Document Store
 
 가장 중요한 Idea는 **Inverted Index**(역색인) 이다.  Inverted Index 란 document 에 있는 단어들을 나열하고 각 단어가 나오는 document 를 식별 하는 방식을 말한다.
 
@@ -157,9 +156,9 @@ POST /_bulk
 
 ## 매핑
 
-> : 필드의 데이터 타입을 설정하는 것  
-> > 다이나믹 매핑 : elasticsearch가 자동으로 설정  
-> > 명시적 매핑 : 사용자가 직접 설정
+: 필드의 데이터 타입을 설정하는 것  
+다이나믹 매핑 : elasticsearch가 자동으로 설정  
+명시적 매핑 : 사용자가 직접 설정
 
 
 |**JSON data type**|**Elasticsearch data type**|
